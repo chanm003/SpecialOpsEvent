@@ -12,19 +12,71 @@
     //configure dependencies before use (probably should centralize)
     jQuery.timeago.settings.allowFuture = true;
 
-    //DOM--VERIFIED--APPEARS IN .master of BOTH SP2010 & SP2013
-    var anchorMain = $("a[name='mainContent']");
-
-
-
-
     var exposedAPI = {
         render: render
     }
 
+    function addScrollingBehavior() {
+        if (sessionStorage.getItem("shouldScroll")) {
+            setTimeout(function () {
+                //console.log('started auto');
+                startScrolling();
+            }, 500);
+        }
+
+        listenForWindowScroll();
+        listenForScrollButtonClicks();
+
+        function isUserAtBottomOfPage() {
+            return $(window).scrollTop() + $(window).height() == $(document).height();
+        }
+
+        function listenForWindowScroll() {
+            $(window).scroll(function () {
+                if (isUserAtBottomOfPage()) {
+
+                    if (sessionStorage.getItem("shouldScroll")) {
+                        //refresh page
+                        location.reload(true);
+                    }
+                }
+            });
+        }
+
+        var timer;
+        function listenForScrollButtonClicks() {
+            $("#autoscroll").click(function () {
+                sessionStorage.setItem("shouldScroll", true);
+                startScrolling();
+            });
+            $("#autostop").click(function () {
+                sessionStorage.removeItem("shouldScroll");
+                clearInterval(timer);
+            });
+        }
+
+        function startScrolling() {
+            timer = setInterval(scrollPage, 30);
+        }
+
+        function getCurrentPosition() {
+            var currentPos;
+            if (document.all) {
+                currentPos = document.documentElement.scrollTop + 1;
+            } else {
+                currentPos = window.pageYOffset + 1;
+            }
+            return currentPos;
+        }
+
+        function scrollPage() {
+            window.scroll(0, getCurrentPosition());
+        }
+    }
+
     function render(data) {
-        var container = $('<div class="appContainer">');
-        anchorMain.after(container);
+        addScrollingBehavior();
+        var container = $('div.appContainer');
 
         renderCCIRTable(container, data.ccirData);
         renderWatchlogTable(container, data.watchlogData);
@@ -130,7 +182,7 @@
                 } else if (data === "Red") {
                     return '<i style="color:red;" class="fa fa-circle fa-2x"></i> ';
                 }
-                
+
             },
             targets: 2
         };
@@ -279,7 +331,7 @@
             { title: "Title" },
             { title: "LTIOV" },
             { title: "Priority" },
-            { title: "Date Opened"}
+            { title: "Date Opened" }
         ];
 
         //Template

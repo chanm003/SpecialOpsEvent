@@ -250,5 +250,6 @@
       </View>
     </File>
   <File Type="GhostableInLibrary" Path="WebPartPages\CUB.aspx" Url="app/CUB.aspx"/>
+<File Type="GhostableInLibrary" Path="WebPartPages\projectionScrollable.aspx" Url="app/projectionScrollable.aspx" />
 </Module>
 </Elements>

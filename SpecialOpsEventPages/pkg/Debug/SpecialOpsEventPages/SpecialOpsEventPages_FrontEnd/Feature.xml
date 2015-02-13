@@ -155,6 +155,7 @@
     <ElementFile Location="WebPartPages\sotg3.aspx" />
     <ElementFile Location="WebPartPages\airAssets.aspx" />
     <ElementFile Location="WebPartPages\cub.aspx" />
+    <ElementFile Location="WebPartPages\projectionScrollable.aspx" />
     <ElementManifest Location="MasterPages\Elements.xml" />
     <ElementFile Location="MasterPages\v4-specialOpsEvent.master" />
     <ElementManifest Location="SpreadsheetsForExcelWebParts\Elements.xml" />

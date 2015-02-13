@@ -246,6 +246,7 @@
     <Content Include="Application\WebPartPages\announce.aspx" />
     <Content Include="Application\WebPartPages\asr.aspx" />
     <Content Include="Application\WebPartPages\comms.aspx" />
+    <Content Include="Application\WebPartPages\projectionScrollable.aspx" />
     <Content Include="Application\WebPartPages\cub.aspx" />
     <Content Include="Application\WebPartPages\editCustomNav.aspx" />
     <Content Include="Application\WebPartPages\Elements.xml" />
