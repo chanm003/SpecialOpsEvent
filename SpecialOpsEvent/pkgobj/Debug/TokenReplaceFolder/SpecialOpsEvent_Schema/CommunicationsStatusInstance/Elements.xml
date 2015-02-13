@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Communications Status" OnQuickLaunch="FALSE" TemplateType="10003" Url="Lists/CommunicationsStatus" Description=""></ListInstance>
+</Elements>

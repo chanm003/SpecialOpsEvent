@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPages" List="116" Url="_catalogs/masterpage">
+    <File Path="MasterPages\v4-specialOpsEvent.master" Url="v4-specialOpsEvent.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="FALSE" />
+  </Module>
+</Elements>

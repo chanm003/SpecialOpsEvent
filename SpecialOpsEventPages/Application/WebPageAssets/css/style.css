@@ -1,0 +1,438 @@
+﻿@import url("../js/lib/vex/css/vex.css");
+@import url("../js/lib/vex/css/vex-theme-os.css");
+@import url("../js/lib/datatables/css/jquery.dataTables.css");
+@import url("font-awesome-4.2.0/css/font-awesome.min.css");
+@import url("../js/lib/jqueryui/jquery-ui.min.css");
+@import url("../js/lib/qtip/jquery.qtip.min.css");
+@import url("../js/lib/jstree/themes/default/style.css");
+@import url("../js/lib/jqueryGanttView/jquery.ganttView.css");
+
+
+/*
+
+	CSS for BICES homepage - TDJ/BFG
+	
+*/
+.bgSOCEUR {
+	background-color:#F9F9F9;
+}
+
+/* LEFT INTRO SIDE */	
+
+.mainPageDarkBG {
+	background: #1F497D;
+	color: #E5EAF2;
+}
+
+.mainPageDarkBG a {
+	color: #fff;
+	background: inherit;
+}
+
+.mainPageDarkBG p {
+	padding: 10px 10px;
+	margin: 0;
+}
+
+
+/* LEFT VERTICAL MENU */
+	
+.mainPageMenu { 
+	margin: 0; 
+	padding: 0; 
+}
+.mainPageMenu  li {
+	list-style: none;
+}
+.mainPageMenu  li a {
+	display: block;
+	color: #6c703a;
+	background: #bcbb7c url(/img/arrow.gif) no-repeat center left;
+	padding: 7px 7px 7px 23px;
+	margin: 0;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.mainPageMenu a:visited {
+	color:#6c703a;
+}
+.mainPageMenu li a:hover {
+	background: #9e9c58 url(/img/arrow.gif) no-repeat center left;
+	color: #E5EAF2;
+	text-decoration:none;
+}
+
+.mainPageBox {
+	background-color:#FFF;
+	padding:4px;
+	border: 1px solid #CCC;
+}
+
+.mainPageBox h2 {
+	font-size:1.5em;
+	margin: 10px;
+}
+
+.link {
+	font-weight:bold;
+	color: #1F497D;
+}
+
+.strong {
+	font-weight:bold;
+}
+
+.p10 {
+	padding:10px;
+}
+
+#main {
+	padding:5px;
+	background-color:#F9F9F9;
+}
+
+#innerWhite {
+	padding: 5px;
+	border: 1px solid #1F497D;
+	background-color:#FFF;
+}
+
+#innerMain {
+	padding:5px;
+	background-color:#e5e5c7;
+	border: 1px solid #CCC;
+}
+
+/* CenterBanner */
+	
+#banner {
+	background: #d1d0a3 url(/img/intro.gif) no-repeat;
+	color: black;
+	margin: 0;
+	height: 199px;
+	width: 640px;
+	border: 1px solid #CCC;
+	font-weight: bold;
+}
+#banner h1 {
+	margin: 0 0 20px 20px;
+	color:black;
+	font-size: 2.2em;
+}
+
+#banner .white {
+	color: #FFF;
+	background-color:transparent;
+	font-size: 1.3em;
+	font-weight:bold;
+	margin:20px;
+}
+
+#banner .mission {
+	width: 350px;
+	margin-left:20px;
+	font-size:1.1em;
+}
+
+.ms-WPHeaderTdSelection {
+	display:none;
+}
+
+.ms-viewselector a {
+	color:#1F497D;
+}
+
+
+.ms-menutoolbar {
+	background-color:#1F497D;
+	height:32px;
+}
+
+td.ms-splitbuttontext a {
+	color:#FFF;
+}
+
+div.ms-menubuttoninactivehover a {
+	color:#FFF;
+}
+
+.ms-menubuttonactivehover td a:hover {
+	color:#1F497D;
+}
+
+.ms-menubuttonactivehover td a {
+	color:#1F497D;
+}
+
+.ms-menubuttonactivehover a:hover {
+	color:#1F497D;
+}
+
+.ms-menubuttonactivehover a {
+	color:#1F497D;
+}
+
+.ms-splitbuttonhover td a:hover {
+	color:#1F497D;
+}
+
+.ms-splitbuttonhover td a {
+	color:#1F497D;
+}
+
+td.ms-toolbar a.ShadowPopup {
+	padding:4px 7px;
+	color:#FFF;
+}
+
+td.ms-toolbar a.ShadowPopup:hover {
+	background-color:#FFF;
+	padding:2px 6px;
+	border:1px solid #CCC;
+	color:#1F497D;
+}
+
+.et-tab{font-size:8pt;font-weight:bold;padding:3px 10px;background:url("/_layouts/images/selbg.png") repeat-x;display:inline-block;cursor:pointer;}
+.et-activetab{background-color:#1F497D;border:solid 1px #1F497D;color:#FFF !important;}
+.et-inactivetab{background-color:#F9F9F9;border:solid 1px #CCCCCC;color:#1F497D;}
+.et-separator{height:5px;background-color:#1F497D;}
+.et-tabrow{white-space:nowrap;}
+.et-offscreen{position:absolute;max-height:1px;max-width:1px;top:-9999px;}</style><script type="text/javascript">
+
+div.et-activetab a {color:#FFF;}
+div.et-activetab a:visited {color:#FFF;}
+div.et-inactivetab a {color:#1F497D;}
+
+
+/* Application Layouts (Air Support, RFI, RFS */
+.groupColor {
+  background-color:#CCCCCC;
+}
+
+
+/* Custom Form styles */
+.customForm td
+{
+   border-bottom: 1px solid silver; 
+    
+   color:black;
+   
+}
+
+.columnHeaderColor {
+  background-color:#F2F2F2;	
+}
+
+.customFormCellColor
+{
+	background-color:#F2F3E9;
+}
+
+.customFormCellFirst
+{
+	border-top: 1px solid silver;
+}
+
+.projector tr th {
+	padding-right:7px;
+	font-size:large;
+	font-weight:bold;
+}
+
+.projector tr td {
+	padding-right:7px;
+	font-size:large;
+	font-weight:bold;
+}
+
+.projector .ms-alternating {
+	background-color:#F2F2F2;
+}
+
+.cosproj .ms-gb {
+	background-color:#CCC;
+}
+
+.projector .ms-gb {
+	background-color:#CCC;
+}
+
+.cosproj .ms-alternating {
+	background-color:#F2F2F2;
+}
+
+/* CLOCK CSS */
+.clock-container {
+	width:571px;
+}
+.clock {
+	color:#676767;
+	text-align:center;
+	white-space:nowrap;
+	word-wrap:normal;
+	float:right;
+}
+.clock-separator {
+	float:right;
+	padding:5px;
+}
+
+.dataTables_wrapper {
+    /*clear:none;
+    float:left;
+    width: 100%;
+    */
+}
+
+.commsStatusTable{
+	margin-bottom: 20px;
+    width: 100%;
+}
+
+.commsStatusTable th {
+    text-align:center;
+}
+
+.commsStatusTable th, .commsStatusTable td{
+    width: 80px;    
+    font-size:1.2em;
+    padding:5px;
+}
+
+.commsStatusTable td.FMC{
+	background-color:green;
+	color:white;
+	font-weight: bold;
+    text-align:center;
+}
+
+.commsStatusTable td.Degraded{
+	background-color:yellow;
+	color:black;
+	font-weight: bold;
+    text-align:center;
+}
+
+.commsStatusTable td.NMC{
+	background-color:red;
+	color:black;
+	font-weight: bold;
+    text-align:center;
+}
+
+.commsStatusTable td.Planned{
+	background-color:navy;
+	color:white;
+	font-weight: bold;
+    text-align:center;
+}
+
+.commsStatusTable td.Standby{
+	background-color: aqua;
+	color:black;
+	font-weight: bold;
+    text-align:center;
+}
+
+.commsStatusTable td.NA{
+	background-color: lightgrey;
+	color:lightgrey;
+	text-align:center;
+}
+
+td.group{
+	background-color: #D1CFD0 !important;
+	
+}
+
+td.expanded-group {
+	/*
+	background: url("/_layouts/images/minus.gif") no-repeat scroll left center transparent;
+	*/
+	padding-left: 15px !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+td.collapsed-group {
+	/*
+	background: url("/_layouts/images/plus.gif") no-repeat scroll left center transparent;
+	*/
+	padding-left: 15px !important;
+    color: black !important;
+    font-weight: bold !important;
+}
+
+table.dataTable{
+    padding-top:5px;
+}
+
+.dataTable th, .dataTable th.sorting, .dataTable th.sorting_desc {
+	background-color: #1F497D !important;
+	color:white;
+}
+
+.dataTable a, .dataTable a:visited {
+    text-decoration: underline;
+}
+
+.webpartsContainer {
+    /*padding used by listview webparts*/
+    padding:0 5px;
+}
+
+.appContainer {
+    padding:0 15px;
+}
+
+.appPart {
+    clear:both;
+    padding-bottom: 25px;
+}
+
+.custombtn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: Arial;
+  color: #ffffff !important;
+  font-size: 12px;
+  padding: 3px 10px 3px 10px;
+  text-decoration: none !important;
+}
+
+.custombtn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.s4-toplinks
+{
+    display: none; /* top navigation will be shown via code*/
+}
+
+/*OVERRIDE JQUERY GANTTVIEW START*/
+div.ganttview-vtheader-item-name {
+	display:none;
+}
+
+div.ganttview-vtheader-series-name {
+	width: 235px;
+	height: 31px;
+	border-top: 1px solid #d0d0d0;
+	line-height: 16px;
+	padding-left: 5px;
+}
+/*OVERRIDE JQUERY GANTTVIEW END*/

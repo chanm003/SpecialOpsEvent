@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AirSupportReq" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AirSupportReq" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01009133ce2f4d01432ea0b0c544b2da233f" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{56ae3261-0d3d-4e0c-b067-416736c28591}" Name="MissionStartDate" />
+          <FieldRef ID="{98dcf62e-0453-49c3-b585-527eac9cbdc7}" Name="MissionEndDate" />
+          <FieldRef ID="{b161c967-87dc-4033-b607-3b68eb149091}" Name="MissionDateFlex" />
+          <FieldRef ID="{c4e99c00-85ef-4801-8e4d-76bd9a4714f0}" Name="RequestingOrganization" />
+          <FieldRef ID="{4ce3a814-d111-4bba-ab16-d577857c993c}" Name="RequestorFirstName" />
+          <FieldRef ID="{87c1527f-1985-418c-b57b-9a3c7536c991}" Name="RequestorLastName" />
+          <FieldRef ID="{c9be611d-b5d8-4de9-b596-9c4c8319112d}" Name="RequestorRankTitle" />
+          <FieldRef ID="{4d9b252d-eb4b-4def-af12-e38825b3a6f0}" Name="RequestorEmail" />
+          <FieldRef ID="{308655bc-2848-4a7a-a2b2-73fd9480c48e}" Name="RequestorPhone" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{248bfff3-df4f-4d2c-b706-62507f80b4bf}" Name="CONOPS5WS" />
+          <FieldRef ID="{ed230308-61a3-45d0-a1b4-71d39e663513}" Name="OperationType" />
+          <FieldRef ID="{8269b97f-1b3b-4a27-a874-768b4a2f13c1}" Name="AirfieldsToBeUsed" />
+          <FieldRef ID="{f6214f15-7d84-401a-9a2d-72d0e288fd86}" Name="NumberOfPAX" />
+          <FieldRef ID="{150a35bc-45a7-4fc3-b022-3a68f58b19c2}" Name="JustifyMissionSupport" />
+          <!--Aircraft MDS field SHOWN only in EditForm.aspx (but separate tab)-->
+          <FieldRef ID="{0df828ac-11a9-4a8c-829e-466db2a2385e}" Name="AircraftMDS" />
+          <!--NEXT TEN FIELDS SHOWN in NewForm.aspx (but separate tab)-->
+          <FieldRef ID="{af9722ce-01c4-4fe6-a30c-d3b6350dbba7}" Name="ABNOpsType" />
+          <FieldRef ID="{04e6bab3-4964-4596-bfe7-a13cf89acc5d}" Name="ABNOpsEquipmentRequirements" />
+          <FieldRef ID="{d99f5681-f0b8-4055-bc3d-b441bd707b85}" Name="ABNOpsTypeOfParachutes" />
+          <FieldRef ID="{84dc5d84-00d8-4d40-9691-1dc634e6f47f}" Name="ABNDropZone" />
+          <FieldRef ID="{f8eee259-4b35-4cab-a6b4-9a61b23d35c3}" Name="ABNOpsControllerRequirements" />
+          <FieldRef ID="{4071d7ba-692f-473e-858b-96a120dc171d}" Name="ABNOpsDropSheet" />
+          <FieldRef ID="{53fab600-adca-4f63-aa8b-c35093099647}" Name="ABNOpsForeignForces" />
+          <FieldRef ID="{19172cd8-8358-4892-8c23-3f48f0e4c94e}" Name="ABNOpsForeignForcesRequirement" />
+          <FieldRef ID="{8fd0e277-6e84-426f-a5b1-7753121e34c5}" Name="ABNOpsTypeOfRelease" />
+          <FieldRef ID="{e27edaa2-55b2-42b4-b187-985c6c649809}" Name="ABNOpsGeneralRemarks" />
+          <!--NEXT NINE FIELDS SHOWN in NewForm.aspx (but separate tab)-->
+          <FieldRef ID="{afd5625e-043e-4d44-912c-4ea676ff390c}" Name="CargoMoveNumberOfPalletSpaces" />
+          <FieldRef ID="{eafaf67d-8c3d-488f-8705-8739624984c5}" Name="CargoMoveWeightOfEachISU" />
+          <FieldRef ID="{2217d119-6a07-415f-a815-62daf40dc8ca}" Name="CargoMoveHazmatListing" />
+          <FieldRef ID="{d69b9c81-8067-46c4-92e5-79ce33be4b1e}" Name="CargoMoveHazmat" />
+          <FieldRef ID="{74633001-df55-4e9e-a840-03fe4ebfde8d}" Name="CargoMoveIsuType" />
+          <FieldRef ID="{68bcbccd-9800-47d1-a6b5-24c069839611}" Name="CargoMoveIsuQuantity" />
+          <FieldRef ID="{06b4497e-c24f-4f94-9606-14482c9b9f0e}" Name="CargoMovePalletDimensionOfEach" />
+          <FieldRef ID="{e4a3236c-67da-4285-85ef-4b40e36cc249}" Name="CargoMoveWeightPerEachPallet" />
+          <FieldRef ID="{c982f158-8fd8-4d23-9143-b92b83cfdf10}" Name="CargoOpsGeneralRemarks" />
+          <!--NEXT SEVEN FIELDS SHOWN only in EditForm.aspx-->
+          <FieldRef ID="{AD4B10CF-AFD2-41FB-9A8D-121575873119}" Name="SOATGPOC" />
+          <FieldRef ID="{0490E4A5-B0AB-4A0F-976D-D2149E936EC0}" Name="DateSOATGPocAssigned" />
+          <FieldRef ID="{8F3BCD98-CDB3-44DB-BEFD-90B7E4178410}" Name="SOATGPriority" />
+          <FieldRef ID="{83C1FA62-987D-4315-BDDB-4AFCBCD811A9}" Name="SOATGComments" />
+          <FieldRef ID="{9c4ae3b9-5d2a-4090-a87b-f68b19622e9d}" Name="TaskedUnit" />
+          <FieldRef ID="{f7622968-9fc2-4b77-9e00-34ce856f1519}" Name="Status" />
+          <FieldRef ID="{43955648-4efc-419e-a39d-8c2f471512aa}" Name="AfterActionReport" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Type="Choice" DisplayName="Requesting Organization" Description="The organization requesting air support" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{c4e99c00-85ef-4801-8e4d-76bd9a4714f0}" Name="RequestingOrganization">
+        <CHOICES>
+          <CHOICE>SOTG1</CHOICE>
+          <CHOICE>SOTG2</CHOICE>
+          <CHOICE>SOTG3</CHOICE>
+          <CHOICE>SOATG</CHOICE>
+          <CHOICE>SOCC</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Text" DisplayName="Requestor First Name" Required="TRUE" MaxLength="255" ID="{4ce3a814-d111-4bba-ab16-d577857c993c}" Name="RequestorFirstName" />
+      <Field Type="Text" DisplayName="Requestor Last Name" Required="TRUE" MaxLength="255" ID="{87c1527f-1985-418c-b57b-9a3c7536c991}" Name="RequestorLastName" />
+      <Field Type="Text" DisplayName="Requestor Rank/Title" Required="TRUE" MaxLength="255" ID="{c9be611d-b5d8-4de9-b596-9c4c8319112d}" Name="RequestorRankTitle" />
+      <Field Type="Text" DisplayName="Requestor Email" Required="TRUE" MaxLength="255" ID="{4d9b252d-eb4b-4def-af12-e38825b3a6f0}" Name="RequestorEmail" />
+      <Field Type="Text" DisplayName="Requestor Phone" Required="TRUE" MaxLength="255" ID="{308655bc-2848-4a7a-a2b2-73fd9480c48e}" Name="RequestorPhone" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Mission Title" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Note" DisplayName="CONOPS (5 W's)" Description="Who / What / When / Where / Why" Required="TRUE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{248bfff3-df4f-4d2c-b706-62507f80b4bf}" Name="CONOPS5WS" />
+      <Field Type="Choice" DisplayName="Operation Type" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{ed230308-61a3-45d0-a1b4-71d39e663513}" Name="OperationType">
+        <CHOICES>
+          <CHOICE>AIRBORNE OPS</CHOICE>
+          <CHOICE>CARGO MOVE</CHOICE>
+          <CHOICE>PAX MOVE</CHOICE>
+          <CHOICE>PAX/CARGO MOVE</CHOICE>
+          <CHOICE>EXERCISE</CHOICE>
+          <CHOICE>FID</CHOICE>
+          <CHOICE>JCET</CHOICE>
+          <CHOICE>JUMP WEEK</CHOICE>
+          <CHOICE>LZ/DZ SURVEY</CHOICE>
+          <CHOICE>MCAD</CHOICE>
+          <CHOICE>PDP</CHOICE>
+          <CHOICE>RFF</CHOICE>
+          <CHOICE>OTHER</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Airfields To Be Used" Description="Select Airfield. Include L/L and Airfield /LZ Survey Requirements" Required="TRUE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{8269b97f-1b3b-4a27-a874-768b4a2f13c1}" Name="AirfieldsToBeUsed" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" />
+      <Field Type="Number" DisplayName="Number of PAX" Required="TRUE" ID="{f6214f15-7d84-401a-9a2d-72d0e288fd86}" Name="NumberOfPAX" />
+      <Field Type="DateTime" DisplayName="Mission Start Date" Required="TRUE" Format="DateTime" ID="{56ae3261-0d3d-4e0c-b067-416736c28591}" Name="MissionStartDate" />
+      <Field Type="DateTime" DisplayName="Mission End Date" Required="TRUE" Format="DateTime" ID="{98dcf62e-0453-49c3-b585-527eac9cbdc7}" Name="MissionEndDate" />
+      <Field Type="Choice" DisplayName="Mission Date Flex" Description="(Flexible Mission Start Date From &quot;H&quot; hour)" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{b161c967-87dc-4033-b607-3b68eb149091}" Name="MissionDateFlex">
+        <CHOICES>
+          <CHOICE>- 12 Hours from H hour</CHOICE>
+          <CHOICE>+ 12 Hours from H hour</CHOICE>
+          <CHOICE>- 24 Hours from H hour</CHOICE>
+          <CHOICE>+ 24 Hours from H hour</CHOICE>
+          <CHOICE>- 48 Hours from H hour</CHOICE>
+          <CHOICE>+ 48 Hours from H hour</CHOICE>
+          <CHOICE>NO FLEX</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Justify Mission Support" Description="Outline mission impact on Unit, Training, Qualification, etc" Required="TRUE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{150a35bc-45a7-4fc3-b022-3a68f58b19c2}" Name="JustifyMissionSupport" />
+      <Field Type="Choice" ShowInNewForm="FALSE" DisplayName="Aircraft MDS"  Description="Aircraft Model" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{0df828ac-11a9-4a8c-829e-466db2a2385e}" Name="AircraftMDS">
+        <CHOICES>
+          <CHOICE>MC-130</CHOICE>
+          <CHOICE>CV-22</CHOICE>
+          <CHOICE>NSAv</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="ABNOpsType" FromBaseType="FALSE" Type="MultiChoice" DisplayName="ABN Ops (Type)" Description="Select All That Apply" Required="FALSE" FillInChoice="FALSE" ID="{af9722ce-01c4-4fe6-a30c-d3b6350dbba7}">
+        <CHOICES>
+          <CHOICE>STATIC LINE</CHOICE>
+          <CHOICE>HALO</CHOICE>
+          <CHOICE>MCAD</CHOICE>
+          <CHOICE>OTHER</CHOICE>
+          <CHOICE>DOOR, RIGHT ONLY</CHOICE>
+          <CHOICE>DOOR, LEFT ONLY</CHOICE>
+          <CHOICE>DOOR, RIGHT AND LEFT</CHOICE>
+          <CHOICE>RAMP ONLY</CHOICE>
+          <CHOICE>RAMP WITH RIGHT DOOR</CHOICE>
+          <CHOICE>RAMP WITH LEFT DOOR</CHOICE>
+          <CHOICE>DAY ONLY</CHOICE>
+          <CHOICE>DAY/NIGHT</CHOICE>
+          <CHOICE>NIGHT ONLY</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="MultiChoice" DisplayName="ABN Ops (Equipment Requirements)" Description="Select All That Apply" Required="FALSE" FillInChoice="FALSE" ID="{04e6bab3-4964-4596-bfe7-a13cf89acc5d}" Name="ABNOpsEquipmentRequirements">
+        <CHOICES>
+          <CHOICE>2 ANCHOR LINES W/ RETRIEVER PORT SIDE</CHOICE>
+          <CHOICE>2 ANCHOR LINES W/ RETRIEVER STARBOARD SIDE</CHOICE>
+          <CHOICE>2 DOOR PLATFORMS</CHOICE>
+          <CHOICE>1 ANCHOR LINE W/ RETRIEVER PORT SIDE</CHOICE>
+          <CHOICE>1 ANCHOR LINE W/ RETRIEVER STARBOARD SIDE</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="MultiChoice" DisplayName="ABN Ops (Type of Parachutes)" Required="FALSE" FillInChoice="FALSE" ID="{d99f5681-f0b8-4055-bc3d-b441bd707b85}" Name="ABNOpsTypeOfParachutes">
+        <CHOICES>
+          <CHOICE>SF-10</CHOICE>
+          <CHOICE>MC1-1D</CHOICE>
+          <CHOICE>T-10D</CHOICE>
+          <CHOICE>T-11</CHOICE>
+          <CHOICE>MC-6</CHOICE>
+          <CHOICE>MC-4</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="ABN (Drop Zone)" Description="Drop Zone Requirements: 1. DZ Name/ 2. Current survey date/ 2. Coordinates/ 3. Country/ 4. Attach current survey to MSR" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{84dc5d84-00d8-4d40-9691-1dc634e6f47f}" Name="ABNDropZone" />
+      <Field Type="MultiChoice" DisplayName="ABN Ops (Controller Requirements)" Description="Select All That Apply" Required="FALSE" FillInChoice="FALSE" ID="{f8eee259-4b35-4cab-a6b4-9a61b23d35c3}" Name="ABNOpsControllerRequirements">
+        <CHOICES>
+          <CHOICE>STS</CHOICE>
+          <CHOICE>CCT</CHOICE>
+          <CHOICE>NONE</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Boolean" DisplayName="ABN Ops (Drop Sheet)" Description="Drop setup sheet attached" ID="{4071d7ba-692f-473e-858b-96a120dc171d}" Name="ABNOpsDropSheet">
+        <Default>0</Default>
+      </Field>
+      <Field Type="Note" DisplayName="ABN Ops (Foreign Forces)" Description="List Foreign Composition: 1. Country 2. Unit 3. Based (location)" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{53fab600-adca-4f63-aa8b-c35093099647}" Name="ABNOpsForeignForces" />
+      <Field Type="Note" DisplayName="ABN Ops (Foreign Forces Equipment)" Description="List All Foreign Forces Equipment: 1. Parachutes 2. Type of Releases 3. All Other Equipment Used for Mission" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{19172cd8-8358-4892-8c23-3f48f0e4c94e}" Name="ABNOpsForeignForcesRequirement" />
+      <Field Type="Choice" DisplayName="ABN Ops (Type of Release)" Description="GMRS&#xD;&#xA;VIRS&#xD;&#xA;CARP" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{8fd0e277-6e84-426f-a5b1-7753121e34c5}" Name="ABNOpsTypeOfRelease">
+        <CHOICES>
+          <CHOICE>GMRS</CHOICE>
+          <CHOICE>VIRS</CHOICE>
+          <CHOICE>CARP</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="ABN Ops (General Remarks)" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{e27edaa2-55b2-42b4-b187-985c6c649809}" Name="ABNOpsGeneralRemarks" />
+      <Field Type="Choice" DisplayName="Cargo Move (# of Pallet Spaces)" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{afd5625e-043e-4d44-912c-4ea676ff390c}" Name="CargoMoveNumberOfPalletSpaces">
+        <CHOICES>
+          <CHOICE>1</CHOICE>
+          <CHOICE>2</CHOICE>
+          <CHOICE>3</CHOICE>
+          <CHOICE>4</CHOICE>
+          <CHOICE>5</CHOICE>
+          <CHOICE>6</CHOICE>
+          <CHOICE>7</CHOICE>
+          <CHOICE>8</CHOICE>
+          <CHOICE>9</CHOICE>
+          <CHOICE>10</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Cargo Move (Estimate Weight of Each ISU)" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{eafaf67d-8c3d-488f-8705-8739624984c5}" Name="CargoMoveWeightOfEachISU" />
+      <Field Type="Note" DisplayName="Cargo Move (HAZMAT Listing)" Required="FALSE" NumLines="15" RichText="FALSE" Sortable="FALSE" ID="{2217d119-6a07-415f-a815-62daf40dc8ca}" Name="CargoMoveHazmatListing" Description="List All Information as Per HAZDEC Requirements" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" AppendOnly="FALSE" />
+      <Field Type="Boolean" DisplayName="Cargo Move (HAZMAT)" Description="If YES, Requester Must List All HAZMAT Items Below!" ID="{d69b9c81-8067-46c4-92e5-79ce33be4b1e}" Name="CargoMoveHazmat">
+        <Default>0</Default>
+      </Field>
+      <Field Type="Choice" DisplayName="Cargo Move (ISU Type)" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{74633001-df55-4e9e-a840-03fe4ebfde8d}" Name="CargoMoveIsuType">
+        <CHOICES>
+          <CHOICE>ISU-90</CHOICE>
+          <CHOICE>ISU-60</CHOICE>
+          <CHOICE>ISU-40</CHOICE>
+          <CHOICE>Cadillac</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="Cargo Move (ISU: Quantity)" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{68bcbccd-9800-47d1-a6b5-24c069839611}" Name="CargoMoveIsuQuantity">
+        <CHOICES>
+          <CHOICE>1</CHOICE>
+          <CHOICE>2</CHOICE>
+          <CHOICE>3</CHOICE>
+          <CHOICE>4</CHOICE>
+          <CHOICE>5</CHOICE>
+          <CHOICE>6</CHOICE>
+          <CHOICE>7</CHOICE>
+          <CHOICE>8</CHOICE>
+          <CHOICE>9</CHOICE>
+          <CHOICE>10</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Cargo Move (Pallet: Dimension of Each)" Description="List Each Cargo Position: &#xD;&#xA;1. LengthxWidthxHeight" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{06b4497e-c24f-4f94-9606-14482c9b9f0e}" Name="CargoMovePalletDimensionOfEach" />
+      <Field Type="Note" DisplayName="Cargo Move (Weight per Each Pallet)" Description="Estimated Weight for Each Pallet Position (List Each Separately)" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{e4a3236c-67da-4285-85ef-4b40e36cc249}" Name="CargoMoveWeightPerEachPallet" />
+      <Field Type="Note" DisplayName="Cargo Ops (General Remarks)" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{c982f158-8fd8-4d23-9143-b92b83cfdf10}" Name="CargoOpsGeneralRemarks" />
+      <Field Type="User" ShowInNewForm="FALSE" DisplayName="SOATG POC" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{AD4B10CF-AFD2-41FB-9A8D-121575873119}" Name="SOATGPOC" />
+      <Field Type="DateTime" ShowInNewForm="FALSE" DisplayName="Date SOATG POC Assigned" Required="FALSE" Format="DateOnly" ID="{0490E4A5-B0AB-4A0F-976D-D2149E936EC0}" Name="DateSOATGPocAssigned" />
+      <Field Type="Choice" ShowInNewForm="FALSE" DisplayName="SOATG Priority" Description="Priority assigned by SOATG" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{8F3BCD98-CDB3-44DB-BEFD-90B7E4178410}" Name="SOATGPriority">
+        <CHOICES>
+          <CHOICE>1</CHOICE>
+          <CHOICE>2</CHOICE>
+          <CHOICE>3</CHOICE>
+          <CHOICE>4</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" ShowInNewForm="FALSE" DisplayName="SOATG Comments" Required="FALSE" NumLines="10" RichText="FALSE" Sortable="FALSE" ID="{83C1FA62-987D-4315-BDDB-4AFCBCD811A9}" Name="SOATGComments" />
+      <Field Type="Text" ShowInNewForm="FALSE" DisplayName="Tasked Unit" Required="FALSE" MaxLength="255" ID="{9c4ae3b9-5d2a-4090-a87b-f68b19622e9d}" Name="TaskedUnit" />
+      <Field Type="Note" ShowInNewForm="FALSE" DisplayName="After Action Report (AAR)" Required="FALSE" NumLines="15" RichText="TRUE" RichTextMode="FullHtml" IsolateStyles="TRUE" Sortable="FALSE" ID="{43955648-4efc-419e-a39d-8c2f471512aa}" Name="AfterActionReport" />
+      <Field Type="Choice" ShowInNewForm="FALSE" DisplayName="Status" Description="Status of the request" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{f7622968-9fc2-4b77-9e00-34ce856f1519}" Name="Status">
+        <Default>Requested</Default>
+        <CHOICES>
+          <CHOICE>Requested</CHOICE>
+          <CHOICE>Vetted by SOATG</CHOICE>
+          <CHOICE>Scheduled</CHOICE>
+          <CHOICE>Disapproved</CHOICE>
+          <CHOICE>Canceled</CHOICE>
+          <CHOICE>Unable to Support</CHOICE>
+          <CHOICE>MSN Complete</CHOICE>
+        </CHOICES>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments"></FieldRef>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="RequestingOrganization" />
+          <FieldRef Name="RequestorFirstName" />
+          <FieldRef Name="RequestorLastName" />
+          <FieldRef Name="RequestorRankTitle" />
+          <FieldRef Name="RequestorEmail" />
+          <FieldRef Name="RequestorPhone" />
+          <FieldRef Name="CONOPS5WS" />
+          <FieldRef Name="OperationType" />
+          <FieldRef Name="AirfieldsToBeUsed" />
+          <FieldRef Name="NumberOfPAX" />
+          <FieldRef Name="MissionStartDate" />
+          <FieldRef Name="MissionEndDate" />
+          <FieldRef Name="MissionDateFlex" />
+          <FieldRef Name="JustifyMissionSupport" />
+          <FieldRef Name="AircraftMDS" />
+          <FieldRef Name="ABNOpsType" />
+          <FieldRef Name="ABNOpsEquipmentRequirements" />
+          <FieldRef Name="ABNOpsTypeOfParachutes" />
+          <FieldRef Name="ABNDropZone" />
+          <FieldRef Name="ABNOpsControllerRequirements" />
+          <FieldRef Name="ABNOpsDropSheet" />
+          <FieldRef Name="ABNOpsForeignForces" />
+          <FieldRef Name="ABNOpsForeignForcesRequirement" />
+          <FieldRef Name="ABNOpsTypeOfRelease" />
+          <FieldRef Name="ABNOpsGeneralRemarks" />
+          <FieldRef Name="CargoMoveNumberOfPalletSpaces" />
+          <FieldRef Name="CargoMoveWeightOfEachISU" />
+          <FieldRef Name="CargoMoveHazmatListing" />
+          <FieldRef Name="CargoMoveHazmat" />
+          <FieldRef Name="CargoMoveIsuType" />
+          <FieldRef Name="CargoMoveIsuQuantity" />
+          <FieldRef Name="CargoMovePalletDimensionOfEach" />
+          <FieldRef Name="CargoMoveWeightPerEachPallet" />
+          <FieldRef Name="CargoOpsGeneralRemarks" />
+          <FieldRef Name="SOATGPOC" />
+          <FieldRef Name="DateSOATGPocAssigned" />
+          <FieldRef Name="SOATGPriority" />
+          <FieldRef Name="SOATGComments" />
+          <FieldRef Name="TaskedUnit" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="AfterActionReport" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+    <Validation Message="Mission End Date cannot precede Mission Start Date">=MissionStartDate&lt;=MissionEndDate</Validation>
+  </MetaData>
+</List>

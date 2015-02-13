@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Phonebook" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Phonebook" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100949c9c7d1c2f4fba8e4e9a8721ec5652" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Name="OrganizationalComponent" DisplayName="Organization" Required="TRUE" Format="Dropdown"/>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Title/Role" Required="TRUE"/>
+          <FieldRef ID="{c3afe4aa-8f60-4afc-b981-bb711a07349b}" Name="ShiftWatch" DisplayName="Shift/Watch" Required="TRUE" Format="Dropdown"/>
+          <FieldRef ID="{b7d957c3-02b2-4bd8-b6ed-ffd1d90d9aa6}" Name="Rank" Required="TRUE"/>
+          <FieldRef ID="{25aa36b8-b76d-429d-8be1-396f5ed57ef0}" Name="Last_x0020_Name" Required="TRUE"/>
+          <FieldRef ID="{22c85520-f033-4713-9394-6c1725f69dc1}" Name="First_x0020_Name" Required="FALSE"/>
+          <FieldRef ID="{758b1982-5407-4eac-b33a-7859745e5570}" Name="Location" Required="TRUE"/>
+          <FieldRef ID="{c5a4074f-3c5e-4c11-8f38-3dd322a664a2}" Name="BuildingNumber" Required="FALSE"/>
+          <FieldRef ID="{098a9f29-149a-47fc-b61a-427db1203825}" Name="Nation" DisplayName="Nation" Required="TRUE" Hidden="FALSE" Customization="" ReadOnly="FALSE" PITarget="" PrimaryPITarget="" PIAttribute="" PrimaryPIAttribute="" Aggregation="" Node=""/>
+          <FieldRef ID="{A817D11F-C0B7-4E9B-A3A9-58FD9DDA14E6}" Name="NIPRVOIP" Required="FALSE"/>
+          <FieldRef ID="{5cd1e678-7041-4917-949e-d47fc42f951c}" Name="Cell" Required="FALSE"/>
+          <FieldRef ID="{cbbba2cc-1305-49eb-8aaa-f3ce44ac89b6}" Name="BICESPhone" Required="FALSE"/>
+          <FieldRef ID="{26c787a2-54e5-44b2-af85-9ff168fc4c09}" Name="BICESVTC" Required="FALSE"/>
+          <FieldRef ID="{EAC250CA-AC61-4000-ADAA-87EB1EB4A5AE}" Name="SIPRVOSIP" Required="FALSE"/>
+          <FieldRef ID="{1DEADEE4-5CD8-457F-954A-5FB1649BFA83}" Name="SIPRVTC" Required="FALSE"/>
+          <FieldRef ID="{00F69803-B436-4EF4-BA2D-73734E50579F}" Name="TSPHONE" Required="FALSE"/>
+          <FieldRef ID="{4EC35814-09D0-49CF-A848-9CAAFE0915A2}" Name="TSVTC" Required="FALSE"/>
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Group="Partner Nation Columns" Name="OrganizationalComponent" ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" DisplayName="Organization" Type="Choice" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" Overwrite="TRUE">
+        <CHOICES />
+      </Field>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Title/Role" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" MaxLength="255" />
+      <Field Type="Choice" DisplayName="Shift/Watch" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{c3afe4aa-8f60-4afc-b981-bb711a07349b}" Name="ShiftWatch" >
+        <Default>Day</Default>
+        <CHOICES>
+          <CHOICE>Day</CHOICE>
+          <CHOICE>Night</CHOICE>
+          <CHOICE>Midshift</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Text" DisplayName="Rank" Required="TRUE" MaxLength="255" ID="{b7d957c3-02b2-4bd8-b6ed-ffd1d90d9aa6}" Name="Rank" />
+      <Field Type="Text" DisplayName="Last Name" Required="TRUE" MaxLength="255" ID="{25aa36b8-b76d-429d-8be1-396f5ed57ef0}" Name="Last_x0020_Name"/>
+      <Field Type="Text" DisplayName="First Name" Required="FALSE" MaxLength="255" ID="{22c85520-f033-4713-9394-6c1725f69dc1}" Name="First_x0020_Name"/>
+      <Field Type="Text" DisplayName="Location" Required="TRUE" MaxLength="255" ID="{758b1982-5407-4eac-b33a-7859745e5570}" Name="Location" />
+      <Field Type="Text" DisplayName="Building Number" Required="FALSE" MaxLength="255" ID="{c5a4074f-3c5e-4c11-8f38-3dd322a664a2}" Name="BuildingNumber"/>
+      <Field Type="Lookup" DisplayName="Nation" Required="TRUE" List="Lists/Country" ShowField="Code" UnlimitedLengthInDocumentLibrary="FALSE" RelationshipDeleteBehavior="None" ID="{098a9f29-149a-47fc-b61a-427db1203825}" Name="Nation" Group="" />
+      <Field Type="Text" DisplayName="NIPR VOIP" Required="FALSE" MaxLength="255" ID="{A817D11F-C0B7-4E9B-A3A9-58FD9DDA14E6}"  Name="NIPRVOIP" />
+      <Field Type="Text" DisplayName="Cell" Required="FALSE" MaxLength="255" ID="{5cd1e678-7041-4917-949e-d47fc42f951c}" Name="Cell" />
+      <Field Type="Text" DisplayName="BICES Phone" Required="FALSE" MaxLength="255" ID="{cbbba2cc-1305-49eb-8aaa-f3ce44ac89b6}" Name="BICESPhone" />
+      <Field Type="Text" DisplayName="BICES VTC" Required="FALSE" MaxLength="255" ID="{26c787a2-54e5-44b2-af85-9ff168fc4c09}" Name="BICESVTC" />
+      <Field Type="Text" DisplayName="SIPR VOSIP" Required="FALSE" MaxLength="255" ID="{EAC250CA-AC61-4000-ADAA-87EB1EB4A5AE}" Name="SIPRVOSIP" />
+      <Field Type="Text" DisplayName="SIPR VTC" Required="FALSE" MaxLength="255" ID="{1DEADEE4-5CD8-457F-954A-5FB1649BFA83}" Name="SIPRVTC" />
+      <Field Type="Text" DisplayName="TS Phone" Required="FALSE" MaxLength="255" ID="{00F69803-B436-4EF4-BA2D-73734E50579F}" Name="TSPHONE" />
+      <Field Type="Text" DisplayName="TS VTC" Required="FALSE" MaxLength="255" ID="{4EC35814-09D0-49CF-A848-9CAAFE0915A2}" Name="TSVTC" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="OrganizationalComponent"/>
+          <FieldRef Name="Nation"/>
+          <FieldRef Name="ShiftWatch"/>
+          <FieldRef Name="Rank"/>
+          <FieldRef Name="Last_x0020_Name"/>
+          <FieldRef Name="First_x0020_Name"/>
+          <FieldRef Name="Location"/>
+          <FieldRef Name="BuildingNumber"/>
+          <FieldRef Name="Cell"/>
+          <FieldRef Name="NIPRVOIP"/>
+          <FieldRef Name="BICESPhone"/>
+          <FieldRef Name="BICESVTC"/>
+          <FieldRef Name="SIPRVOSIP" />
+          <FieldRef Name="SIPRVTC" />
+          <FieldRef Name="TSPHONE" />
+          <FieldRef Name="TSVTC" />
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="TRUE" GroupLimit="1000">
+            <FieldRef Name="OrganizationalComponent"/>
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="Title"/>
+            <FieldRef Name="Last_x0020_Name"/>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

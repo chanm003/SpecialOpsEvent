@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CommunicationsStatus" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CommunicationsStatus" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x010095c9ce7975ed4092a10eb5a1d800bd7d" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{96e0949b-0159-4a68-bdf1-51187caefe5b}" Name="SortOrder" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{d721e785-302d-496f-9e65-e049a4209478}" Name="UNCLASSData" />
+          <FieldRef ID="{b171a11a-8f17-41a0-a11a-a3e4a483413a}" Name="BICESData" />
+          <FieldRef ID="{95bff6b9-60fb-4ff0-8e4a-5b703179d28c}" Name="SECRETData" />
+          <FieldRef ID="{875e618d-02e5-4d9a-83ca-9495bfcd4603}" Name="TSData" />
+          <FieldRef ID="{0ce1cbf1-dace-4f01-9ba4-2fe8cbc94167}" Name="UNCLASSPhone" />
+          <FieldRef ID="{339f6e9a-34f8-4718-8f0b-b8a8d68a98ab}" Name="BICESPhone" />
+          <FieldRef ID="{f29c8f79-5899-4079-8740-c5032c71016a}" Name="SECRETPhone" />
+          <FieldRef ID="{3c0ea31e-a39a-4162-88e1-7277cd8e1449}" Name="TACSATRadio" />
+          <FieldRef ID="{51eb8fd0-9269-472a-80ef-af623bc381c4}" Name="BICESVTC" />
+          <FieldRef ID="{5d0fe942-7ded-44f1-978f-f61f6756b16f}" Name="SECRETVTC" />
+          <FieldRef ID="{b5fdb8fb-20e2-4b01-960b-41207e11d93a}" Name="TSVTC" />
+          <FieldRef ID="{edebd6d5-70e4-47e0-9e6c-fec8b91f3ba6}" Name="PackageComments" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Type="Number" DisplayName="Sort Order" Required="TRUE" Decimals="0" ID="{96e0949b-0159-4a68-bdf1-51187caefe5b}" Name="SortOrder" Description="Determines order in which packages are displayed" Percentage="FALSE" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Package" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Choice" DisplayName="UNCLASS Data" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{d721e785-302d-496f-9e65-e049a4209478}" Name="UNCLASSData">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="BICES Data" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{b171a11a-8f17-41a0-a11a-a3e4a483413a}" Name="BICESData">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="SECRET Data" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{95bff6b9-60fb-4ff0-8e4a-5b703179d28c}" Name="SECRETData">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="TS Data" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{875e618d-02e5-4d9a-83ca-9495bfcd4603}" Name="TSData">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="UNCLASS Phone" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{0ce1cbf1-dace-4f01-9ba4-2fe8cbc94167}" Name="UNCLASSPhone">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="BICES Phone" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{339f6e9a-34f8-4718-8f0b-b8a8d68a98ab}" Name="BICESPhone">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="SECRET Phone" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{f29c8f79-5899-4079-8740-c5032c71016a}" Name="SECRETPhone">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="TACSAT Radio" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{3c0ea31e-a39a-4162-88e1-7277cd8e1449}" Name="TACSATRadio">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="BICES VTC" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{51eb8fd0-9269-472a-80ef-af623bc381c4}" Name="BICESVTC">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="SECRET VTC" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{5d0fe942-7ded-44f1-978f-f61f6756b16f}" Name="SECRETVTC">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="TS VTC" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{b5fdb8fb-20e2-4b01-960b-41207e11d93a}" Name="TSVTC">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="PackageComments" ID="{edebd6d5-70e4-47e0-9e6c-fec8b91f3ba6}" DisplayName="Comments" Type="Text" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="SortOrder" />
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="UNCLASSData" />
+          <FieldRef Name="BICESData" />
+          <FieldRef Name="SECRETData" />
+          <FieldRef Name="TSData" />
+          <FieldRef Name="UNCLASSPhone" />
+          <FieldRef Name="BICESPhone" />
+          <FieldRef Name="SECRETPhone" />
+          <FieldRef Name="TACSATRadio" />
+          <FieldRef Name="BICESVTC" />
+          <FieldRef Name="SECRETVTC" />
+          <FieldRef Name="TSVTC" />
+          <FieldRef Name="PackageComments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="SortOrder"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="b10aee04-749f-41ae-b7e1-f767c55d5229" DisplayName="EditableGrid" Type="GRID" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="EditableGrid.aspx">
+        <ViewFields>
+          <FieldRef Name="SortOrder" />
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="UNCLASSData" />
+          <FieldRef Name="BICESData" />
+          <FieldRef Name="SECRETData" />
+          <FieldRef Name="TSData" />
+          <FieldRef Name="UNCLASSPhone" />
+          <FieldRef Name="BICESPhone" />
+          <FieldRef Name="SECRETPhone" />
+          <FieldRef Name="TACSATRadio" />
+          <FieldRef Name="BICESVTC" />
+          <FieldRef Name="SECRETVTC" />
+          <FieldRef Name="TSVTC" />
+          <FieldRef Name="PackageComments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="SortOrder"></FieldRef>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

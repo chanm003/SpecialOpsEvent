@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="WatchLog" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/WatchLog" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01005C4521856553445498DBAF49424C1B6C" Name="WatchLog Event" Description="" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Event" />
+          <FieldRef ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Name="OrganizationalComponent" />
+          <FieldRef ID="{FB88858E-0301-439E-A887-808CB5852C15}" DisplayName="Date Time Group" Required="TRUE" Description="Date and time of log entry" Name="DateTimeGroup" Format="DateTime" />
+          <FieldRef ID="{6414611D-C7C0-44EA-BFD5-A43E0E3C9378}" DisplayName="Event Details" Required="FALSE" Description="Additional event details" Name="EventDetails" NumLines="15" Sortable="FALSE" />
+          <FieldRef ID="{7F631425-6CA3-4CBA-9106-D76E1AE85DA5}" DisplayName="Significant" Required="TRUE" Description="Select &quot;Yes&quot; to include the log entry on the Current Operations Summary" Name="Significant" Format="Dropdown" />
+          <FieldRef ID="{B1D72E22-5093-4D9F-9549-07CB044F6053}" DisplayName="Action Taken" Required="FALSE" Description="Specify action taken, if any" Name="ActionTaken" />
+          <FieldRef ID="{51796F3E-A61A-49B1-91D7-099AA1533CB6}" DisplayName="Initials" Required="TRUE" Description="Your initials" Name="YourInitials" />
+          <FieldRef ID="{2B2662FD-630D-4784-9EB4-3D2B14C0B9F0}" DisplayName="DTG" Name="DTG" Format="DateOnly" ReadOnly="TRUE" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" Description="Event being recorded" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field  Name="OrganizationalComponent" ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Description="For this watch log event" DisplayName="Organization" Type="Choice" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" Overwrite="TRUE">
+        <CHOICES />
+      </Field>
+      <Field Type="DateTime" DisplayName="Date Time Group" Description="Date and time of log entry" Required="TRUE" Format="DateTime"  ID="{FB88858E-0301-439E-A887-808CB5852C15}" Name="DateTimeGroup" Overwrite="TRUE"></Field>
+      <Field Type="Note" DisplayName="Event Details" Description="Additional event details" Required="FALSE" NumLines="15" RichText="FALSE" Sortable="FALSE"  ID="{6414611D-C7C0-44EA-BFD5-A43E0E3C9378}" Name="EventDetails" Overwrite="TRUE"></Field>
+      <Field Type="Choice" DisplayName="Significant" Description="Select &quot;Yes&quot; to include the log entry on the Current Operations Summary" Required="TRUE" Format="Dropdown" FillInChoice="FALSE"  ID="{7F631425-6CA3-4CBA-9106-D76E1AE85DA5}" Name="Significant" Overwrite="TRUE">
+        <Default>No</Default>
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Text" DisplayName="Action Taken" Description="Specify action taken, if any" Required="FALSE" MaxLength="255"  ID="{B1D72E22-5093-4D9F-9549-07CB044F6053}" Name="ActionTaken" Overwrite="TRUE" />
+      <Field Type="Text" DisplayName="Initials" Description="Your initials" Required="TRUE" MaxLength="5"  ID="{51796F3E-A61A-49B1-91D7-099AA1533CB6}" Name="YourInitials" Overwrite="TRUE" />
+      <Field Type="Calculated" DisplayName="DTG" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE"  ID="{2B2662FD-630D-4784-9EB4-3D2B14C0B9F0}" Name="DTG" Overwrite="TRUE">
+        <Formula>=UPPER(TEXT(DateTimeGroup,"ddHHmm")&amp;"Z"&amp;(TEXT(DateTimeGroup,"MMMyy")))</Formula>
+        <FieldRefs>
+          <FieldRef Name="DateTimeGroup" />
+        </FieldRefs>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="DTG" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="EventDetails" />
+          <FieldRef Name="ActionTaken" />
+          <FieldRef Name="YourInitials" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Significant" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="DateTimeGroup" Ascending="FALSE" />
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

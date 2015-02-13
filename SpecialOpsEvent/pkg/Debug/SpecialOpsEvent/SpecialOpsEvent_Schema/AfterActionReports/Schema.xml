@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="AfterActionReports" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/AfterActionReports" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100e52cd7e87c4541f3bf48c58ad1559710" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{65af8f98-488a-49a3-a552-3b33a06a7342}" Name="ObservationDate" />
+          <FieldRef ID="{0fa7752d-c586-4073-be0a-d79bfca544ed}" Name="Observation" />
+          <FieldRef ID="{253532f2-2706-4300-a990-80a6202de078}" Name="Insight" />
+          <FieldRef ID="{a9219b6c-f01a-4e67-9cb3-2e4074c30ad9}" Name="Lesson" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Hidden="TRUE" ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="FALSE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="ObservationDate" ID="{65af8f98-488a-49a3-a552-3b33a06a7342}" DisplayName="Date"  Type="DateTime" Format="DateOnly" Required="TRUE" Description="Date of observation" />
+      <Field Name="Observation" ID="{0fa7752d-c586-4073-be0a-d79bfca544ed}" DisplayName="Observation" Type="Note" Required="TRUE" Description="Describe the observation" />
+      <Field Name="Insight" ID="{253532f2-2706-4300-a990-80a6202de078}" DisplayName="Insight" Type="Note" Description="Discussion" />
+      <Field Name="Lesson" ID="{a9219b6c-f01a-4e67-9cb3-2e4074c30ad9}" DisplayName="Lesson" Type="Note" Description="Recommendation" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments"></FieldRef>
+          <FieldRef Name="ObservationDate" />
+          <FieldRef Name="Observation" />
+          <FieldRef Name="Insight" />
+          <FieldRef Name="Lesson" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ObservationDate" Ascending="FALSE"></FieldRef>
+            <FieldRef Name="ID" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

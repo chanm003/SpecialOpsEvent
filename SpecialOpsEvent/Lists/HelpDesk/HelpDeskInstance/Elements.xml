@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Help Desk" OnQuickLaunch="FALSE" TemplateType="10007" Url="Lists/HelpDesk" Description=""></ListInstance>
+</Elements>

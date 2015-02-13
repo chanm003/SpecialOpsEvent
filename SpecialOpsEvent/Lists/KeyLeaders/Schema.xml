@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="KeyLeaders" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/KeyLeaders" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100f29a2897aa7f4483b2043406a405c111" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{9e7f6f7d-cc5f-49ca-a09f-239de50c2270}" Name="SortOrder" Required="TRUE"/>
+          <FieldRef ID="{2aceb541-25cc-4d0a-804c-c90e41e65c7b}" Name="Who" Required="TRUE"/>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" Required="TRUE"/>
+          <FieldRef ID="{809b292b-f2f8-4c5d-854c-fb55f3b18b91}" Name="What" Required="TRUE"/>
+          <FieldRef ID="{d8bc9420-982f-4ad1-a9b4-1d17a4b0ab8c}" Name="Where" Required="TRUE"/>
+          <FieldRef ID="{55ee37e3-95ac-496e-948a-142a69cf1312}" Name="Why" Required="TRUE"/>
+          <FieldRef ID="{1fed812b-da8e-4564-82f1-f5b2a24d33a5}" Name="Start_x0020_Date" Required="TRUE"/>
+          <FieldRef ID="{bcfff14f-29f6-4951-a30c-0c9f199ebcc2}" Name="End_x0020_Date" Required="TRUE"/>
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Type="Number" DisplayName="Sort Order" Description="Determines the order in which key leaders are listed" Required="TRUE" ID="{9e7f6f7d-cc5f-49ca-a09f-239de50c2270}" Name="SortOrder"/>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Role" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="User" DisplayName="Who" Required="TRUE" ID="{2aceb541-25cc-4d0a-804c-c90e41e65c7b}" Name="Who" />
+      <Field Type="Note" DisplayName="What" Required="TRUE" NumLines="6" RichText="FALSE" Sortable="FALSE" ID="{809b292b-f2f8-4c5d-854c-fb55f3b18b91}" Name="What"/>
+      <Field Type="Text" DisplayName="Where" Required="TRUE" MaxLength="255" ID="{d8bc9420-982f-4ad1-a9b4-1d17a4b0ab8c}" Name="Where" />
+      <Field Type="Note" DisplayName="Why" Required="TRUE" NumLines="6" RichText="FALSE" Sortable="FALSE" ID="{55ee37e3-95ac-496e-948a-142a69cf1312}" Name="Why" />
+      <Field Type="DateTime" DisplayName="Start Date" Required="TRUE" Format="DateOnly" ID="{1fed812b-da8e-4564-82f1-f5b2a24d33a5}" Name="Start_x0020_Date" />
+      <Field Type="DateTime" DisplayName="End Date" Required="TRUE" Format="DateOnly" ID="{bcfff14f-29f6-4951-a30c-0c9f199ebcc2}" Name="End_x0020_Date" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle" DisplayName="Who"/>
+          <FieldRef Name="Who"/>
+          <FieldRef Name="Start_x0020_Date"/>
+          <FieldRef Name="End_x0020_Date"/>
+          <FieldRef Name="What"/>
+          <FieldRef Name="Where"/>
+          <FieldRef Name="Why"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="SortOrder"/>
+            <FieldRef Name="Start_x0020_Date"/>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

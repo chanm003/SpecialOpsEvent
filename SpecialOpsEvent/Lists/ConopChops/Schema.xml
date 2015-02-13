@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="ConopChops" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/ConopChops" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01007eedaa7a45ec456aaff017a5c569671e" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{850ee85b-4a04-4acb-b0c4-f37ee7ab2cc4}" Name="SignOnBehalfOf" />
+          <FieldRef ID="{9bc9e722-4dec-46a7-a4e5-267390748d2e}" Name="Verdict" />
+          <FieldRef ID="{5a263202-3c27-4ede-8f01-2cded42dd8f9}" Name="ConopLibraryUrl" />
+          <FieldRef ID="{CB46F36A-C6AE-40DB-A11B-30584E368121}" Name="ConopID" />
+          <FieldRef ID="{ceb50715-410d-4053-a3fc-e4bbb13f8a69}" Name="CommentsOnConop" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" >
+        <Default>CONOP Chop</Default>
+      </Field>
+      <Field Name="SignOnBehalfOf" ID="{850ee85b-4a04-4acb-b0c4-f37ee7ab2cc4}" DisplayName="SignOnBehalfOf" Type="Text" Required="TRUE">
+      </Field>
+      <Field Name="Verdict" ID="{9bc9e722-4dec-46a7-a4e5-267390748d2e}" DisplayName="Verdict" Type="Choice" Required="TRUE">
+        <CHOICES>
+          <CHOICE>Approved</CHOICE>
+          <CHOICE>Disapproved</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="ConopLibraryUrl" ID="{5a263202-3c27-4ede-8f01-2cded42dd8f9}" DisplayName="ConopLibraryUrl" Type="Text" Required="TRUE" />
+      <Field Name="ConopID" ID="{CB46F36A-C6AE-40DB-A11B-30584E368121}" DisplayName="ConopID" Type="Text" Required="TRUE" />
+      <Field Name="CommentsOnConop" ID="{ceb50715-410d-4053-a3fc-e4bbb13f8a69}" DisplayName="CommentsOnConop" Type="Note" RichText="FALSE" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments"></FieldRef>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="SignOnBehalfOf" />
+          <FieldRef Name="Verdict" />
+          <FieldRef Name="ConopLibraryUrl" />
+          <FieldRef Name="ConopID" />
+          <FieldRef Name="CommentsOnConop" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x010100F0782D7CFAC0410ABF90D5F5FEC04C93" Name="FRAGO" Group="Special Ops Event Content Types" Description="FRAGO Template" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Name="OrganizationalComponent"/>
+      <FieldRef ID="{593c4bda-7c08-49f7-8ed8-a067df6c4839}" DisplayName="Doc Type" Required="TRUE" Name="DocType" Format="Dropdown" />
+      <FieldRef ID="{fc83c269-1862-4653-8bf4-ecd99fe3b51c}" DisplayName="Mission" Required="FALSE" Description="The mission associated with the document" Customization="" Name="Mission" />
+    </FieldRefs>
+    <DocumentTemplate TargetName="~site/EventDocuments/Templates/FRAGOs.docx">
+    </DocumentTemplate>
+  </ContentType>
+</Elements>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="WebPartPages\" Type="ElementManifest" />
+    <ProjectItemFile Source="announce.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="asr.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="comms.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="editCustomNav.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="excon.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="evDoc.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="helpDesk.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="missionTracker.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="phone.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="projection.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="rfi.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="sitreps.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="soatg.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="socc.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="sotg1.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="sotg2.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="sotg3.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="airAssets.aspx" Target="WebPartPages\" Type="ElementFile" />
+    <ProjectItemFile Source="cub.aspx" Target="WebPartPages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--14-Hive/Template/Features/Fields/fieldswss.xml-->
+  <Field
+    Type="Choice"
+    DisplayName="Doc Type"
+    Required="TRUE"
+    Indexed="FALSE"
+    Format="Dropdown"
+    FillInChoice="FALSE"
+    Group="Special Ops Event Columns"
+    ID="{593C4BDA-7C08-49F7-8ED8-A067DF6C4839}"
+    Name="DocType"
+    Overwrite="TRUE">
+    <CHOICES>
+      <CHOICE>Administrative</CHOICE>
+      <CHOICE>Annex</CHOICE>
+      <CHOICE>Base Orders</CHOICE>
+      <CHOICE>Battle Drills</CHOICE>
+      <CHOICE>Battle Rhythm</CHOICE>
+      <CHOICE>Brief</CHOICE>
+      <CHOICE>Campaign Plan</CHOICE>
+      <CHOICE>Civil Military Operations</CHOICE>
+      <CHOICE>Collection Management</CHOICE>
+      <CHOICE>Commanders Update Brief</CHOICE>
+      <CHOICE>COMMSTAT Communications Status</CHOICE>
+      <CHOICE>Concept of Support</CHOICE>
+      <CHOICE>CONOP Concept of Operations</CHOICE>
+      <CHOICE>CUB Commanders Update Brief</CHOICE>
+      <CHOICE>DISUM Daily Intelligence Summary</CHOICE>
+      <CHOICE>EBO Evidence Based Operations</CHOICE>
+      <CHOICE>Geopspatial</CHOICE>
+      <CHOICE>GRINTSUM Graphical Intelligence Summary</CHOICE>
+      <CHOICE>Images</CHOICE>
+      <CHOICE>Information Operations</CHOICE>
+      <CHOICE>INTSUM</CHOICE>
+      <CHOICE>IO Input Output</CHOICE>
+      <CHOICE>JEG Joint Effects Group</CHOICE>
+      <CHOICE>JPG Joint Planning Group</CHOICE>
+      <CHOICE>LOGSITREP Logistics Situational</CHOICE>
+      <CHOICE>Meteorology and Oceanography</CHOICE>
+      <CHOICE>MISREP Mission Report</CHOICE>
+      <CHOICE>MSEL Master Scenario Events List</CHOICE>
+      <CHOICE>OPSUM</CHOICE>
+      <CHOICE>Orders</CHOICE>
+      <CHOICE>PED Portable Electronic Device</CHOICE>
+      <CHOICE>PERSTAT Personnel Status</CHOICE>
+      <CHOICE>Planning</CHOICE>
+      <CHOICE>Post Mitigation</CHOICE>
+      <CHOICE>PRCC Personnel Recovery Coordination Center</CHOICE>
+      <CHOICE>Reference</CHOICE>
+      <CHOICE>ROE Rules of Engagement</CHOICE>
+      <CHOICE>RTB</CHOICE>
+      <CHOICE>SIGACTS Significant Activities</CHOICE>
+      <CHOICE>SITREPS Situational Reports</CHOICE>
+      <CHOICE>Storyboard</CHOICE>
+      <CHOICE>Strategic Communications</CHOICE>
+      <CHOICE>Targeting</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <Field
+    Type="Lookup"
+    DisplayName="Mission"
+    Description="The mission associated with the document"
+    Required="FALSE"
+    List="Lists/MissionTracker"
+    ShowField="Title"
+    Group="Special Ops Event Columns"
+    ID="{FC83C269-1862-4653-8BF4-ECD99FE3B51C}"
+    Name="Mission"
+    Customization="" />
+
+  <Field Type="DateTime"
+         DisplayName="Date Time Group"
+         Description="Date and time of log entry"
+         Required="TRUE"
+         Format="DateTime"
+         Group="Special Ops Event Columns"
+         ID="{FB88858E-0301-439E-A887-808CB5852C15}"
+         Name="DateTimeGroup"
+         Overwrite="TRUE">
+  </Field>
+
+  <Field Type="Note"
+         DisplayName="Event Details"
+         Description="Additional event details"
+         Required="FALSE"
+         NumLines="15"
+         RichText="FALSE"
+         Sortable="FALSE"
+         Group="Special Ops Event Columns"
+         ID="{6414611D-C7C0-44EA-BFD5-A43E0E3C9378}"
+         Name="EventDetails"
+         Overwrite="TRUE">
+  </Field>
+
+  <Field Type="Choice"
+         DisplayName="Significant"
+         Description="Select &quot;Yes&quot; to include the log entry on the Current Operations Summary"
+         Required="TRUE"
+         Format="Dropdown"
+         FillInChoice="FALSE"
+         Group="Special Ops Event Columns"
+         ID="{7F631425-6CA3-4CBA-9106-D76E1AE85DA5}"
+         Name="Significant"
+         Overwrite="TRUE">
+    <Default>No</Default>
+    <CHOICES>
+      <CHOICE>Yes</CHOICE>
+      <CHOICE>No</CHOICE>
+    </CHOICES>
+  </Field>
+
+  <Field Type="Text"
+         DisplayName="Action Taken"
+         Description="Specify action taken, if any"
+         Required="FALSE"
+         MaxLength="255"
+         Group="Special Ops Event Columns"
+         ID="{B1D72E22-5093-4D9F-9549-07CB044F6053}"
+         Name="ActionTaken"
+         Overwrite="TRUE"/>
+
+  <Field Type="Text"
+         DisplayName="Initials"
+         Description="Your initials"
+         Required="TRUE"
+         MaxLength="5"
+         Group="Special Ops Event Columns"
+         ID="{51796F3E-A61A-49B1-91D7-099AA1533CB6}"
+         Name="YourInitials"
+         Overwrite="TRUE"/>
+
+  <Field Type="Calculated"
+         DisplayName="DTG"
+         Format="DateOnly"
+         LCID="1033"
+         ResultType="Text"
+         ReadOnly="TRUE"
+         Group="Special Ops Event Columns"
+         ID="{2B2662FD-630D-4784-9EB4-3D2B14C0B9F0}"
+         Name="DTG"
+         Overwrite="TRUE">
+    <Formula>=UPPER(TEXT(DateTimeGroup,"ddHHmm")&amp;"Z"&amp;(TEXT(DateTimeGroup,"MMMyy")))</Formula>
+    <FieldRefs>
+      <FieldRef Name="DateTimeGroup" />
+    </FieldRefs>
+  </Field>
+
+  <Field Group="Special Ops Event Columns" Name="OrganizationalComponent"
+         ID="{A7489391-67FB-4544-9DCA-0A17642630FE}"
+         DisplayName="Organization" Type="Choice" Required="TRUE"
+         Format="Dropdown" FillInChoice="FALSE" Overwrite="TRUE">
+    <CHOICES/>
+  </Field>
+</Elements>
+
+

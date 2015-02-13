@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Phonebook" OnQuickLaunch="FALSE" TemplateType="10014" Url="Lists/Phonebook" Description=""></ListInstance>
+</Elements>

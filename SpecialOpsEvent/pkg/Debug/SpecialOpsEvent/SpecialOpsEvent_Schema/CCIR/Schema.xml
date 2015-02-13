@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="CCIR" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/CCIR" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100c06876b0ca6241fe9177c19968756e73" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{e897c40f-e911-4193-86cf-0e19c1948216}" Name="CCIRCategory" />
+          <FieldRef ID="{2a007f82-4acf-42e6-ba89-ba13d443988b}" Name="CCIRNumber" />
+          <FieldRef ID="{af561226-8529-4b7a-b35e-4cf5dfa22bb6}" Name="CCIRStatus" />
+          <FieldRef ID="{055d1a31-0c78-46e8-ad6d-8c036c875330}" Name="CCIRDescription" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" Description="The requirement" />
+      <Field Name="CCIRCategory" ID="{e897c40f-e911-4193-86cf-0e19c1948216}" DisplayName="Category" Type="Choice" Required="TRUE" Description="Information requirement subcomponent">
+        <CHOICES>
+          <CHOICE>Essential Elements of Friendly Information (EEFI)</CHOICE>
+          <CHOICE>Friendly Force Information Requirements (FFIR)</CHOICE>
+          <CHOICE>Priority Intelligence Requirements (PIR)</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="CCIRNumber" ID="{2a007f82-4acf-42e6-ba89-ba13d443988b}" DisplayName="Number" Type="Choice" Required="TRUE" Description="Sequence number associated with the requirement." >
+        <CHOICES>
+          <CHOICE>01</CHOICE>
+          <CHOICE>02</CHOICE>
+          <CHOICE>03</CHOICE>
+          <CHOICE>04</CHOICE>
+          <CHOICE>05</CHOICE>
+          <CHOICE>06</CHOICE>
+          <CHOICE>07</CHOICE>
+          <CHOICE>08</CHOICE>
+          <CHOICE>09</CHOICE>
+          <CHOICE>10</CHOICE>
+          <CHOICE>11</CHOICE>
+          <CHOICE>12</CHOICE>
+          <CHOICE>13</CHOICE>
+          <CHOICE>14</CHOICE>
+          <CHOICE>15</CHOICE>
+          <CHOICE>16</CHOICE>
+          <CHOICE>17</CHOICE>
+          <CHOICE>18</CHOICE>
+          <CHOICE>19</CHOICE>
+          <CHOICE>20</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="CCIRStatus" ID="{af561226-8529-4b7a-b35e-4cf5dfa22bb6}" DisplayName="Status" Type="Choice" Required="TRUE" Description="Status of the requirement">
+        <CHOICES>
+          <CHOICE>Red</CHOICE>
+          <CHOICE>Green</CHOICE>
+          <CHOICE>Yellow</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="CCIRDescription" ID="{055d1a31-0c78-46e8-ad6d-8c036c875330}" DisplayName="Description" Type="Text" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="CCIRNumber" />
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="CCIRStatus" />
+          <FieldRef Name="CCIRDescription" />
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="FALSE">
+            <FieldRef Name="CCIRCategory"/>
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="CCIRNumber"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

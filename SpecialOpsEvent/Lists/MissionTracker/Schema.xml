@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MissionTracker" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MissionTracker" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x010028feced43e4a413c8488327a0e2c597f" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{38e5cc16-2325-4a18-addc-18a7d3c7fd35}" Name="MissionNumber" />
+          <FieldRef ID="{b55bf79e-08f2-4e3f-ab0e-cb25516d46d5}" Name="Status" />
+          <FieldRef ID="{c3e3708a-0d13-4d53-b26f-66bbcdb95a46}" Name="MissionApproved" />
+          <FieldRef ID="{23da3382-6996-4146-ace2-a14b1405135c}" Name="ExpectedExecution" />
+          <FieldRef ID="{5104bbbe-211c-4dff-99b5-176d7244bac7}" Name="ExpectedTermination" />
+          <FieldRef ID="{16776d79-4ad6-4e35-b072-c848a491e27c}" Name="SOTG" />
+          <FieldRef ID="{923186fe-4f76-4ce9-b1e9-44cb0cc92517}" Name="Comments" />
+          <FieldRef ID="{2f25dba6-de96-4975-93f9-02cb710551af}" Name="DTGMissionApproved" />
+          <FieldRef ID="{90c693f6-8063-4e82-8465-77958b7593a6}" Name="DTGExpectedExecution" />
+          <FieldRef ID="{1736fdc1-1e21-4fb5-8910-7faf111dcbe4}" Name="DTGExpectedTermination" />
+          <FieldRef ID="{bd530b30-1e48-4d73-9e60-c9ea34abc593}" Name="StatusSorted" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Text" DisplayName="Mission#" Description="A sequential tracking number assigned by the Battle Watch Captain." Required="TRUE" Indexed="FALSE" MaxLength="255" ID="{38e5cc16-2325-4a18-addc-18a7d3c7fd35}" Name="MissionNumber" />
+      <Field Type="Choice" DisplayName="Status" Description="Use this drop-down menu to identify what stage the Mission or CONOP is currently in.  This field should be updated as the CONOP moves through the stages from planning to execution to completion." Required="TRUE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{b55bf79e-08f2-4e3f-ab0e-cb25516d46d5}" Name="Status">
+        <CHOICES>
+          <CHOICE>Initial Targeting</CHOICE>
+          <CHOICE>JPG Assigned</CHOICE>
+          <CHOICE>COA Approved</CHOICE>
+          <CHOICE>CONOP Received - In Chop</CHOICE>
+          <CHOICE>CONOP APPROVED</CHOICE>
+          <CHOICE>CONOP DECLINED</CHOICE>
+          <CHOICE>FRAGO In-Chop</CHOICE>
+          <CHOICE>FRAGO Released</CHOICE>
+          <CHOICE>EXORD Released</CHOICE>
+          <CHOICE>Mission In Progress</CHOICE>
+          <CHOICE>Return to Base</CHOICE>
+          <CHOICE>QuickLook</CHOICE>
+          <CHOICE>StoryBoard</CHOICE>
+          <CHOICE>OPSUM</CHOICE>
+          <CHOICE>Mission Closed</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="DateTime" DisplayName="Mission Approved" Description="Date/Time that mission was approved" Required="FALSE" Indexed="FALSE" Format="DateTime" ID="{c3e3708a-0d13-4d53-b26f-66bbcdb95a46}" Name="MissionApproved" />
+      <Field Type="DateTime" DisplayName="Expected Execution" Description="This is the desired/anticipated launch of the mission based on planning timelines and the constraints of support requirements." Required="FALSE" Indexed="FALSE" Format="DateTime" ID="{23da3382-6996-4146-ace2-a14b1405135c}" Name="ExpectedExecution" />
+      <Field Type="DateTime" DisplayName="Expected Termination" Description="Expected date and time the mission will Return to Base (RTB)." Required="FALSE" Indexed="FALSE" Format="DateTime" ID="{5104bbbe-211c-4dff-99b5-176d7244bac7}" Name="ExpectedTermination" />
+      <Field Type="Choice" DisplayName="SOTG" Description="Designate which SOTG is/will be executing the mission." Required="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{16776d79-4ad6-4e35-b072-c848a491e27c}" Name="SOTG">
+        <CHOICES>
+          <CHOICE>None</CHOICE>
+          <CHOICE>SOATG</CHOICE>
+          <CHOICE>SOTG1</CHOICE>
+          <CHOICE>SOTG2</CHOICE>
+          <CHOICE>SOTG3</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Comments" Description="Provide more detailed information on the status of the mission." Required="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" ID="{923186fe-4f76-4ce9-b1e9-44cb0cc92517}" Name="Comments" />
+      <Field Type="Calculated" DisplayName="DTG Mission Approved" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{2f25dba6-de96-4975-93f9-02cb710551af}" Name="DTGMissionApproved">
+        <Formula>=IF(ISBLANK(MissionApproved),"",UPPER(TEXT(MissionApproved,"ddHHmm")&amp;"Z"&amp;(TEXT(MissionApproved,"MMMyy"))))</Formula>
+        <FieldRefs>
+          <FieldRef Name="MissionApproved" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Calculated" DisplayName="DTG Expected Execution" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{90c693f6-8063-4e82-8465-77958b7593a6}" Name="DTGExpectedExecution">
+        <Formula>=IF(ISBLANK(ExpectedExecution),"",UPPER(TEXT(ExpectedExecution,"ddHHmm")&amp;"Z"&amp;(TEXT(ExpectedExecution,"MMMyy"))))</Formula>
+        <FieldRefs>
+          <FieldRef Name="ExpectedExecution" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Calculated" DisplayName="DTG Expected Termination" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{1736fdc1-1e21-4fb5-8910-7faf111dcbe4}" Name="DTGExpectedTermination">
+        <Formula>=IF(ISBLANK(ExpectedTermination),"",UPPER(TEXT(ExpectedTermination,"ddHHmm")&amp;"Z"&amp;(TEXT(ExpectedTermination,"MMMyy"))))</Formula>
+        <FieldRefs>
+          <FieldRef Name="ExpectedTermination" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Calculated" DisplayName="StatusSorted" Indexed="FALSE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{bd530b30-1e48-4d73-9e60-c9ea34abc593}" Name="StatusSorted">
+        <Formula>=IF(Status="Initial Targeting","01:"&amp;Status,IF(Status="JPG Assigned","02:"&amp;Status,IF(Status="COA Approved","03:"&amp;Status,IF(Status="CONOP Received - In Chop","04:"&amp;Status,IF(Status="CONOP Declined","05:"&amp;Status,IF(Status="CONOP Approved","06:"&amp;Status,IF(Status="FRAGO In-Chop","07:"&amp;Status,IF(Status="FRAGO Released","08:"&amp;Status,IF(Status="EXORD Released","09:"&amp;Status,IF(Status="Mission In Progress","10:"&amp;Status,IF(Status="Mission Complete","11:"&amp;Status,IF(Status="Return to Base","12:"&amp;Status,IF(Status="Mission Closed","13:"&amp;Status,IF(Status="QuickLook","14:"&amp;Status,IF(Status="StoryBoard","15:"&amp;Status,"16:"&amp;Status)))))))))))))))</Formula>
+        <FieldRefs>
+          <FieldRef Name="Status" />
+        </FieldRefs>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="MissionNumber" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Comments" />
+          <FieldRef Name="SOTG" />
+          <FieldRef Name="DTGMissionApproved" />
+          <FieldRef Name="DTGExpectedExecution" />
+          <FieldRef Name="DTGExpectedTermination" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="MissionNumber" Ascending="FALSE" />
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="c827ea66-c25e-43f5-8a9d-f044b1c2b364" DisplayName="Ongoing" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Ongoing.aspx">
+        <ViewFields>
+          <FieldRef Name="Attachments"/>
+          <FieldRef Name="MissionNumber"/>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="Status"/>
+          <FieldRef Name="Comments"/>
+          <FieldRef Name="DTGMissionApproved"/>
+          <FieldRef Name="DTGExpectedExecution"/>
+          <FieldRef Name="DTGExpectedTermination"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="MissionNumber" Ascending="FALSE"/>
+          </OrderBy>
+          <Where>
+            <Neq>
+              <FieldRef Name="Status"/>
+              <Value Type="Text">Mission Closed</Value>
+            </Neq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="3" Name="d2ed486d-529e-4ef6-813a-6b6707bd79be" DisplayName="Closed" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Closed.aspx">
+        <ViewFields>
+          <FieldRef Name="Attachments"/>
+          <FieldRef Name="MissionNumber"/>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="Status"/>
+          <FieldRef Name="Comments"/>
+          <FieldRef Name="DTGMissionApproved"/>
+          <FieldRef Name="DTGExpectedExecution"/>
+          <FieldRef Name="DTGExpectedTermination"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="MissionNumber" Ascending="FALSE"/>
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status"/>
+              <Value Type="Text">Mission Closed</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="4" Name="47d81069-db3f-4deb-80d1-897ab85ce2e1" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
+        <ViewFields>
+          <FieldRef Name="Status"/>
+          <FieldRef Name="MissionNumber"/>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="DTGExpectedExecution"/>
+          <FieldRef Name="DTGExpectedTermination"/>
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="TRUE" GroupLimit="30">
+            <FieldRef Name="Status"/>
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="ExpectedExecution"/>
+            <FieldRef Name="MissionNumber"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="5" Name="46bb3c96-8799-4dcb-a832-f680474fb5ef" DisplayName="Gantt" Type="GANTT" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Gantt.aspx">
+        <ViewFields>
+          <FieldRef Name="LinkTitle"/>
+          <FieldRef Name="Status"/>
+          <FieldRef Name="MissionNumber"/>
+          <FieldRef Name="SOTG"/>
+        </ViewFields>
+        <ViewData>
+          <FieldRef Name="ExpectedExecution" Type="GanttStartDate"/>
+          <FieldRef Name="ExpectedTermination" Type="GanttEndDate"/>
+          <FieldRef Name="Title" Type="GanttTitle"/>
+        </ViewData>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ExpectedExecution"/>
+            <FieldRef Name="MissionNumber"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Watch Log - SOATG"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogSoatg">
+  </ListInstance>
+
+  <ListInstance Title="Watch Log - SOCC"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogSOCC">
+  </ListInstance>
+
+  <ListInstance Title="Watch Log - SOTG 15"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogSotg15">
+  </ListInstance>
+
+  <ListInstance Title="Watch Log - SOTG 25"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogSotg25">
+  </ListInstance>
+
+  <ListInstance Title="Watch Log - SOTG 35"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogSotg35">
+  </ListInstance>
+
+  <ListInstance Title="Watch Log - EXCON"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogExcon">
+  </ListInstance>
+
+  <ListInstance Title="Watch Log - SIGCEN"
+                OnQuickLaunch="FALSE"
+                TemplateType="10016"
+                Url="Lists/WatchLogSigcen">
+  </ListInstance>
+</Elements>

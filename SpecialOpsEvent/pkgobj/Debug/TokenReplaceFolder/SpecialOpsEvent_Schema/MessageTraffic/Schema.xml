@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MessageTraffic" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MessageTraffic" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100fb1f6f5c684c48dda629a8fb9009ccc2" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{d1de11a6-3e26-4cfc-969c-50922c147464}" Name="DtgOrgTitle" />
+          <FieldRef ID="{cd688cc0-a838-4cad-bf07-66986aed7bf2}" Name="DateTimeGroup" />
+          <FieldRef ID="{85db4734-fa44-4f82-a8e2-f7824a49bfe0}" Name="DTG" />
+          <FieldRef ID="{5acfab73-f290-4278-9bc8-85eb7352901c}" Name="MessageTraffic" />
+          <FieldRef ID="{5c2d5fae-6bf1-4fb7-80f3-cf94337368b9}" Name="Originator" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{dc31e431-0068-48df-8021-f5102b000ada}" Name="TaskInfo" />
+          <FieldRef ID="{ef235736-b125-4c09-adc9-3f9eec13f025}" Name="Initials" />
+          <FieldRef ID="{17832e2c-66a2-4051-b741-c7d4aa66420e}" Name="Significant" />
+          <FieldRef ID="{a06c7c51-2bef-456a-bfd5-9dd3418a8338}" Name="Comments" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Type="Calculated" DisplayName="DTG//ORG//TITLE" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{d1de11a6-3e26-4cfc-969c-50922c147464}" Name="DtgOrgTitle">
+        <Formula>=CONCATENATE(DTG,"//",Originator,"//",Title)</Formula>
+        <FieldRefs>
+          <FieldRef Name="Title" />
+          <FieldRef Name="Originator" />
+          <FieldRef Name="DTG" />
+        </FieldRefs>
+      </Field>
+      <Field Type="DateTime" DisplayName="Date Time Group" Description="(DTG) Date and Time that message was received/sent" Required="TRUE" Format="DateTime" ID="{cd688cc0-a838-4cad-bf07-66986aed7bf2}" Name="DateTimeGroup" />
+      <Field Type="Calculated" DisplayName="DTG" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{85db4734-fa44-4f82-a8e2-f7824a49bfe0}" Name="DTG">
+        <Formula>=IF(DateTimeGroup="","",(UPPER(TEXT(DateTimeGroup,"ddHHmm")&amp;"Z"&amp;(TEXT(DateTimeGroup,"MMMyy")))))</Formula>
+        <FieldRefs>
+          <FieldRef Name="DateTimeGroup" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Choice" DisplayName="Message Traffic" Description="Inbound or Outbound Message" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{5acfab73-f290-4278-9bc8-85eb7352901c}" Name="MessageTraffic">
+        <CHOICES>
+          <CHOICE>Inbound Message</CHOICE>
+          <CHOICE>Outbound Message</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Text" DisplayName="Originator" Description="Originator of the message" Required="TRUE" MaxLength="255" ID="{5c2d5fae-6bf1-4fb7-80f3-cf94337368b9}" Name="Originator" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Description="Message title" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Note" DisplayName="Task/Info" Description="Message details" Required="FALSE" NumLines="20" RichText="TRUE" RichTextMode="Compatible" Sortable="FALSE" ID="{dc31e431-0068-48df-8021-f5102b000ada}" Name="TaskInfo" />
+      <Field Type="Text" DisplayName="Initials" Description="Initials of the individual that received/sent the message" Required="TRUE" MaxLength="5" ID="{ef235736-b125-4c09-adc9-3f9eec13f025}" Name="Initials" />
+      <Field Type="Choice" DisplayName="Significant" Description="Select &quot;Yes&quot; to include the message in the Current Operations Summary" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{17832e2c-66a2-4051-b741-c7d4aa66420e}" Name="Significant">
+        <Default>No</Default>
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Comments" Required="FALSE" NumLines="6" RichText="TRUE" RichTextMode="Compatible" Sortable="FALSE" ID="{a06c7c51-2bef-456a-bfd5-9dd3418a8338}" Name="Comments" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="MessageTraffic" />
+          <FieldRef Name="DateTimeGroup" />
+          <FieldRef Name="Originator" />
+          <FieldRef Name="TaskInfo" />
+          <FieldRef Name="Initials" />
+          <FieldRef Name="Significant" />
+          <FieldRef Name="Comments" />
+          <FieldRef Name="DTG" />
+          <FieldRef Name="DtgOrgTitle" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="06a3391e-0876-4270-8bee-212433218d48" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
+        <ViewFields>
+          <FieldRef Name="Attachments"/>
+          <FieldRef Name="DtgOrgTitle"/>
+          <FieldRef Name="Comments"/>
+          <FieldRef Name="Initials"/>
+          <FieldRef Name="Significant"/>
+        </ViewFields>
+        <Query>
+          <GroupBy Collapse="TRUE" GroupLimit="30">
+            <FieldRef Name="MessageTraffic"/>
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="DateTimeGroup" Ascending="FALSE"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="Standard" /><XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

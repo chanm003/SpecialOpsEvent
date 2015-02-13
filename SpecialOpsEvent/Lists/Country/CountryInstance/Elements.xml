@@ -1,0 +1,1749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Country" OnQuickLaunch="FALSE" TemplateType="10017" Url="Lists/Country" Description="">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">Afghanistan</Field>
+          <Field Name="Code">AF</Field>
+          <Field Name="Capital">Kabul</Field>
+          <Field Name="Latitude">34.198173</Field>
+          <Field Name="Longitude">65.324707</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Aland Islands</Field>
+          <Field Name="Code">AX</Field>
+          <Field Name="Capital">Mariehamn</Field>
+          <Field Name="Latitude">60.190695</Field>
+          <Field Name="Longitude">19.871521</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Albania</Field>
+          <Field Name="Code">AL</Field>
+          <Field Name="Capital">Tirana</Field>
+          <Field Name="Latitude">41.236511</Field>
+          <Field Name="Longitude">20.066528</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Algeria</Field>
+          <Field Name="Code">DZ</Field>
+          <Field Name="Capital">Algiers</Field>
+          <Field Name="Latitude">27.644606</Field>
+          <Field Name="Longitude">2.768555</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Andorra</Field>
+          <Field Name="Code">AD</Field>
+          <Field Name="Capital">Andorra La Vella</Field>
+          <Field Name="Latitude">42.561679</Field>
+          <Field Name="Longitude">1.579285</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Angola</Field>
+          <Field Name="Code">AO</Field>
+          <Field Name="Capital">Luanda</Field>
+          <Field Name="Latitude">-12.323903</Field>
+          <Field Name="Longitude">17.481995</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Anguilla</Field>
+          <Field Name="Code">AI</Field>
+          <Field Name="Capital">The Valley</Field>
+          <Field Name="Latitude">18.222014</Field>
+          <Field Name="Longitude">-63.054314</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Antigua and Barbuda</Field>
+          <Field Name="Code">AG</Field>
+          <Field Name="Capital">Saint John'S</Field>
+          <Field Name="Latitude">17.088619</Field>
+          <Field Name="Longitude">-61.807365</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Arabian Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Argentina</Field>
+          <Field Name="Code">AR</Field>
+          <Field Name="Capital">Buenos Aires</Field>
+          <Field Name="Latitude">-36.597889</Field>
+          <Field Name="Longitude">-65.214844</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Armenia</Field>
+          <Field Name="Code">AM</Field>
+          <Field Name="Capital">Yerevan</Field>
+          <Field Name="Latitude">40.292097</Field>
+          <Field Name="Longitude">44.730835</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Aruba</Field>
+          <Field Name="Code">AW</Field>
+          <Field Name="Capital">Oranjestad</Field>
+          <Field Name="Latitude">12.517531</Field>
+          <Field Name="Longitude">-69.981365</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Atlantic Ocean</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Australia</Field>
+          <Field Name="Code">AU</Field>
+          <Field Name="Capital">Canberra</Field>
+          <Field Name="Latitude">-24.726875</Field>
+          <Field Name="Longitude">133.813477</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Austria</Field>
+          <Field Name="Code">AT</Field>
+          <Field Name="Capital">Vienna</Field>
+          <Field Name="Latitude">47.593199</Field>
+          <Field Name="Longitude">14.246521</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Azerbaijan</Field>
+          <Field Name="Code">AZ</Field>
+          <Field Name="Capital">Baku</Field>
+          <Field Name="Latitude">40.381598</Field>
+          <Field Name="Longitude">47.989998</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bahamas</Field>
+          <Field Name="Code">BS</Field>
+          <Field Name="Capital">Nassau</Field>
+          <Field Name="Latitude">24.514640</Field>
+          <Field Name="Longitude">-77.964478</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bahrain</Field>
+          <Field Name="Code">BH</Field>
+          <Field Name="Capital">Manama</Field>
+          <Field Name="Latitude">26.050614</Field>
+          <Field Name="Longitude">50.535049</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Baltic Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bangladesh</Field>
+          <Field Name="Code">BD</Field>
+          <Field Name="Capital">Dhaka</Field>
+          <Field Name="Latitude">24.337087</Field>
+          <Field Name="Longitude">90.142822</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Barbados</Field>
+          <Field Name="Code">BB</Field>
+          <Field Name="Capital">Bridgetown</Field>
+          <Field Name="Latitude">13.173766</Field>
+          <Field Name="Longitude">-59.561005</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Belarus</Field>
+          <Field Name="Code">BY</Field>
+          <Field Name="Capital">Minsk</Field>
+          <Field Name="Latitude">53.540307</Field>
+          <Field Name="Longitude">27.817383</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Belgium</Field>
+          <Field Name="Code">BE</Field>
+          <Field Name="Capital">Brussels</Field>
+          <Field Name="Latitude">50.8371</Field>
+          <Field Name="Longitude">4.3676</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Belize</Field>
+          <Field Name="Code">BZ</Field>
+          <Field Name="Capital">Belmopan</Field>
+          <Field Name="Latitude">17.035777</Field>
+          <Field Name="Longitude">-88.769531</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Benin</Field>
+          <Field Name="Code">BJ</Field>
+          <Field Name="Capital">Portonovo</Field>
+          <Field Name="Latitude">9.914744</Field>
+          <Field Name="Longitude">2.285156</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bermuda</Field>
+          <Field Name="Code">BM</Field>
+          <Field Name="Capital">Hamilton</Field>
+          <Field Name="Latitude">32.301643</Field>
+          <Field Name="Longitude">-64.760628</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bhutan</Field>
+          <Field Name="Code">BT</Field>
+          <Field Name="Capital">Thimphu</Field>
+          <Field Name="Latitude">27.474161</Field>
+          <Field Name="Longitude">90.414734</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Black Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bolivia</Field>
+          <Field Name="Code">BO</Field>
+          <Field Name="Capital">Sucre</Field>
+          <Field Name="Latitude">-16.256867</Field>
+          <Field Name="Longitude">-64.467773</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bosnia-Herzegovina</Field>
+          <Field Name="Code">BA</Field>
+          <Field Name="Capital">Sarajevo</Field>
+          <Field Name="Latitude">44.315988</Field>
+          <Field Name="Longitude">17.792358</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Botswana</Field>
+          <Field Name="Code">BW</Field>
+          <Field Name="Capital">Gaborone</Field>
+          <Field Name="Latitude">-21.800308</Field>
+          <Field Name="Longitude">23.642578</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Brazil</Field>
+          <Field Name="Code">BR</Field>
+          <Field Name="Capital">Brasilia</Field>
+          <Field Name="Latitude">-10.141932</Field>
+          <Field Name="Longitude">-52.646484</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">British Virgin Islands</Field>
+          <Field Name="Code">VG</Field>
+          <Field Name="Capital">Road Town</Field>
+          <Field Name="Latitude">18.416753</Field>
+          <Field Name="Longitude">-64.642181</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Brunei Darussalam</Field>
+          <Field Name="Code">BN</Field>
+          <Field Name="Capital">Bandar Seri Begawan</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Bulgaria</Field>
+          <Field Name="Code">BG</Field>
+          <Field Name="Capital">Sofia</Field>
+          <Field Name="Latitude">42.682435</Field>
+          <Field Name="Longitude">25.356445</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Burkina Faso</Field>
+          <Field Name="Code">BF</Field>
+          <Field Name="Capital">Ouagadougou</Field>
+          <Field Name="Latitude">12.651058</Field>
+          <Field Name="Longitude">-1.549072</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Burundi</Field>
+          <Field Name="Code">BI</Field>
+          <Field Name="Capital">Bujumbura</Field>
+          <Field Name="Latitude">-3.220044</Field>
+          <Field Name="Longitude">29.871826</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cambodia</Field>
+          <Field Name="Code">KH</Field>
+          <Field Name="Capital">Phnom Penh</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cameroon</Field>
+          <Field Name="Code">CM</Field>
+          <Field Name="Capital">Yaounde</Field>
+          <Field Name="Latitude">5.178482</Field>
+          <Field Name="Longitude">12.392578</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Canada</Field>
+          <Field Name="Code">CA</Field>
+          <Field Name="Capital">Ottawa</Field>
+          <Field Name="Latitude">52.935397</Field>
+          <Field Name="Longitude">-106.567383</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cape Verde</Field>
+          <Field Name="Code">CV</Field>
+          <Field Name="Capital">Praia</Field>
+          <Field Name="Latitude">15.098643</Field>
+          <Field Name="Longitude">-23.675537</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Caspian Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Central African Republic</Field>
+          <Field Name="Code">CF</Field>
+          <Field Name="Capital">Bangui</Field>
+          <Field Name="Latitude">7.057282</Field>
+          <Field Name="Longitude">21.269531</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Chad</Field>
+          <Field Name="Code">TD</Field>
+          <Field Name="Capital">N'Djamena</Field>
+          <Field Name="Latitude">14.562318</Field>
+          <Field Name="Longitude">18.830566</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Chile</Field>
+          <Field Name="Code">CL</Field>
+          <Field Name="Capital">Santiago</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">China</Field>
+          <Field Name="Code">CN</Field>
+          <Field Name="Capital">Beijing</Field>
+          <Field Name="Latitude">34.533712</Field>
+          <Field Name="Longitude">102.874145</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Colombia</Field>
+          <Field Name="Code">CO</Field>
+          <Field Name="Capital">Bogota</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Comoros</Field>
+          <Field Name="Code">KM</Field>
+          <Field Name="Capital">Moroni</Field>
+          <Field Name="Latitude">-11.637441</Field>
+          <Field Name="Longitude">43.335571</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Costa Rica</Field>
+          <Field Name="Code">CR</Field>
+          <Field Name="Capital">San Jose</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cote D Ivoire</Field>
+          <Field Name="Code">CI</Field>
+          <Field Name="Capital">Yamoussoukro</Field>
+          <Field Name="Latitude">8.091862</Field>
+          <Field Name="Longitude">-5.800781</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Croatia</Field>
+          <Field Name="Code">HR</Field>
+          <Field Name="Capital">Zagreb</Field>
+          <Field Name="Latitude">45.008506</Field>
+          <Field Name="Longitude">15.277176</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cuba</Field>
+          <Field Name="Code">CU</Field>
+          <Field Name="Capital">Havana</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Cyprus</Field>
+          <Field Name="Code">CY</Field>
+          <Field Name="Capital">Nicosia</Field>
+          <Field Name="Latitude">35.021000</Field>
+          <Field Name="Longitude">33.233185</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Czech Republic</Field>
+          <Field Name="Code">CZ</Field>
+          <Field Name="Capital">Prague</Field>
+          <Field Name="Latitude">49.830896</Field>
+          <Field Name="Longitude">15.150146</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Democratic Republic of the Congo</Field>
+          <Field Name="Code">CG</Field>
+          <Field Name="Capital">Kinshasa</Field>
+          <Field Name="Latitude">-1.603794</Field>
+          <Field Name="Longitude">22.917480</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Denmark</Field>
+          <Field Name="Code">DK</Field>
+          <Field Name="Capital">Copenhagen</Field>
+          <Field Name="Latitude">56.016808</Field>
+          <Field Name="Longitude">9.184570</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Djibouti</Field>
+          <Field Name="Code">DJ</Field>
+          <Field Name="Capital">Djibouti</Field>
+          <Field Name="Latitude">11.982905</Field>
+          <Field Name="Longitude">42.736816</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Dominica</Field>
+          <Field Name="Code">DM</Field>
+          <Field Name="Capital">Roseau</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Dominican Republic</Field>
+          <Field Name="Code">DO</Field>
+          <Field Name="Capital">Santo Domingo</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ecuador</Field>
+          <Field Name="Code">EC</Field>
+          <Field Name="Capital">Quito</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Egypt</Field>
+          <Field Name="Code">EG</Field>
+          <Field Name="Capital">Cairo</Field>
+          <Field Name="Latitude">26.293415</Field>
+          <Field Name="Longitude">29.816895</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">El Salvador</Field>
+          <Field Name="Code">SV</Field>
+          <Field Name="Capital">San Salvador</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Equatorial Guinea</Field>
+          <Field Name="Code">GQ</Field>
+          <Field Name="Capital">Malabo</Field>
+          <Field Name="Latitude">1.592812</Field>
+          <Field Name="Longitude">10.327148</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Eritrea</Field>
+          <Field Name="Code">ER</Field>
+          <Field Name="Capital">Asmara</Field>
+          <Field Name="Latitude">15.644197</Field>
+          <Field Name="Longitude">38.44162</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Estonia</Field>
+          <Field Name="Code">EE</Field>
+          <Field Name="Capital">Talinn</Field>
+          <Field Name="Latitude">58.766776</Field>
+          <Field Name="Longitude">25.655823</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ethiopia</Field>
+          <Field Name="Code">ET</Field>
+          <Field Name="Capital">Addis Ababa</Field>
+          <Field Name="Latitude">8.363693</Field>
+          <Field Name="Longitude">39.572754</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Faeroe Islands</Field>
+          <Field Name="Code">FO</Field>
+          <Field Name="Capital">Torshavn</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Falkland Islands</Field>
+          <Field Name="Code">FK</Field>
+          <Field Name="Capital">Stanley</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Fiji</Field>
+          <Field Name="Code">FJ</Field>
+          <Field Name="Capital">Suva</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Finland</Field>
+          <Field Name="Code">FI</Field>
+          <Field Name="Capital">Helsinki</Field>
+          <Field Name="Latitude">60.264342</Field>
+          <Field Name="Longitude">24.202881</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">France</Field>
+          <Field Name="Code">FR</Field>
+          <Field Name="Capital">Paris</Field>
+          <Field Name="Latitude">47.197178</Field>
+          <Field Name="Longitude">2.779541</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">French Guiana</Field>
+          <Field Name="Code">GF</Field>
+          <Field Name="Capital">Cayenne</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Gabon</Field>
+          <Field Name="Code">GA</Field>
+          <Field Name="Capital">Libreville</Field>
+          <Field Name="Latitude">-0.505365</Field>
+          <Field Name="Longitude">11.931152</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Georgia</Field>
+          <Field Name="Code">GE</Field>
+          <Field Name="Capital">T'Bilisi</Field>
+          <Field Name="Latitude">41.894100</Field>
+          <Field Name="Longitude">44.077148</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Germany</Field>
+          <Field Name="Code">DE</Field>
+          <Field Name="Capital">Berlin</Field>
+          <Field Name="Latitude">51.096623</Field>
+          <Field Name="Longitude">9.711914</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ghana</Field>
+          <Field Name="Code">GH</Field>
+          <Field Name="Capital">Accra</Field>
+          <Field Name="Latitude">7.700105</Field>
+          <Field Name="Longitude">-1.219482</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Greece</Field>
+          <Field Name="Code">GR</Field>
+          <Field Name="Capital">Athens</Field>
+          <Field Name="Latitude">39.724089</Field>
+          <Field Name="Longitude">21.994629</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Greenland</Field>
+          <Field Name="Code">GL</Field>
+          <Field Name="Capital">Nuuk</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Grenada</Field>
+          <Field Name="Code">GD</Field>
+          <Field Name="Capital">St. George'S</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Guadeloupe</Field>
+          <Field Name="Code">GP</Field>
+          <Field Name="Capital">Basse-Terre</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Guatemala</Field>
+          <Field Name="Code">GT</Field>
+          <Field Name="Capital">Guatemala City</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Guinea</Field>
+          <Field Name="Code">GN</Field>
+          <Field Name="Capital">Malabo</Field>
+          <Field Name="Latitude">10.450000</Field>
+          <Field Name="Longitude">-10.640259</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Guinea-Bissau</Field>
+          <Field Name="Code">GW</Field>
+          <Field Name="Capital">Bissau</Field>
+          <Field Name="Latitude">12.021860</Field>
+          <Field Name="Longitude">-14.729919</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Gulf of Arden</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Guyana</Field>
+          <Field Name="Code">GY</Field>
+          <Field Name="Capital">Georgetown</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Haiti</Field>
+          <Field Name="Code">HT</Field>
+          <Field Name="Capital">Port-Au-Prince</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Honduras</Field>
+          <Field Name="Code">HN</Field>
+          <Field Name="Capital">Tegucigalpa</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Hong Kong</Field>
+          <Field Name="Code">HK</Field>
+          <Field Name="Capital">Beijing</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Hungary</Field>
+          <Field Name="Code">HU</Field>
+          <Field Name="Capital">Budapest</Field>
+          <Field Name="Latitude">47.115000</Field>
+          <Field Name="Longitude">19.193115</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Iceland</Field>
+          <Field Name="Code">IS</Field>
+          <Field Name="Capital">Reykjavik</Field>
+          <Field Name="Latitude">65.058235</Field>
+          <Field Name="Longitude">-18.369141</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">India</Field>
+          <Field Name="Code">IN</Field>
+          <Field Name="Capital">New Delhi</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Indonesia</Field>
+          <Field Name="Code">
+            ID
+          </Field>
+          <Field Name="Capital">Jakarta</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Iran</Field>
+          <Field Name="Code">IR</Field>
+          <Field Name="Capital">Tehran</Field>
+          <Field Name="Latitude">32.063956</Field>
+          <Field Name="Longitude">55.063477</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Iraq</Field>
+          <Field Name="Code">IQ</Field>
+          <Field Name="Capital">Baghdad</Field>
+          <Field Name="Latitude">33.151349</Field>
+          <Field Name="Longitude">43.626709</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ireland</Field>
+          <Field Name="Code">IE</Field>
+          <Field Name="Capital">Dublin</Field>
+          <Field Name="Latitude">53.174765</Field>
+          <Field Name="Longitude">-7.937622</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Israel</Field>
+          <Field Name="Code">IL</Field>
+          <Field Name="Capital">Jerusalem</Field>
+          <Field Name="Latitude">31.569175</Field>
+          <Field Name="Longitude">34.898071</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Italy</Field>
+          <Field Name="Code">IT</Field>
+          <Field Name="Capital">Rome</Field>
+          <Field Name="Latitude">43.189158</Field>
+          <Field Name="Longitude">11.881714</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Jamaica</Field>
+          <Field Name="Code">JM</Field>
+          <Field Name="Capital">Kingston</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Japan</Field>
+          <Field Name="Code">JP</Field>
+          <Field Name="Capital">Japan</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Jordan</Field>
+          <Field Name="Code">JO</Field>
+          <Field Name="Capital">Amman</Field>
+          <Field Name="Latitude">31.052934</Field>
+          <Field Name="Longitude">36.340942</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Kazakhstan</Field>
+          <Field Name="Code">KZ</Field>
+          <Field Name="Capital">Astana</Field>
+          <Field Name="Latitude">48.864715</Field>
+          <Field Name="Longitude">67.939453</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Kenya</Field>
+          <Field Name="Code">KE</Field>
+          <Field Name="Capital">Nairobi</Field>
+          <Field Name="Latitude">1.186439</Field>
+          <Field Name="Longitude">38.210449</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Kosovo</Field>
+          <Field Name="Code">KV</Field>
+          <Field Name="Capital">Pristina</Field>
+          <Field Name="Latitude">42.666667</Field>
+          <Field Name="Longitude">21.166667</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Kuwait</Field>
+          <Field Name="Code">KW</Field>
+          <Field Name="Capital">Kuwait</Field>
+          <Field Name="Latitude">29.393543</Field>
+          <Field Name="Longitude">47.413559</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Kyrgyzstan</Field>
+          <Field Name="Code">KG</Field>
+          <Field Name="Capital">Bishkek</Field>
+          <Field Name="Latitude">41.364442</Field>
+          <Field Name="Longitude">74.761963</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lao People'S Democratic Republic</Field>
+          <Field Name="Code">LA</Field>
+          <Field Name="Capital">Vientiane</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Latvia</Field>
+          <Field Name="Code">LV</Field>
+          <Field Name="Capital">Riga</Field>
+          <Field Name="Latitude">56.788845</Field>
+          <Field Name="Longitude">24.807129</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lebanon</Field>
+          <Field Name="Code">LB</Field>
+          <Field Name="Capital">Beirut</Field>
+          <Field Name="Latitude">33.945638</Field>
+          <Field Name="Longitude">35.798492</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lesotho</Field>
+          <Field Name="Code">LS</Field>
+          <Field Name="Capital">Maseru</Field>
+          <Field Name="Latitude">-29.659416</Field>
+          <Field Name="Longitude">28.289795</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Liberia</Field>
+          <Field Name="Code">LR</Field>
+          <Field Name="Capital">Monrovia</Field>
+          <Field Name="Latitude">6.222473</Field>
+          <Field Name="Longitude">-9.272461</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Libya</Field>
+          <Field Name="Code">LY</Field>
+          <Field Name="Capital">Tripoli</Field>
+          <Field Name="Latitude">27.527758</Field>
+          <Field Name="Longitude">17.138672</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Liechtenstein</Field>
+          <Field Name="Code">LI</Field>
+          <Field Name="Capital">Vaduz</Field>
+          <Field Name="Latitude">47.135089</Field>
+          <Field Name="Longitude">9.553986</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Lithuania</Field>
+          <Field Name="Code">LT</Field>
+          <Field Name="Capital">Vilnius</Field>
+          <Field Name="Latitude">55.503750</Field>
+          <Field Name="Longitude">23.686523</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Luxembourg</Field>
+          <Field Name="Code">LU</Field>
+          <Field Name="Capital">Luxembourg</Field>
+          <Field Name="Latitude">49.743119</Field>
+          <Field Name="Longitude">6.127396</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Macedonia</Field>
+          <Field Name="Code">MK</Field>
+          <Field Name="Capital">Skopje</Field>
+          <Field Name="Latitude">41.605175</Field>
+          <Field Name="Longitude">21.791382</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Madagascar</Field>
+          <Field Name="Code">MG</Field>
+          <Field Name="Capital">Antananarivo</Field>
+          <Field Name="Latitude">-18.458768</Field>
+          <Field Name="Longitude">46.538086</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Malawi</Field>
+          <Field Name="Code">MW</Field>
+          <Field Name="Capital">Lilongwe</Field>
+          <Field Name="Latitude">-13.432367</Field>
+          <Field Name="Longitude">34.154663</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Malaysia</Field>
+          <Field Name="Code">MY</Field>
+          <Field Name="Capital">Kuala Lumpur</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mali</Field>
+          <Field Name="Code">ML</Field>
+          <Field Name="Capital">Bamako</Field>
+          <Field Name="Latitude">16.567758</Field>
+          <Field Name="Longitude">-3.543091</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Malta</Field>
+          <Field Name="Code">MT</Field>
+          <Field Name="Capital">Valletta</Field>
+          <Field Name="Latitude">35.893500</Field>
+          <Field Name="Longitude">14.438782</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Martinique</Field>
+          <Field Name="Code">MQ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mauritania</Field>
+          <Field Name="Code">MR</Field>
+          <Field Name="Capital">Nouakchott</Field>
+          <Field Name="Latitude">20.591652</Field>
+          <Field Name="Longitude">-10.770264</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mauritius</Field>
+          <Field Name="Code">MU</Field>
+          <Field Name="Capital">Port Louis</Field>
+          <Field Name="Latitude">-20.290537</Field>
+          <Field Name="Longitude">57.603607</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mediterranean Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mexico</Field>
+          <Field Name="Code">MX</Field>
+          <Field Name="Capital">Mexico</Field>
+          <Field Name="Latitude">24.126702</Field>
+          <Field Name="Longitude">-102.832031</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Moldova</Field>
+          <Field Name="Code">MD</Field>
+          <Field Name="Capital">Chisinau</Field>
+          <Field Name="Latitude">47.405785</Field>
+          <Field Name="Longitude">28.657837</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Monaco</Field>
+          <Field Name="Code">MC</Field>
+          <Field Name="Capital">Monaco</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mongolia</Field>
+          <Field Name="Code">MN</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Montenegro</Field>
+          <Field Name="Code">ME</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">42.400010</Field>
+          <Field Name="Longitude">18.726368</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Montserrat</Field>
+          <Field Name="Code">MS</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Morocco</Field>
+          <Field Name="Code">MA</Field>
+          <Field Name="Capital">Rabat</Field>
+          <Field Name="Latitude">31.611288</Field>
+          <Field Name="Longitude">-6.697083</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Mozambique</Field>
+          <Field Name="Code">MZ</Field>
+          <Field Name="Capital">Maputo</Field>
+          <Field Name="Latitude">-16.993755</Field>
+          <Field Name="Longitude">35.899653</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Myanmar</Field>
+          <Field Name="Code">MM</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Namibia</Field>
+          <Field Name="Code">NA</Field>
+          <Field Name="Capital">Windhoek</Field>
+          <Field Name="Latitude">-21.555284</Field>
+          <Field Name="Longitude">17.310791</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Nepal</Field>
+          <Field Name="Code">NP</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Netherlands</Field>
+          <Field Name="Code">NL</Field>
+          <Field Name="Capital">Amsterdam</Field>
+          <Field Name="Latitude">52.099757</Field>
+          <Field Name="Longitude">5.311890</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">New Caledonia</Field>
+          <Field Name="Code">NC</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">New Zealand</Field>
+          <Field Name="Code">NZ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Nicaragua</Field>
+          <Field Name="Code">NI</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Niger</Field>
+          <Field Name="Code">NE</Field>
+          <Field Name="Capital">Niamey</Field>
+          <Field Name="Latitude">17.644022</Field>
+          <Field Name="Longitude">9.444580</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Nigeria</Field>
+          <Field Name="Code">NG</Field>
+          <Field Name="Capital">Abuja</Field>
+          <Field Name="Latitude">9.39792</Field>
+          <Field Name="Longitude">8.178921</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">North Korea</Field>
+          <Field Name="Code">KP</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">North Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Norway</Field>
+          <Field Name="Code">NO</Field>
+          <Field Name="Capital">Oslo</Field>
+          <Field Name="Latitude">58.671226</Field>
+          <Field Name="Longitude">7.17407</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Oman</Field>
+          <Field Name="Code">OM</Field>
+          <Field Name="Capital">Muscat</Field>
+          <Field Name="Latitude">20.766387</Field>
+          <Field Name="Longitude">56.271973</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Pakistan</Field>
+          <Field Name="Code">PK</Field>
+          <Field Name="Capital">Islamabad</Field>
+          <Field Name="Latitude">29.831114</Field>
+          <Field Name="Longitude">68.587646</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Palau</Field>
+          <Field Name="Code">PW</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Palestinian Territories</Field>
+          <Field Name="Code">PS</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Panama</Field>
+          <Field Name="Code">PA</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Papua New Guinea</Field>
+          <Field Name="Code">PG</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Paraguay</Field>
+          <Field Name="Code">PY</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Persian Gulf</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Peru</Field>
+          <Field Name="Code">PE</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Philippines</Field>
+          <Field Name="Code">PH</Field>
+          <Field Name="Capital">Manila</Field>
+          <Field Name="Latitude">11.286161</Field>
+          <Field Name="Longitude">122.296142</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Poland</Field>
+          <Field Name="Code">PL</Field>
+          <Field Name="Capital">Warsaw</Field>
+          <Field Name="Latitude">52.507863</Field>
+          <Field Name="Longitude">19.173889</Field>
+          <Field Name="NATO">
+            Yes
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Portugal</Field>
+          <Field Name="Code">PT</Field>
+          <Field Name="Capital">Lisbon</Field>
+          <Field Name="Latitude">39.804316</Field>
+          <Field Name="Longitude">-8.212280</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Puerto Rico</Field>
+          <Field Name="Code">PR</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Qatar</Field>
+          <Field Name="Code">QA</Field>
+          <Field Name="Capital">Doha</Field>
+          <Field Name="Latitude">25.358919</Field>
+          <Field Name="Longitude">51.127625</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Red Sea</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Reunion</Field>
+          <Field Name="Code">RE</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Romania</Field>
+          <Field Name="Code">RO</Field>
+          <Field Name="Capital">Bucharest</Field>
+          <Field Name="Latitude">46.080852</Field>
+          <Field Name="Longitude">25.015869</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Russian Federation</Field>
+          <Field Name="Code">RU</Field>
+          <Field Name="Capital">Moscow</Field>
+          <Field Name="Latitude">55.801281</Field>
+          <Field Name="Longitude">37.573242</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Rwanda</Field>
+          <Field Name="Code">RW</Field>
+          <Field Name="Capital">Kigali</Field>
+          <Field Name="Latitude">-1.905776</Field>
+          <Field Name="Longitude">29.855347</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Saint Kitts and Nevis</Field>
+          <Field Name="Code">KN</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Saint Lucia</Field>
+          <Field Name="Code">LC</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Samoa</Field>
+          <Field Name="Code">WS</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sao Tome and Principe</Field>
+          <Field Name="Code">ST</Field>
+          <Field Name="Capital">Sao Tome</Field>
+          <Field Name="Latitude">0.258178</Field>
+          <Field Name="Longitude">6.586304</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Saudi Arabia</Field>
+          <Field Name="Code">SA</Field>
+          <Field Name="Capital">Riyadh</Field>
+          <Field Name="Latitude">23.885838</Field>
+          <Field Name="Longitude">44.340820</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Scotland</Field>
+          <Field Name="Code"></Field>
+          <Field Name="Capital">Edinburgh</Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Senegal</Field>
+          <Field Name="Code">SN</Field>
+          <Field Name="Capital">Dakar</Field>
+          <Field Name="Latitude">14.477234</Field>
+          <Field Name="Longitude">-15.238037</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Serbia</Field>
+          <Field Name="Code">RS</Field>
+          <Field Name="Capital">Belgrade</Field>
+          <Field Name="Latitude">43.620171</Field>
+          <Field Name="Longitude">20.982055</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sierra Leone</Field>
+          <Field Name="Code">SL</Field>
+          <Field Name="Capital">Freetown</Field>
+          <Field Name="Latitude">8.760224</Field>
+          <Field Name="Longitude">-11.771851</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Singapore</Field>
+          <Field Name="Code">SG</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Slovakia</Field>
+          <Field Name="Code">SK</Field>
+          <Field Name="Capital">Bratislava</Field>
+          <Field Name="Latitude">48.785152</Field>
+          <Field Name="Longitude">19.467773</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Slovenia</Field>
+          <Field Name="Code">SI</Field>
+          <Field Name="Capital">Ljublijana</Field>
+          <Field Name="Latitude">46.042736</Field>
+          <Field Name="Longitude">14.753265</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Solomon Islands</Field>
+          <Field Name="Code">SB</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Somalia</Field>
+          <Field Name="Code">SO</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">8.363693</Field>
+          <Field Name="Longitude">48.845215</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">South Africa</Field>
+          <Field Name="Code">ZA</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">-30.581179</Field>
+          <Field Name="Longitude">22.895508</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">South Georgia</Field>
+          <Field Name="Code">GS</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">South Korea</Field>
+          <Field Name="Code">KR</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Spain</Field>
+          <Field Name="Code">ES</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">40.430224</Field>
+          <Field Name="Longitude">-3.713379</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sri Lanka</Field>
+          <Field Name="Code">LK</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">7.612998</Field>
+          <Field Name="Longitude">80.722046</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sudan</Field>
+          <Field Name="Code">SD</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">16.467695</Field>
+          <Field Name="Longitude">28.234863</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Suriname</Field>
+          <Field Name="Code">SR</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Svalbard and Jan Mayen</Field>
+          <Field Name="Code">SJ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Swaziland</Field>
+          <Field Name="Code">SZ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">-26.593439</Field>
+          <Field Name="Longitude">31.448364</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Sweden</Field>
+          <Field Name="Code">SE</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">60.813785</Field>
+          <Field Name="Longitude">14.672928</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Switzerland</Field>
+          <Field Name="Code">CH</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">46.878968</Field>
+          <Field Name="Longitude">8.020020</Field>
+          <Field Name="NATO">No</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Syrian Arab Republic</Field>
+          <Field Name="Code">SY</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">35.182788</Field>
+          <Field Name="Longitude">38.430176</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Taiwan</Field>
+          <Field Name="Code">TW</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Tajikistan</Field>
+          <Field Name="Code">TJ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">-38.315801</Field>
+          <Field Name="Longitude">70.982666</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Tanzania</Field>
+          <Field Name="Code">TZ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">-7.144499</Field>
+          <Field Name="Longitude">35.200195</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Thailand</Field>
+          <Field Name="Code">TH</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Democratic Republic of the Congo</Field>
+          <Field Name="Code">CD</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">The Gambia</Field>
+          <Field Name="Code">GM</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Timor-Leste</Field>
+          <Field Name="Code">TL</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Togo</Field>
+          <Field Name="Code">TG</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">8.075546</Field>
+          <Field Name="Longitude">1.082153</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Tonga</Field>
+          <Field Name="Code">TO</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Trinidad and Tobago</Field>
+          <Field Name="Code">TT</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Tunisia</Field>
+          <Field Name="Code">TN</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">34.307144</Field>
+          <Field Name="Longitude">9.349365</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Turkey</Field>
+          <Field Name="Code">TR</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">39.402244</Field>
+          <Field Name="Longitude">35.073853</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Turkmenistan</Field>
+          <Field Name="Code">TM</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">39.707187</Field>
+          <Field Name="Longitude">58.886719</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Turks and Caicos Islands</Field>
+          <Field Name="Code">TC</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Uganda</Field>
+          <Field Name="Code">UG</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">1.999106</Field>
+          <Field Name="Longitude">32.673340</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Ukraine</Field>
+          <Field Name="Code">UA</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">49.253465</Field>
+          <Field Name="Longitude">31.267090</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">United Arab Emirates</Field>
+          <Field Name="Code">AE</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">23.563987</Field>
+          <Field Name="Longitude">53.849487</Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">United Kingdom</Field>
+          <Field Name="Code">GB</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude">52.935397</Field>
+          <Field Name="Longitude">-1.845703</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">United States</Field>
+          <Field Name="Code">US</Field>
+          <Field Name="Capital">Washington D.C.</Field>
+          <Field Name="Latitude">39.876019</Field>
+          <Field Name="Longitude">-97.514648</Field>
+          <Field Name="NATO">Yes</Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Uruguay</Field>
+          <Field Name="Code">UY</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Uzbekistan</Field>
+          <Field Name="Code">UZ</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Vanuatu</Field>
+          <Field Name="Code">VU</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Venezuela</Field>
+          <Field Name="Code">VE</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Vietnam</Field>
+          <Field Name="Code">VN</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Western Sahara</Field>
+          <Field Name="Code">EH</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Yemen</Field>
+          <Field Name="Code">YE</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Zambia</Field>
+          <Field Name="Code">ZM</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+        <Row>
+          <Field Name="Title">Zimbabwe</Field>
+          <Field Name="Code">ZW</Field>
+          <Field Name="Capital"></Field>
+          <Field Name="Latitude"></Field>
+          <Field Name="Longitude"></Field>
+          <Field Name="NATO"></Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

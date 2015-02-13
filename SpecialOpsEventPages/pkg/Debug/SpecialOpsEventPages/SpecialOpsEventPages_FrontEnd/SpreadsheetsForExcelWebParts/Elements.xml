@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SpreadsheetsForExcelWebParts" Path="SpreadsheetsForExcelWebParts" Url="SOATG" >
+    <File Type="GhostableInLibrary"  Path="AirMissionTracker.xlsx" Url="AirMissionTracker.xlsx">
+      <Property Type="string" Name="OrganizationalComponent" Value="A33 Current Operations" />
+      <Property Type="string" Name="DocType" Value="Battle Rhythm" />
+      <Property Type="string" Name="Title" Value="Air Mission Tracker" />
+    </File>
+    <File Type="GhostableInLibrary"  Path="CombatPowerContract.xlsx" Url="CombatPowerContract.xlsx">
+      <Property Type="string" Name="OrganizationalComponent" Value="A33 Current Operations" />
+      <Property Type="string" Name="DocType" Value="Battle Rhythm" />
+      <Property Type="string" Name="Title" Value="Combat Power Contract" />
+    </File>
+  </Module>
+</Elements>

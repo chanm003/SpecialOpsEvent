@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="10015">
+      <Receiver>
+        <Name>RfiItemEventReceiverItemUpdating</Name>
+        <Type>ItemUpdating</Type>
+        <Assembly>SpecialOpsEventPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06657a0938f97006</Assembly>
+        <Class>SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver.RfiItemEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+      <Receiver>
+        <Name>RfiItemEventReceiverItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>SpecialOpsEventPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06657a0938f97006</Assembly>
+        <Class>SpecialOpsEventPages.ItemEventReceivers.RfiItemEventReceiver.RfiItemEventReceiver</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

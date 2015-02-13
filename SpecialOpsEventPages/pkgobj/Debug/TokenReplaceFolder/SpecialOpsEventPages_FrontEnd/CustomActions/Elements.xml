@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="editNavigationLink"
+    GroupId="SiteActions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="2000"
+    RequireSiteAdministrator="TRUE"
+    ImageUrl="/_layouts/images/SiteSettings_SiteCollectionAdmin_48x48.png"
+    Title="Edit Custom Navigation"
+    Description="Modify custom navigation or set it up for the first time">
+    <UrlAction Url="~site/app/EditCustomNav.aspx"/>
+  </CustomAction>
+</Elements>

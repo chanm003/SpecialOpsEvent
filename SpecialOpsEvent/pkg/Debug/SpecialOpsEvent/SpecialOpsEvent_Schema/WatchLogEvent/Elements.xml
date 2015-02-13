@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01005C4521856553445498DBAF49424C1B6C" Name="WatchLog Event" Group="Special Ops Event Content Types" Description="" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" DisplayName="Event" />
+      <FieldRef ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Name="OrganizationalComponent"/>
+      <FieldRef ID="{FB88858E-0301-439E-A887-808CB5852C15}" DisplayName="Date Time Group" Required="TRUE" Description="Date and time of log entry" Name="DateTimeGroup" Format="DateTime" />
+      <FieldRef ID="{6414611D-C7C0-44EA-BFD5-A43E0E3C9378}" DisplayName="Event Details" Required="FALSE" Description="Additional event details" Name="EventDetails" NumLines="15" Sortable="FALSE" />
+      <FieldRef ID="{7F631425-6CA3-4CBA-9106-D76E1AE85DA5}" DisplayName="Significant" Required="TRUE" Description="Select &quot;Yes&quot; to include the log entry on the Current Operations Summary" Name="Significant" Format="Dropdown" />
+      <FieldRef ID="{B1D72E22-5093-4D9F-9549-07CB044F6053}" DisplayName="Action Taken" Required="FALSE" Description="Specify action taken, if any" Name="ActionTaken" />
+      <FieldRef ID="{51796F3E-A61A-49B1-91D7-099AA1533CB6}" DisplayName="Initials" Required="TRUE" Description="Your initials" Name="YourInitials" />
+      <FieldRef ID="{2B2662FD-630D-4784-9EB4-3D2B14C0B9F0}" DisplayName="DTG" Name="DTG" Format="DateOnly" ReadOnly="TRUE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

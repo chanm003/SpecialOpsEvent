@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="HelpDesk" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/HelpDesk" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01004a680f084e14416ab55212240cef5018" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{748a4048-1c41-4d40-b2d6-602e31531ff0}" Name="Details" />
+          <FieldRef ID="{2bce6bb2-1a41-496e-b9dd-f066e1db9f48}" Name="Customer" />
+          <FieldRef ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Name="OrganizationalComponent" />
+          <FieldRef ID="{4dc614eb-3000-4b6b-a2e4-9febbdfdc36f}" Name="Priority" />
+          <FieldRef ID="{61f4bb52-6d1c-41e8-b87f-ead4a92cf7cf}" Name="RequestType" />
+          <FieldRef ID="{986f0923-0e3b-4592-83ba-93bf4bd9bdb7}" Name="AssignedTo" />
+          <FieldRef ID="{5448e555-f8e7-4391-9ec3-6fc20ab58d14}" Name="Comments" />
+          <FieldRef ID="{6c2b941b-b12f-413c-9ac7-207ed7094052}" Name="Status" />
+          <FieldRef ID="{c912ef52-5f6b-4a3e-bef4-537bfa67f651}" Name="ResolutionType" />
+          <FieldRef ID="{e5f97023-6d96-4eca-9679-8aad446c2f06}" Name="ResolutionDate" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" Description="Title for this request" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Note" DisplayName="Details" Required="FALSE" NumLines="6" RichText="TRUE" RichTextMode="Compatible" Sortable="FALSE" ID="{748a4048-1c41-4d40-b2d6-602e31531ff0}" Name="Details" Description="Request details" RestrictedMode="TRUE" IsolateStyles="FALSE" AppendOnly="FALSE" />
+      <Field Type="User" DisplayName="Customer" List="UserInfo" Required="TRUE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{2bce6bb2-1a41-496e-b9dd-f066e1db9f48}" Name="Customer" Description="The requestor" Group="" />
+      <Field Group="Partner Nation Columns" Name="OrganizationalComponent" ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" DisplayName="Organization" Type="Choice" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" Overwrite="TRUE">
+        <CHOICES />
+      </Field>
+      <Field Type="Choice" DisplayName="Priority" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{4dc614eb-3000-4b6b-a2e4-9febbdfdc36f}" Name="Priority" Description="Priority of the request">
+        <CHOICES>
+          <CHOICE>(1) High</CHOICE>
+          <CHOICE>(2) Normal</CHOICE>
+          <CHOICE>(3) Low</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="Request Type" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{61f4bb52-6d1c-41e8-b87f-ead4a92cf7cf}" Name="RequestType" Description="Type of request">
+        <CHOICES>
+          <CHOICE>Access Request</CHOICE>
+          <CHOICE>Portal Development/KM</CHOICE>
+          <CHOICE>Support</CHOICE>
+          <CHOICE>Security</CHOICE>
+          <CHOICE>Maintenance</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ShowInNewForm="FALSE" ShowInEditForm="TRUE" Type="UserMulti" DisplayName="Assigned To" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{986f0923-0e3b-4592-83ba-93bf4bd9bdb7}" Name="AssignedTo" Group="" Mult="TRUE" Sortable="FALSE" Description="Person assigned to work the request" />
+      <Field ShowInNewForm="FALSE" ShowInEditForm="TRUE" Type="Note" DisplayName="Comments" Required="FALSE" NumLines="6" RichText="TRUE" RichTextMode="Compatible" Sortable="FALSE" ID="{5448e555-f8e7-4391-9ec3-6fc20ab58d14}" Name="Comments" Description="Comments to be entered by those assigned to the request" RestrictedMode="TRUE" IsolateStyles="FALSE" AppendOnly="FALSE" />
+      <Field ShowInNewForm="FALSE" ShowInEditForm="TRUE" Type="Choice" DisplayName="Status" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{6c2b941b-b12f-413c-9ac7-207ed7094052}" Name="Status">
+        <Default>Initiated</Default>
+        <CHOICES>
+          <CHOICE>Initiated</CHOICE>
+          <CHOICE>Engaged</CHOICE>
+          <CHOICE>Hold</CHOICE>
+          <CHOICE>Resolved</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ShowInNewForm="FALSE" ShowInEditForm="TRUE" Type="Choice" DisplayName="Resolution Type" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{c912ef52-5f6b-4a3e-bef4-537bfa67f651}" Name="ResolutionType">
+        <CHOICES>
+          <CHOICE>Positive</CHOICE>
+          <CHOICE>Neutral</CHOICE>
+          <CHOICE>Negative</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field ShowInNewForm="FALSE" ShowInEditForm="TRUE" Type="DateTime" DisplayName="Resolution Date" Required="FALSE" Format="DateOnly" ID="{e5f97023-6d96-4eca-9679-8aad446c2f06}" Name="ResolutionDate" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Customer" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Comments" />
+          <FieldRef Name="ResolutionDate" />
+          <FieldRef Name="ResolutionType" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="cf6623fc-df67-4882-8fce-3742efc498ff" DisplayName="Open" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Open.aspx" DefaultView="FALSE">
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Customer" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Comments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <Neq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Resolved</Value>
+            </Neq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>   
+      </View>
+      <View BaseViewID="3" Name="5f1ae092-5faa-43b6-a339-4fd40f594a14" DisplayName="Initiated" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Initiated.aspx" DefaultView="FALSE">
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Customer" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Comments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Initiated</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="4" Name="a58c2a89-714c-4976-bd05-9c713eec78b7" DisplayName="On Hold" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="OnHold.aspx" DefaultView="FALSE">
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Customer" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Comments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Hold</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="5" Name="3b3341ae-7f7a-4d53-950b-f25356f3ddea" DisplayName="Resolved" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Resolved.aspx" DefaultView="FALSE">
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Customer" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Comments" />
+          <FieldRef Name="ResolutionDate" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Resolved</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="6" Name="a7fa5ac3-0ceb-4fb4-ac8f-8b1f091d2169" DisplayName="Engaged" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Engaged.aspx" DefaultView="FALSE">
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="OrganizationalComponent" />
+          <FieldRef Name="Customer" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="RequestType" />
+          <FieldRef Name="AssignedTo" />
+          <FieldRef Name="Comments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Engaged</Value>
+            </Eq>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

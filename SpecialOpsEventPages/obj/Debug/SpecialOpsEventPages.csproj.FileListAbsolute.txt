@@ -1,0 +1,4 @@
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\bin\Debug\SpecialOpsEventPages.dll
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\bin\Debug\SpecialOpsEventPages.pdb
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.dll
+c:\users\mike.chan.adm\documents\visual studio 2012\Projects\SpecialOpsEvent\SpecialOpsEventPages\obj\Debug\SpecialOpsEventPages.pdb

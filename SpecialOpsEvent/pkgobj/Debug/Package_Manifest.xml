@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="11c1abeb-2a8d-4148-986b-64ebd7ad61a6" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SpecialOpsEvent.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SpecialOpsEvent_Schema\Feature.xml" />
+  </FeatureManifests>
+</Solution>

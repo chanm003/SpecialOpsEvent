@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="EXCON Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+              
+                Url="EXCON">
+  </ListInstance>
+  <ListInstance Title="SOATG Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+                
+                Url="SOATG">
+  </ListInstance>
+  <ListInstance Title="SOCC Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+                
+                Url="SOCC">
+  </ListInstance>
+  <ListInstance Title="SOTG-15 Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+                
+                Url="SOTG1">
+  </ListInstance>
+  <ListInstance Title="SOTG-25 Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+                
+                Url="SOTG2">
+  </ListInstance>
+  <ListInstance Title="SOTG-35 Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+                
+                Url="SOTG3">
+  </ListInstance>
+  <ListInstance Title="SIGCEN Documents"
+                OnQuickLaunch="FALSE"
+                TemplateType="10019"
+                
+                Url="SIGCEN">
+  </ListInstance>
+</Elements>

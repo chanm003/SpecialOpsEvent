@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Air Support Requests" OnQuickLaunch="FALSE" TemplateType="10001" Url="Lists/AirSupportRequests" Description=""></ListInstance>
+</Elements>

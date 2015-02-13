@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="WebPartPages">
+    <File Type="GhostableInLibrary" Path="WebPartPages\asr.aspx" Url="app/asr.aspx" />
+    <File Type="GhostableInLibrary" Path="WebPartPages\editCustomNav.aspx" Url="app/editCustomNav.aspx" />
+    <File Type="GhostableInLibrary" Path="WebPartPages\helpDesk.aspx" Url="app/helpDesk.aspx" />
+    <File Type="GhostableInLibrary" Path="WebPartPages\missionTracker.aspx" Url="app/missionTracker.aspx"/>
+    <File Type="GhostableInLibrary" Path="WebPartPages\projection.aspx" Url="app/projection.aspx" />
+    <File Type="GhostableInLibrary" Path="WebPartPages\sitreps.aspx" Url="app/sitreps.aspx" />
+
+    <File Type="GhostableInLibrary" Path="WebPartPages\announce.aspx" Url="app/announce.aspx" >
+      <View List="Lists/EventAnnouncements" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="100">
+      </View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\comms.aspx" Url="app/comms.aspx">
+      <View List="SIGCEN" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="Lists/WatchLogSigcen" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="200"></View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\excon.aspx" Url="app/excon.aspx">
+      <View List="Lists/WatchLogEXCON" BaseViewID="1" WebPartZoneID="Top" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="2" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="SOCOMFMD" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="100"></View>
+      <View List="EXCON" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="200"></View>
+      <View List="Lists/MSEL" BaseViewID="2" WebPartZoneID="Bottom" WebPartOrder="100"></View>
+    </File>
+
+    <File Type="GhostableInLibrary" Path="WebPartPages\evDoc.aspx" Url="app/evDoc.aspx">
+      <View List="EventDocuments" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="100">
+      </View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\phone.aspx" Url="app/phone.aspx">
+      <View List="Lists/Phonebook" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="100">
+      </View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\rfi.aspx" Url="app/rfi.aspx">
+      <View List="Lists/RFI" BaseViewID="8" WebPartZoneID="openRFI" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="9" WebPartZoneID="closeRFI" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="10" WebPartZoneID="myRFI" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="11" WebPartZoneID="manageRFI" WebPartOrder="100"></View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\socc.aspx" Url="app/socc.aspx">
+      <View List="Lists/WatchLogSOCC" BaseViewID="1" WebPartZoneID="Top" WebPartOrder="100"></View>
+      <View List="Lists/MessageTraffic" BaseViewID="2" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="Lists/MissionTracker" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="200"></View>
+      <View List="Lists/RFI" BaseViewID="4" WebPartZoneID="Left" WebPartOrder="300"></View>
+      <View List="SOCC" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="100"></View>
+      <View List="Lists/CCIR" BaseViewID="1" WebPartZoneID="Bottom" WebPartOrder="100"></View>
+      <View List="Lists/KeyLeaders" BaseViewID="1" WebPartZoneID="Bottom" WebPartOrder="200"></View>
+    </File>
+
+    <File Type="GhostableInLibrary" Path="WebPartPages\sotg1.aspx" Url="app/sotg1.aspx">
+      <View List="Lists/WatchLogSotg15" BaseViewID="1" WebPartZoneID="Top" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="5" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="SOTG1" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="100"></View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\sotg2.aspx" Url="app/sotg2.aspx">
+      <View List="Lists/WatchLogSotg25" BaseViewID="1" WebPartZoneID="Top" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="6" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="SOTG2" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="100"></View>
+    </File>
+    <File Type="GhostableInLibrary" Path="WebPartPages\sotg3.aspx" Url="app/sotg3.aspx">
+      <View List="Lists/WatchLogSotg35" BaseViewID="1" WebPartZoneID="Top" WebPartOrder="100"></View>
+      <View List="Lists/RFI" BaseViewID="7" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="SOTG3" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="100"></View>
+    </File>
+
+
+    <File Type="GhostableInLibrary" Path="WebPartPages\airAssets.aspx" Url="app/airAssets.aspx">
+      <AllUsersWebPart WebPartOrder="100" WebPartZoneID="Top">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Excel.WebUI.ExcelWebRenderer, Microsoft.Office.Excel.WebUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="AllowHyperlinks" type="bool">True</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="Height" type="string">400px</property>
+        <property name="AllowInExcelOperations" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AutoGenerateTitle" type="bool">False</property>
+        <property name="WorkbookUri">~site/SOATG/AirMissionTracker.xlsx</property>
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/ewr023.gif</property>
+        <property name="Title" type="string">Air Mission Tracker </property>
+        <property name="VisibleItem" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="TitleIconImageUrl" type="string">/_layouts/images/ewr023.gif</property>
+        <property name="AllowPivotSpecificOperations" type="bool">True</property>
+        <property name="AutoGenerateDetailLink" type="bool">True</property>
+        <property name="Description" type="string">Use the Excel Web Access Web Part to interact with an Excel workbook as a Web page.</property>
+        <property name="AllowFiltering" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="ChromeType" type="chrometype">TitleOnly</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowPeriodicDataRefresh" type="bool">True</property>
+        <property name="AllowRecalculation" type="bool">True</property>
+        <property name="Width" type="string" />
+        <property name="TypingAndFormulaEntry" type="bool">False</property>
+        <property name="CloseWorkbookSessions" type="bool">True</property>
+        <property name="HelpUrl" type="string" />
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="AllowSorting" type="bool">True</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="AllowParameterModification" type="bool">True</property>
+        <property name="ShowVisibleItemButton" type="bool">True</property>
+        <property name="AllowManualDataRefresh" type="bool">True</property>
+        <property name="ToolbarStyle" type="Microsoft.Office.Excel.WebUI.ToolbarVisibilityStyle, Microsoft.Office.Excel.WebUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">FullToolbar</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="AllowInteractivity" type="bool">True</property>
+        <property name="ShowWorkbookParameters" type="bool">True</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowHide" type="bool">True</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]>
+      </AllUsersWebPart>
+      <AllUsersWebPart WebPartOrder="200" WebPartZoneID="Top">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Excel.WebUI.ExcelWebRenderer, Microsoft.Office.Excel.WebUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="AllowHyperlinks" type="bool">True</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="Height" type="string">400px</property>
+        <property name="AllowInExcelOperations" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AutoGenerateTitle" type="bool">False</property>
+        <property name="WorkbookUri">~site/SOATG/CombatPowerContract.xlsx</property>
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/ewr023.gif</property>
+        <property name="Title" type="string">Combat Power Contract </property>
+        <property name="VisibleItem" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="TitleIconImageUrl" type="string">/_layouts/images/ewr023.gif</property>
+        <property name="AllowPivotSpecificOperations" type="bool">True</property>
+        <property name="AutoGenerateDetailLink" type="bool">True</property>
+        <property name="Description" type="string">Use the Excel Web Access Web Part to interact with an Excel workbook as a Web page.</property>
+        <property name="AllowFiltering" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="ChromeType" type="chrometype">TitleOnly</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowPeriodicDataRefresh" type="bool">True</property>
+        <property name="AllowRecalculation" type="bool">True</property>
+        <property name="Width" type="string" />
+        <property name="TypingAndFormulaEntry" type="bool">False</property>
+        <property name="CloseWorkbookSessions" type="bool">True</property>
+        <property name="HelpUrl" type="string" />
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="AllowSorting" type="bool">True</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="AllowParameterModification" type="bool">True</property>
+        <property name="ShowVisibleItemButton" type="bool">True</property>
+        <property name="AllowManualDataRefresh" type="bool">True</property>
+        <property name="ToolbarStyle" type="Microsoft.Office.Excel.WebUI.ToolbarVisibilityStyle, Microsoft.Office.Excel.WebUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">FullToolbar</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="AllowInteractivity" type="bool">True</property>
+        <property name="ShowWorkbookParameters" type="bool">True</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowHide" type="bool">True</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]>
+      </AllUsersWebPart>
+    </File>
+    
+    <File Type="GhostableInLibrary" Path="WebPartPages\SOATG.aspx" Url="app/SOATG.aspx">
+      <AllUsersWebPart WebPartOrder="100" WebPartZoneID="Top">
+        <![CDATA[<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Excel.WebUI.ExcelWebRenderer, Microsoft.Office.Excel.WebUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="AllowHyperlinks" type="bool">True</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="Height" type="string">400px</property>
+        <property name="AllowInExcelOperations" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
+        <property name="AutoGenerateTitle" type="bool">False</property>
+        <property name="WorkbookUri">~site/SOATG/CombatPowerContract.xlsx</property>
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/ewr023.gif</property>
+        <property name="Title" type="string">Combat Power Contract </property>
+        <property name="VisibleItem" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="TitleIconImageUrl" type="string">/_layouts/images/ewr023.gif</property>
+        <property name="AllowPivotSpecificOperations" type="bool">True</property>
+        <property name="AutoGenerateDetailLink" type="bool">True</property>
+        <property name="Description" type="string">Use the Excel Web Access Web Part to interact with an Excel workbook as a Web page.</property>
+        <property name="AllowFiltering" type="bool">True</property>
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="ChromeType" type="chrometype">TitleOnly</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowPeriodicDataRefresh" type="bool">True</property>
+        <property name="AllowRecalculation" type="bool">True</property>
+        <property name="Width" type="string" />
+        <property name="TypingAndFormulaEntry" type="bool">False</property>
+        <property name="CloseWorkbookSessions" type="bool">True</property>
+        <property name="HelpUrl" type="string" />
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="AllowSorting" type="bool">True</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="AllowParameterModification" type="bool">True</property>
+        <property name="ShowVisibleItemButton" type="bool">True</property>
+        <property name="AllowManualDataRefresh" type="bool">True</property>
+        <property name="ToolbarStyle" type="Microsoft.Office.Excel.WebUI.ToolbarVisibilityStyle, Microsoft.Office.Excel.WebUI, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">FullToolbar</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="AllowInteractivity" type="bool">True</property>
+        <property name="ShowWorkbookParameters" type="bool">True</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="AllowHide" type="bool">True</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>]]>
+      </AllUsersWebPart>
+      <View List="Lists/WatchLogSOATG" BaseViewID="1" WebPartZoneID="Top" WebPartOrder="200"></View>
+      <View List="Lists/RFI" BaseViewID="3" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="SOATG" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="100"></View>
+      <View List="SOATG" BaseViewID="4" WebPartZoneID="Right" WebPartOrder="200" DefaultView="FALSE" Hidden="TRUE">
+        <![CDATA[
+  <webParts>
+   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+     <type name="Microsoft.SharePoint.WebPartPages.XsltListViewWebPart,Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+     <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+     <properties>
+      <property name="Title" type="string">Daily Tasking Orders</property>
+     </properties>
+    </data>
+   </webPart>
+  </webParts>
+ ]]>
+      </View>
+    </File>
+  <File Type="GhostableInLibrary" Path="WebPartPages\CUB.aspx" Url="app/CUB.aspx"/>
+</Module>
+</Elements>

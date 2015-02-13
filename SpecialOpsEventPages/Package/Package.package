@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f265e077-1ed3-44f3-9f6c-a56a4b2ad14b" solutionId="f265e077-1ed3-44f3-9f6c-a56a4b2ad14b" resetWebServer="false" name="SpecialOpsEventPages" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="1ffb6c44-a2c8-42b4-ba66-c409f8306f98" />
+  </features>
+</package>

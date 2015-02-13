@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="EventDocumentTemplates" Path="EventDocumentTemplates" Url="EventDocuments/Templates">
+  <File Path="OPORD.docx" Url="OPORD.docx" Type="GhostableInLibrary" />
+<File Path="SITREP.docx" Url="SITREP.docx" Type="GhostableInLibrary" />
+<File Path="FRAGO.docx" Url="FRAGO.docx" Type="GhostableInLibrary" />
+<File Path="CONOP.pptx" Url="CONOP.pptx" Type="GhostableInLibrary" />
+<File Path="AAR.docx" Url="AAR.docx" Type="GhostableInLibrary" />
+</Module>
+  <Module Name="AARS" Url="EventDocuments/AARs" Path="">
+
+  </Module>
+</Elements>

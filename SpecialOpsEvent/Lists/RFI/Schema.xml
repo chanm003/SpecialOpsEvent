@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List VersioningEnabled="TRUE" xmlns:ows="Microsoft SharePoint" Title="RFI" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/RFI" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01009e3ea998c0b945928fdb4a6ae073da67" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{9D1133B1-E379-44D6-B7EF-9A7F3886526F}" Name="RfiTracking" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{8f9fe8fa-a6a8-43fb-b9b4-27fbe9359585}" Name="Details" />
+          <FieldRef ID="{305982bb-740c-43bb-a69e-f179b0d1bed9}" Name="Priority" />
+          <FieldRef ID="{77724ef4-538f-4bb8-947c-88bfa27dfb47}" Name="LTIOV" />
+          <FieldRef ID="{0831e704-45a1-459b-8aa4-4760b37e2cb7}" Name="POC" />
+          <FieldRef ID="{52a4efd5-c1ca-486a-9214-2d3a78f124e5}" Name="POCPhone" />
+          <FieldRef ID="{29d688b7-3bb0-45f5-939e-7db4f8aad8d7}" Name="POCOrganization" />
+          <FieldRef ID="{9a944f62-1447-4e4b-943d-df81c47b47c1}" Name="CollectionRequirement" />
+          <FieldRef ID="{468e3596-512e-46b8-b4e4-e58be8fd5dad}" Name="RecommendedOPR" />
+          <FieldRef ID="{3745aad5-32d5-4149-8e2a-c60de62bbd7e}" Name="Status" />
+          <FieldRef ID="{6a7db9b8-a1ce-40f2-b329-77eacfea602d}" Name="Response" />
+          <FieldRef ID="{2d0e4f5e-f700-4412-924c-4704b0a3803b}" Name="DateClosed" />
+          <FieldRef ID="{c3bfeb72-392f-4928-b812-804872b7aef4}" Name="Respondent" />
+          <FieldRef ID="{4acb49fc-4164-4483-ae81-c08aa1ec0dfb}" Name="RespondentPhone" />
+          <FieldRef ID="{10bf089e-6f6b-4bce-8fb1-33197bfce56e}" Name="ResponseSufficient" />
+          <FieldRef ID="{d68b8c60-ff2b-4e50-a4fb-dc80d912d0bb}" Name="InsufficientExplanation" />
+          <FieldRef ID="{b0901985-7e7c-42ab-8de2-6899abb4efd8}" Name="TrackThisRFI" />
+          <FieldRef ID="{1ae8d601-144c-4b4e-9097-dedc0297cd74}" Name="RFIReturned" />
+          <FieldRef ID="{86107b90-e528-4268-a9b7-26d469f3df4e}" Name="Reopened" />
+          <FieldRef ID="{8fbf732b-3174-48be-b740-0ca8603f1ccc}" Name="PreviousRespondent" />
+          <FieldRef ID="{e91a0f79-cc4b-4efd-8634-d9664fd176c4}" Name="NotifiedOPR" />
+          <FieldRef ID="{44d9b716-7b18-41b0-90cb-4acd36037900}" Name="IDGarrison" />
+          <FieldRef ID="{50eed57a-1fe4-4a7e-810d-a5be32846ddf}" Name="IDDeployed" />
+          <FieldRef ID="{094d36c9-7cbc-41cd-a6c9-9ea29affc3fb}" Name="DateOpened" />
+          <FieldRef ID="{5f273ca0-41f6-4fd2-9c92-1ae1ea9b7006}" Name="EXCONView" />
+          <FieldRef ID="{770d6929-29b8-4a9d-abc1-6b81a0207b26}" Name="PrioritySort" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Type="Number" Decimals="0" DisplayName="RFI Tracking" Required="FALSE" ID="{9D1133B1-E379-44D6-B7EF-9A7F3886526F}" Name="RfiTracking" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Note" DisplayName="Details" Description="Give further details and background on the question asked in the Title.  Include summary of known information related to the RFI." Required="FALSE" NumLines="10" RichText="FALSE" AppendOnly="TRUE" Sortable="FALSE" ID="{8f9fe8fa-a6a8-43fb-b9b4-27fbe9359585}" Name="Details" RestrictedMode="TRUE" RichTextMode="Compatible" IsolateStyles="FALSE" />
+      <Field Type="Choice" DisplayName="Priority" Description="Requested priority of this RFI" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{305982bb-740c-43bb-a69e-f179b0d1bed9}" Name="Priority">
+        <CHOICES>
+          <CHOICE>Routine (48-96 hrs)</CHOICE>
+          <CHOICE>Priority (24-48 hrs)</CHOICE>
+          <CHOICE>Immediate (&lt; 24 hrs)</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="DateTime" DisplayName="LTIOV" Description="Last Time Information Of Value (for mission-critical requests, only)." Required="FALSE" Format="DateTime" ID="{77724ef4-538f-4bb8-947c-88bfa27dfb47}" Name="LTIOV" />
+      <Field Type="User" DisplayName="POC" Description="Request point of contact; typically the creator or the RFI Manager" Required="TRUE" ID="{0831e704-45a1-459b-8aa4-4760b37e2cb7}" Name="POC" />
+      <Field Type="Text" DisplayName="POC Phone" Required="TRUE" MaxLength="255" ID="{52a4efd5-c1ca-486a-9214-2d3a78f124e5}" Name="POCPhone" />
+      <Field Type="Text" DisplayName="POC Organization" Description="POC's organization" Required="TRUE" MaxLength="255" ID="{29d688b7-3bb0-45f5-939e-7db4f8aad8d7}" Name="POCOrganization" />
+      <Field Type="Choice" DisplayName="Collection Requirement" Description="Select &quot;Yes&quot; if this is a Collection Requirement" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{9a944f62-1447-4e4b-943d-df81c47b47c1}" Name="CollectionRequirement">
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="Recommended OPR" Description="Recommended (Office of Primary Responsibility)  The team responsible for responding to the request. The Recommended OPR may be reassigned." Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{468e3596-512e-46b8-b4e4-e58be8fd5dad}" Name="RecommendedOPR">
+        <CHOICES>
+          <CHOICE>SOCC-Operations</CHOICE>
+          <CHOICE>SOCC-Intel</CHOICE>
+          <CHOICE>SOCC-SIGCEN</CHOICE>
+          <CHOICE>SOCC-SUPCEN</CHOICE>
+          <CHOICE>SOTG-15</CHOICE>
+          <CHOICE>SOTG-25</CHOICE>
+          <CHOICE>SOTG-35</CHOICE>
+          <CHOICE>SOATG</CHOICE>
+          <CHOICE>Higher Headquarters</CHOICE>
+          <CHOICE>Embassy</CHOICE>
+          <CHOICE>EXCON</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Choice" DisplayName="Status" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  Description="Status of the request" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{3745aad5-32d5-4149-8e2a-c60de62bbd7e}" Name="Status">
+        <Default>Open</Default>
+        <CHOICES>
+          <CHOICE>Open</CHOICE>
+          <CHOICE>Closed</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Response" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  Description="Response to the RFI" Required="FALSE" NumLines="20" RichText="FALSE" AppendOnly="TRUE" Sortable="FALSE" ID="{6a7db9b8-a1ce-40f2-b329-77eacfea602d}" Name="Response" />
+      <Field Type="DateTime" DisplayName="Date Closed" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Description="The responder will set this date once the information has been supplied" Required="FALSE" Format="DateTime" ID="{2d0e4f5e-f700-4412-924c-4704b0a3803b}" Name="DateClosed" />
+      <Field Type="User" DisplayName="Respondent" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  List="UserInfo" Description="The person providing the response" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{c3bfeb72-392f-4928-b812-804872b7aef4}" Name="Respondent" />
+      <Field Type="Text" DisplayName="Respondent Phone" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  Description="Respondent's telephone number" Required="FALSE" MaxLength="255" ID="{4acb49fc-4164-4483-ae81-c08aa1ec0dfb}" Name="RespondentPhone" />
+      <Field Type="Choice" DisplayName="Response Sufficient" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  Description="Indication of whether or not the requestor considers the response to be sufficient" Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{10bf089e-6f6b-4bce-8fb1-33197bfce56e}" Name="ResponseSufficient">
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Note" DisplayName="Insufficient Explanation" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  Required="FALSE" NumLines="20" RichText="FALSE" Sortable="FALSE" ID="{d68b8c60-ff2b-4e50-a4fb-dc80d912d0bb}" Name="InsufficientExplanation" />
+      <Field Type="UserMulti" DisplayName="Manage RFI" List="UserInfo" Description="Add yourself here to track this RFI via the RFI Application's &quot;Manage RFIs&quot; tab. If you no longer want to track this RFI, please remove ONLY your ID (not others)." Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" ID="{b0901985-7e7c-42ab-8de2-6899abb4efd8}" Name="TrackThisRFI" />
+      <Field Type="Choice" DisplayName="RFI Returned?" ShowInNewForm="FALSE" ShowInEditForm="FALSE"  Required="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{1ae8d601-144c-4b4e-9097-dedc0297cd74}" Name="RFIReturned">
+        <Default>No</Default>
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Calculated" DisplayName="Reopened" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{86107b90-e528-4268-a9b7-26d469f3df4e}" Name="Reopened">
+        <Formula>=IF(ResponseSufficient="No","Yes")</Formula>
+        <FieldRefs>
+          <FieldRef Name="ResponseSufficient" />
+        </FieldRefs>
+      </Field>
+      <Field Type="User" DisplayName="Previous Respondent" ShowInNewForm="FALSE" ShowInEditForm="FALSE" List="UserInfo" Required="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" ID="{8fbf732b-3174-48be-b740-0ca8603f1ccc}" Name="PreviousRespondent" />
+      <Field Type="Text" DisplayName="Notified OPR" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Required="FALSE" MaxLength="255" ID="{e91a0f79-cc4b-4efd-8634-d9664fd176c4}" Name="NotifiedOPR" />
+      <Field Type="Text" DisplayName="IDGarrison" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Required="FALSE" MaxLength="255" ID="{44d9b716-7b18-41b0-90cb-4acd36037900}" Name="IDGarrison" />
+      <Field Type="Text" DisplayName="IDDeployed" ShowInNewForm="FALSE" ShowInEditForm="FALSE" Required="FALSE" MaxLength="255" ID="{50eed57a-1fe4-4a7e-810d-a5be32846ddf}" Name="IDDeployed" />
+      <Field Type="Calculated" DisplayName="Date Opened" Format="DateTime" ShowInNewForm="FALSE" ShowInEditForm="FALSE" LCID="1033" ResultType="DateTime" ReadOnly="TRUE" Description="Date the request was opened/created" ID="{094d36c9-7cbc-41cd-a6c9-9ea29affc3fb}" Name="DateOpened">
+        <Formula>=Created</Formula>
+        <FieldRefs>
+          <FieldRef Name="Created" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Calculated" DisplayName="EXCON View" Description="Determines whether or not to display item on EXCON page" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{5f273ca0-41f6-4fd2-9c92-1ae1ea9b7006}" Name="EXCONView">
+        <Formula>=IF(OR(RecommendedOPR="Higher Headquarters",RecommendedOPR="Embassy",RecommendedOPR="EXCON"),IF(Status="Open","Yes","No"),"No")</Formula>
+        <FieldRefs>
+          <FieldRef Name="Status" />
+          <FieldRef Name="RecommendedOPR" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Calculated" DisplayName="PrioritySort" Format="DateOnly" LCID="1033" ResultType="Number" ReadOnly="TRUE" ID="{770d6929-29b8-4a9d-abc1-6b81a0207b26}" Name="PrioritySort">
+        <Formula>=IF(ISNUMBER(SEARCH("Immediate",Priority)),1,IF(ISNUMBER(SEARCH("Priority",Priority)),2,3))</Formula>
+        <FieldRefs>
+          <FieldRef Name="Priority" />
+        </FieldRefs>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="RfiTracking" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="LTIOV" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="Details" />
+          <FieldRef Name="CollectionRequirement" />
+          <FieldRef Name="POC" />
+          <FieldRef Name="RecommendedOPR" />
+          <FieldRef Name="Respondent" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="DateOpened" />
+          <FieldRef Name="DateClosed" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID" Ascending="FALSE" />
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="58a64784-db8f-46ed-8e96-161906494007" DisplayName="EXCON" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="EXCON.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="PrioritySort" />
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Eq>
+                <FieldRef Name="EXCONView" />
+                <Value Type="Text">Yes</Value>
+              </Eq>
+              <Neq>
+                <FieldRef Name="Status" />
+                <Value Type="Text">Closed</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="3" Name="7f144a68-9649-4a56-af1f-906b8c0316d5" DisplayName="SOATG" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOATG.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="PrioritySort" />
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Eq>
+                <FieldRef Name="RecommendedOPR" />
+                <Value Type="Text">SOATG</Value>
+              </Eq>
+              <Neq>
+                <FieldRef Name="Status" />
+                <Value Type="Text">Closed</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="4" Name="6baee1f9-940b-41fe-b508-440d2447c763" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="PrioritySort" />
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Contains>
+                <FieldRef Name="RecommendedOPR" />
+                <Value Type="Text">SOCC</Value>
+              </Contains>
+              <Neq>
+                <FieldRef Name="Status" />
+                <Value Type="Text">Closed</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="5" Name="68d60789-b865-4091-a533-d12a3915ac42" DisplayName="SOTG-15" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-15.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="PrioritySort" />
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Eq>
+                <FieldRef Name="RecommendedOPR" />
+                <Value Type="Text">SOTG-15</Value>
+              </Eq>
+              <Neq>
+                <FieldRef Name="Status" />
+                <Value Type="Text">Closed</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="6" Name="39bbdcc1-b83f-4089-ad2c-1ebf720d4eb4" DisplayName="SOTG-25" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-25.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="PrioritySort" />
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Eq>
+                <FieldRef Name="RecommendedOPR" />
+                <Value Type="Text">SOTG-25</Value>
+              </Eq>
+              <Neq>
+                <FieldRef Name="Status" />
+                <Value Type="Text">Closed</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View BaseViewID="7" Name="c0d6c064-3345-45a6-84a9-9e1328cfcbaa" DisplayName="SOTG-35" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-35.aspx">
+        <ViewFields>
+          <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="PrioritySort" />
+            <FieldRef Name="ID" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Eq>
+                <FieldRef Name="RecommendedOPR" />
+                <Value Type="Text">SOTG-35</Value>
+              </Eq>
+              <Neq>
+                <FieldRef Name="Status" />
+                <Value Type="Text">Closed</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View TabularView="FALSE" BaseViewID="8" Name="1dd331f2-b26b-48f7-beec-a0cde079121b" DisplayName="Open RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Open RFIs.aspx">
+        <ViewFields>
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="POCOrganization" />
+          <FieldRef Name="RfiTracking" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+          <FieldRef Name="DateOpened" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Open</Value>
+            </Eq>
+          </Where>
+          <GroupBy Collapse="FALSE">
+            <FieldRef Name="RecommendedOPR" />
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="PrioritySort"/>
+            <FieldRef Name="ID"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="None" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View TabularView="FALSE" BaseViewID="9" Name="24c9fae1-c87f-4f98-8467-1c9fd0d5646e" DisplayName="Closed RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Closed RFIs.aspx">
+        <ViewFields>
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="POCOrganization" />
+          <FieldRef Name="RfiTracking" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+          <FieldRef Name="DateOpened" />
+          <FieldRef Name="DateClosed" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="Status" />
+              <Value Type="Text">Closed</Value>
+            </Eq>
+          </Where>
+          <GroupBy Collapse="FALSE">
+            <FieldRef Name="RecommendedOPR" />
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="PrioritySort"/>
+            <FieldRef Name="ID"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="None" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View TabularView="FALSE" BaseViewID="10" Name="7f40b8f0-ca78-4bab-964f-efb9a3672c1e" DisplayName="My RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="My RFIs.aspx">
+        <ViewFields>
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="RfiTracking" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+          <FieldRef Name="DateOpened" />
+          <FieldRef Name="DateClosed" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="Author"/>
+              <Value Type="Integer">
+                <UserID Type="Integer"/>
+              </Value>
+            </Eq>
+          </Where>
+          <GroupBy Collapse="FALSE">
+            <FieldRef Name="RecommendedOPR" />
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="PrioritySort"/>
+            <FieldRef Name="ID"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="None" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+      <View TabularView="FALSE" BaseViewID="11" Name="82347fd0-3840-4733-94bc-024734ff068f" DisplayName="Manage RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Manage RFIs.aspx">
+        <ViewFields>
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="ID" />
+          <FieldRef Name="POCOrganization" />
+          <FieldRef Name="RfiTracking" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Priority" />
+          <FieldRef Name="LTIOV" />
+          <FieldRef Name="DateOpened" />
+          <FieldRef Name="DateClosed" />
+        </ViewFields>
+        <Query>
+          <Where>
+            <Eq>
+              <FieldRef Name="TrackThisRFI"/>
+              <Value Type="Integer">
+                <UserID Type="Integer"/>
+              </Value>
+            </Eq>
+          </Where>
+          <GroupBy Collapse="FALSE">
+            <FieldRef Name="RecommendedOPR" />
+          </GroupBy>
+          <OrderBy>
+            <FieldRef Name="PrioritySort"/>
+            <FieldRef Name="ID"/>
+          </OrderBy>
+        </Query>
+        <Toolbar Type="None" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

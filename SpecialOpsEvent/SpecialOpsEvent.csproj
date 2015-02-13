@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{889B129D-371C-4D4C-A723-A589DAFE01D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpecialOpsEvent</RootNamespace>
+    <AssemblyName>SpecialOpsEvent</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Schema\Schema.EventReceiver.cs">
+      <DependentUpon>Schema.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\AAR\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d94c1a0-17be-4089-beb5-a47a081019f0}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\FRAGO\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ed03cb2-9373-4252-b6e8-4f773f32badb}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\OPORD\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{304873f1-bddc-4eec-b204-3958baf09f7f}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\SITREP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28467207-95b7-486e-a44b-280882a7ca66}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\WatchLogEvent\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab2cb86c-393f-4f4b-854c-55da870a3382}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Schema\Schema.feature">
+      <FeatureId>{4369ad99-5f81-42e9-823a-ea5895c19512}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Libraries\App\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{69b625b6-1db6-4ddf-98aa-2cfcaf1076eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Libraries\EventDocuments\EventDocumentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15a7ba04-63d0-4e9c-ab9a-6767752841f0}</SharePointProjectItemId>
+    </None>
+    <None Include="Libraries\EventDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6d5bb519-9e4e-4429-96fc-823be67c56e9}</SharePointProjectItemId>
+    </None>
+    <None Include="Libraries\EventParticpantLibrary\EventParticpantLibraryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f983e46c-4f0f-45c4-84a4-9811bbc5d6cb}</SharePointProjectItemId>
+    </None>
+    <None Include="Libraries\EventParticpantLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53748ecd-77ce-4397-a60c-19b34974d1ab}</SharePointProjectItemId>
+    </None>
+    <None Include="Libraries\SOCOMFMD\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6083ef8-f72d-4c1e-b23d-6bf1c90827b3}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AfterActionReports\AfterActionReportsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f812433-1d5a-4b08-bf64-b886debb1fbc}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AfterActionReports\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ede1fdc-fb48-437c-a874-3b59d2f48696}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AirSupportReq\AirSupportReqInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1148c4a8-6dfc-48f7-94dc-0f70dd254487}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\AirSupportReq\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d90072a4-77b1-466a-b9ac-e5b4a7ecbc28}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\CCIR\CCIRInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ed7bf01-d657-4234-a9e1-961f57cc1c30}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\CCIR\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6c459471-4ab5-4c9a-8eef-522412671509}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\CommunicationsStatus\CommunicationsStatusInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e7ab4d0f-1b1b-4431-902c-e58aff08b924}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\CommunicationsStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d6c89c0-bfe4-48c1-96c2-5d60b988bcc7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ConopChops\ConopChopsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cd73139-905d-41f1-834d-e5ee9879a84a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ConopChops\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b28ad436-48b5-4b07-b81f-fb20818d3196}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Country\CountryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{378d5584-15f3-411b-96a8-4dbc608eed08}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Country\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4fcb0ec9-1a77-4dbc-9e3d-1dde0e824dbd}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\EventAnnouncements\EventAnnouncementsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{09cd4a82-414c-4ea3-ad7b-e4571067b217}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\EventAnnouncements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f13b5862-de04-4b25-9ed1-7237d9fd2f87}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\EventCalendar\EventCalendarInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebb204c5-bd99-4666-b626-86f48a4ec0c5}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\EventCalendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2910a543-661c-4101-abce-423148963217}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\HelpDesk\HelpDeskInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae6da3b4-83ba-4e91-96be-9dbd183f1ff0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\HelpDesk\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6e2c68f-288a-4a1c-aa6d-9598d0db23df}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\KeyLeaders\KeyLeadersInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{159aad59-f9f1-458e-9077-f50a6feb87e9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\KeyLeaders\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{729836ae-5cbf-4517-8dd2-63cd06d34d0d}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MessageTraffic\MessageTrafficInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59aa8c3c-8644-4902-9402-5ab94b1c0316}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MessageTraffic\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f818cb8-9d6f-4ce8-bf5c-676aa8c5e4d5}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MissionTracker\MissionTrackerInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3134ba5a-98b7-4ec7-837b-b0d5024ea7e6}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MissionTracker\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{79866e0c-48eb-4ece-bb2d-18c44ce69053}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MSEL\MSELInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{da5536f4-7566-4a89-afe5-68721d7430c1}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\MSEL\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59f55711-d44a-4eec-9070-a16cca732061}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Navigation\NavigationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29612655-5cbd-4e0d-8155-d03fdabcddf2}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Navigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3bb02e1b-d6a4-45d1-9eb4-0a62c6b86f88}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\NodeStatus\NodeStatusInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64a8fd43-271e-4c21-bfeb-78e1976b46c9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\NodeStatus\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85e9ca52-cfe1-46aa-a34e-787c0ac2d08a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Phonebook\PhonebookInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98952a7f-799d-4fb7-9c6a-ad97e567855f}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Phonebook\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{58325770-148f-43b8-bd13-a6b973ea7abc}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\RFI\RFIInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{db0fb110-c81b-46c0-9e7e-2548513584dd}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\RFI\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1b15adc5-438b-4d27-b43d-73c13095d49b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\WatchLog\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7cfcbbe5-c4be-453c-8b1d-21509cd45b65}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\WatchLog\WatchLogInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a794eb2-7ea3-4260-8c56-67efa2fcc750}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\EventDocumentTemplates\AAR.docx" />
+    <None Include="Modules\EventDocumentTemplates\CONOP.pptx" />
+    <None Include="Modules\EventDocumentTemplates\FRAGO.docx" />
+    <None Include="Modules\EventDocumentTemplates\OPORD.docx" />
+    <None Include="Modules\EventDocumentTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{77f8eece-7317-4c87-8418-86694f370e59}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\EventDocumentTemplates\SITREP.docx" />
+    <None Include="Package\Package.package">
+      <PackageId>{11c1abeb-2a8d-4148-986b-64ebd7ad61a6}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{935830e4-dac8-4355-af0f-f9e8082736c0}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContentTypes\AAR\Elements.xml" />
+    <Content Include="ContentTypes\FRAGO\Elements.xml" />
+    <Content Include="ContentTypes\OPORD\Elements.xml" />
+    <Content Include="ContentTypes\SITREP\Elements.xml" />
+    <Content Include="ContentTypes\WatchLogEvent\Elements.xml" />
+    <Content Include="Features\Schema\Schema.Template.xml">
+      <DependentUpon>Schema.feature</DependentUpon>
+    </Content>
+    <Content Include="Libraries\App\Elements.xml" />
+    <Content Include="Libraries\EventDocuments\EditDlg.htm" />
+    <Content Include="Libraries\EventDocuments\Elements.xml" />
+    <Content Include="Libraries\EventDocuments\EventDocumentsInstance\Elements.xml" />
+    <Content Include="Libraries\EventDocuments\FileDlg.htm" />
+    <Content Include="Libraries\EventDocuments\Repair.aspx" />
+    <Content Include="Libraries\EventDocuments\Schema.xml" />
+    <Content Include="Libraries\EventDocuments\Upload.aspx" />
+    <Content Include="Libraries\EventParticpantLibrary\EditDlg.htm" />
+    <Content Include="Libraries\EventParticpantLibrary\Elements.xml" />
+    <Content Include="Libraries\EventParticpantLibrary\EventParticpantLibraryInstance\Elements.xml" />
+    <Content Include="Libraries\EventParticpantLibrary\FileDlg.htm" />
+    <Content Include="Libraries\EventParticpantLibrary\Repair.aspx" />
+    <Content Include="Libraries\EventParticpantLibrary\Schema.xml" />
+    <Content Include="Libraries\EventParticpantLibrary\Upload.aspx" />
+    <Content Include="Libraries\SOCOMFMD\Elements.xml" />
+    <Content Include="Lists\AfterActionReports\AfterActionReportsInstance\Elements.xml" />
+    <Content Include="Lists\AfterActionReports\Elements.xml" />
+    <Content Include="Lists\AfterActionReports\Schema.xml" />
+    <Content Include="Lists\AirSupportReq\AirSupportReqInstance\Elements.xml" />
+    <Content Include="Lists\AirSupportReq\Elements.xml" />
+    <Content Include="Lists\AirSupportReq\Schema.xml" />
+    <Content Include="Lists\CCIR\CCIRInstance\Elements.xml" />
+    <Content Include="Lists\CCIR\Elements.xml" />
+    <Content Include="Lists\CCIR\Schema.xml" />
+    <Content Include="Lists\CommunicationsStatus\CommunicationsStatusInstance\Elements.xml" />
+    <Content Include="Lists\CommunicationsStatus\Elements.xml" />
+    <Content Include="Lists\CommunicationsStatus\Schema.xml" />
+    <Content Include="Lists\ConopChops\ConopChopsInstance\Elements.xml" />
+    <Content Include="Lists\ConopChops\Elements.xml" />
+    <Content Include="Lists\ConopChops\Schema.xml" />
+    <Content Include="Lists\Country\CountryInstance\Elements.xml" />
+    <Content Include="Lists\Country\Elements.xml" />
+    <Content Include="Lists\Country\Schema.xml" />
+    <Content Include="Lists\EventAnnouncements\Elements.xml" />
+    <Content Include="Lists\EventAnnouncements\EventAnnouncementsInstance\Elements.xml" />
+    <Content Include="Lists\EventAnnouncements\Schema.xml" />
+    <Content Include="Lists\EventCalendar\Elements.xml" />
+    <Content Include="Lists\EventCalendar\EventCalendarInstance\Elements.xml" />
+    <Content Include="Lists\EventCalendar\Schema.xml" />
+    <Content Include="Lists\HelpDesk\Elements.xml" />
+    <Content Include="Lists\HelpDesk\HelpDeskInstance\Elements.xml" />
+    <Content Include="Lists\HelpDesk\Schema.xml" />
+    <Content Include="Lists\KeyLeaders\Elements.xml" />
+    <Content Include="Lists\KeyLeaders\KeyLeadersInstance\Elements.xml" />
+    <Content Include="Lists\KeyLeaders\Schema.xml" />
+    <Content Include="Lists\MessageTraffic\Elements.xml" />
+    <Content Include="Lists\MessageTraffic\MessageTrafficInstance\Elements.xml" />
+    <Content Include="Lists\MessageTraffic\Schema.xml" />
+    <Content Include="Lists\MissionTracker\Elements.xml" />
+    <Content Include="Lists\MissionTracker\MissionTrackerInstance\Elements.xml" />
+    <Content Include="Lists\MissionTracker\Schema.xml" />
+    <Content Include="Lists\MSEL\Elements.xml" />
+    <Content Include="Lists\MSEL\MSELInstance\Elements.xml" />
+    <Content Include="Lists\MSEL\Schema.xml" />
+    <Content Include="Lists\Navigation\Elements.xml" />
+    <Content Include="Lists\Navigation\NavigationInstance\Elements.xml" />
+    <Content Include="Lists\Navigation\Schema.xml" />
+    <Content Include="Lists\NodeStatus\Elements.xml" />
+    <Content Include="Lists\NodeStatus\NodeStatusInstance\Elements.xml" />
+    <Content Include="Lists\NodeStatus\Schema.xml" />
+    <Content Include="Lists\Phonebook\Elements.xml" />
+    <Content Include="Lists\Phonebook\PhonebookInstance\Elements.xml" />
+    <Content Include="Lists\Phonebook\Schema.xml" />
+    <Content Include="Lists\RFI\Elements.xml" />
+    <Content Include="Lists\RFI\RFIInstance\Elements.xml" />
+    <Content Include="Lists\RFI\Schema.xml" />
+    <Content Include="Lists\WatchLog\Elements.xml" />
+    <Content Include="Lists\WatchLog\Schema.xml" />
+    <Content Include="Lists\WatchLog\WatchLogInstance\Elements.xml" />
+    <Content Include="Modules\EventDocumentTemplates\Elements.xml" />
+    <Content Include="SiteColumns\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="NodeStatus" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/NodeStatus" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100899fca8292024da49ac11d807e0ebc6a" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{5cb5937c-70d0-4f17-80f0-ce720b905f2c}" Name="Package" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{f58aca8e-ed56-499d-b102-2b11025d9dae}" Name="Status" />
+          <FieldRef ID="{63f7e293-cb33-45cf-9741-9c4e09f1c7dc}" Name="NodeComments" />
+          <FieldRef ID="{bfe85724-529a-42ba-aadb-96f284aca2d0}" Name="ContactInfo" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field Name="Package" ID="{5cb5937c-70d0-4f17-80f0-ce720b905f2c}" DisplayName="Package" Type="Text" Required="TRUE" />
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Node#" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" MaxLength="255" />
+      <Field Type="Choice" DisplayName="Status" Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{f58aca8e-ed56-499d-b102-2b11025d9dae}" Name="Status">
+        <CHOICES>
+          <CHOICE>FMC</CHOICE>
+          <CHOICE>Degraded</CHOICE>
+          <CHOICE>NMC</CHOICE>
+          <CHOICE>Planned</CHOICE>
+          <CHOICE>Standby</CHOICE>
+          <CHOICE>N/A</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="NodeComments" ID="{63f7e293-cb33-45cf-9741-9c4e09f1c7dc}" DisplayName="Comments" Type="Text" />
+      <Field Type="Note" DisplayName="Contact Info" Required="FALSE" NumLines="6" RichText="TRUE" RichTextMode="Compatible" Sortable="FALSE" ID="{bfe85724-529a-42ba-aadb-96f284aca2d0}" Name="ContactInfo" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Package" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="NodeComments" />
+          <FieldRef Name="ContactInfo" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Package" />
+            <FieldRef Name="Title" />
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="fdb0fcc8-c0da-4e9b-847f-cb114372017f" DisplayName="EditableGrid" Type="GRID" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="EditableGrid.aspx">
+        <ViewFields>
+          <FieldRef Name="Package" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="NodeComments" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Package" />
+            <FieldRef Name="Title" />
+          </OrderBy>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

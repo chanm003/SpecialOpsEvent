@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MSEL" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/MSEL" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01002c4d2f6a5c2040b28cb3396bb12ed3d7" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{6008446b-af6f-4b1f-9fa7-dd3d453e7745}" Name="DTG" />
+          <FieldRef ID="{80101cde-1a20-4366-8e01-2ff4792f464e}" Name="DateTimeGroup" />
+          <FieldRef ID="{d6f46b22-f15e-45fc-972a-d4271f06c9d8}" Name="Desk" />
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{eb873c12-81d6-440e-aa1a-af5b861c9be9}" Name="From" />
+          <FieldRef ID="{35e48997-5270-46ed-bf70-e5512e0840da}" Name="To" />
+          <FieldRef ID="{e8965df0-a684-4488-8b09-d876f39dbf15}" Name="Description" />
+          <FieldRef ID="{ed9ece46-bf2e-44b0-b1a6-9550d02e8bbd}" Name="Status" />
+          <FieldRef ID="{787AA5F6-A3A6-4142-A08C-311E2AE9AB0D}" Name="Injected"/>
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Subject" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" FromBaseType="TRUE" MaxLength="255" />
+      <Field Type="DateTime" DisplayName="Date Time Group" Description="Date and time associated with message or event" Required="TRUE" Format="DateTime" ID="{80101cde-1a20-4366-8e01-2ff4792f464e}" Name="DateTimeGroup" CalType="0" />
+      <Field Type="Note" DisplayName="Description" Required="FALSE" NumLines="3" RichText="FALSE" Sortable="FALSE" ID="{e8965df0-a684-4488-8b09-d876f39dbf15}" Name="Description" />
+      <Field Type="Text" DisplayName="Desk" Required="TRUE" MaxLength="255" ID="{d6f46b22-f15e-45fc-972a-d4271f06c9d8}" Name="Desk" />
+      <Field Type="Calculated" DisplayName="DTG" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{6008446b-af6f-4b1f-9fa7-dd3d453e7745}" Name="DTG">
+        <Formula>=IF(DateTimeGroup="","",(UPPER(TEXT(DateTimeGroup,"ddHHmm")&amp;"Z"&amp;(TEXT(DateTimeGroup,"MMMyy")))))</Formula>
+        <FieldRefs>
+          <FieldRef Name="DateTimeGroup" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Text" DisplayName="From" Required="TRUE" MaxLength="255" ID="{eb873c12-81d6-440e-aa1a-af5b861c9be9}" Name="From" />
+      <Field Type="Choice" DisplayName="Status"  Required="TRUE" Format="Dropdown" FillInChoice="FALSE" ID="{ed9ece46-bf2e-44b0-b1a6-9550d02e8bbd}" Name="Status">
+        <Default>Pending</Default>
+        <CHOICES>
+          <CHOICE>Pending</CHOICE>
+          <CHOICE>Complete</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Type="Text" DisplayName="Injected" Required="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE"  MaxLength="255" ID="{787AA5F6-A3A6-4142-A08C-311E2AE9AB0D}" Name="Injected" Description="Specifies whether this item was successfully copied to Message Traffic list as an &quot;Inbound Message&quot;" />
+      <Field Type="Text" DisplayName="To" Required="TRUE" MaxLength="255" ID="{35e48997-5270-46ed-bf70-e5512e0840da}" Name="To" />
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="DTG" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Desk" />
+          <FieldRef Name="From" />
+          <FieldRef Name="To" />
+          <FieldRef Name="Description" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Injected"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="DateTimeGroup" Ascending="FALSE" />
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="2" Name="a8a571f7-a683-4aeb-9d30-ac4ac4351b1e" DisplayName="For EXCON Page" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="For EXCON Page.aspx">
+        <ViewFields>
+          <FieldRef Name="Attachments" />
+          <FieldRef Name="DTG" />
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Desk" />
+          <FieldRef Name="From" />
+          <FieldRef Name="To" />
+          <FieldRef Name="Description" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="Injected"/>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="DateTimeGroup" Ascending="FALSE" />
+          </OrderBy>
+          <Where>
+            <And>
+              <Neq>
+                <FieldRef Name="Status"/>
+                <Value Type="Text">Completed</Value>
+              </Neq>
+              <Neq>
+                <FieldRef Name="Status"/>
+                <Value Type="Text">Canceled</Value>
+              </Neq>
+            </And>
+          </Where>
+        </Query>
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Country" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Country" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100b191056c17f24d9e86d5d8fcfb9bf695" Name="Item">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{4763C6BA-7FA5-40C6-A987-09D85174C80E}" Name="Code" />
+          <FieldRef ID="{CA8B7724-B9A7-4B12-B03B-C976CD1004D1}" Name="Capital" />
+          <FieldRef ID="{68AA9287-426E-45E5-B9FA-494E020E321F}" Name="Latitude" />
+          <FieldRef ID="{8A2CE3AE-BADA-47B1-86F8-18E253B74E9A}" Name="Longitude" />
+          <FieldRef ID="{5FFB809E-7ECD-49FD-B2DD-EEA3FC88D2DA}" Name="NATO"/>
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Type="Text" DisplayName="Code" Description="Country abbreviation" Required="FALSE" Indexed="FALSE" MaxLength="255" ID="{4763C6BA-7FA5-40C6-A987-09D85174C80E}" Name="Code" />
+      <Field Type="Text" DisplayName="Capital" Description="Capital city of the country" Required="FALSE" Indexed="FALSE" MaxLength="255" ID="{CA8B7724-B9A7-4B12-B03B-C976CD1004D1}" Name="Capital" />
+      <Field Type="Text" DisplayName="Latitude" Required="FALSE" Indexed="FALSE" MaxLength="255" ID="{68AA9287-426E-45E5-B9FA-494E020E321F}" Name="Latitude" />
+      <Field Type="Text" DisplayName="Longitude" Required="FALSE" Indexed="FALSE" MaxLength="255" ID="{8A2CE3AE-BADA-47B1-86F8-18E253B74E9A}" Name="Longitude" />
+      <Field Type="Choice" DisplayName="NATO" Required="FALSE" Indexed="FALSE" Format="Dropdown" FillInChoice="FALSE" ID="{5FFB809E-7ECD-49FD-B2DD-EEA3FC88D2DA}" Name="NATO">
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitle"></FieldRef>
+          <FieldRef Name="Code" />
+          <FieldRef Name="Capital" />
+          <FieldRef Name="Latitude" />
+          <FieldRef Name="Longitude" />
+          <FieldRef Name="NATO" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
