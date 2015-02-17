@@ -115,7 +115,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" TabularView="FALSE" MobileView="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink>main.xsl</XslLink>
         <Query>
           <Where>
@@ -150,7 +150,7 @@
         </Query>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/events.png" Url="AllItems.aspx" DefaultBaseView="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ParameterBindings>
@@ -174,7 +174,7 @@
         </Query>
       </View>
       <View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/events.png" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/mobile/viewdaily.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
@@ -215,7 +215,7 @@
         </Query>
       </View>
       <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/events.png" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />

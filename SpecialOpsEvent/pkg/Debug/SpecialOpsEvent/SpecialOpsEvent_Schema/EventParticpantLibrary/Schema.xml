@@ -111,7 +111,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE" FreeForm="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -132,7 +132,7 @@
         </Query>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,All_Documents;" DefaultView="TRUE" MobileView="True" MobileDefaultView="True" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/AllItems.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -155,7 +155,7 @@
         </Query>
       </View>
       <View BaseViewID="2" Type="HTML" FileDialog="TRUE" TabularView="FALSE" DisplayName="$Resources:core,File_Dialog_View;" Hidden="TRUE" Path="filedlg.htm" ModerationType="Moderator">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ViewFields>
           <FieldRef Name="DocIcon"></FieldRef>
           <FieldRef Name="BaseName"></FieldRef>
@@ -170,7 +170,7 @@
         </Query>
       </View>
       <View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Explorer_View;" TabularView="FALSE" Url="Forms/WebFldr.aspx" SetupPath="pages\webfldr.aspx" RequiresClientIntegration="TRUE" ReadOnly="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink>main.xsl</XslLink>
         <ViewFields />
         <ParameterBindings>
@@ -179,7 +179,7 @@
         <Query />
       </View>
       <View BaseViewID="6" Type="HTML" TabularView="FALSE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -198,7 +198,7 @@
         </Query>
       </View>
       <View BaseViewID="7" AggregateView="TRUE" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Merge_Documents;" TabularView="FALSE" ToolbarTemplate="MergeToolBar" DefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Combine.aspx" Hidden="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -219,7 +219,7 @@
         </Query>
       </View>
       <View BaseViewID="9" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,Relink_Documents;" ToolbarTemplate="RelinkToolBar" TabularView="FALSE" DefaultView="FALSE" Url="Forms/repair.aspx" ImageUrl="/_layouts/images/dlicon.png" Hidden="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -248,7 +248,7 @@
         </Query>
       </View>
       <View BaseViewID="40" Type="HTML" WebPartZoneID="Main" DisplayName="assetLibTemp" DefaultView="FALSE" MobileView="FALSE" MobileDefaultView="FALSE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/dlicon.png" Url="Forms/Thumbnails.aspx" Hidden="TRUE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <ViewFields>
           <FieldRef Name="LinkFilename"></FieldRef>
         </ViewFields>
@@ -277,7 +277,7 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
     </Views>

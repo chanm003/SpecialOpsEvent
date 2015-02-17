@@ -64,7 +64,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -82,7 +82,7 @@
         </ParameterBindings>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -133,7 +133,7 @@
             </Neq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>   
       </View>
       <View BaseViewID="3" Name="5f1ae092-5faa-43b6-a339-4fd40f594a14" DisplayName="Initiated" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Initiated.aspx" DefaultView="FALSE">
@@ -160,7 +160,7 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="4" Name="a58c2a89-714c-4976-bd05-9c713eec78b7" DisplayName="On Hold" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="OnHold.aspx" DefaultView="FALSE">
@@ -187,7 +187,7 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="5" Name="3b3341ae-7f7a-4d53-950b-f25356f3ddea" DisplayName="Resolved" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Resolved.aspx" DefaultView="FALSE">
@@ -215,7 +215,7 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="6" Name="a7fa5ac3-0ceb-4fb4-ac8f-8b1f091d2169" DisplayName="Engaged" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Engaged.aspx" DefaultView="FALSE">
@@ -242,7 +242,7 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
     </Views>

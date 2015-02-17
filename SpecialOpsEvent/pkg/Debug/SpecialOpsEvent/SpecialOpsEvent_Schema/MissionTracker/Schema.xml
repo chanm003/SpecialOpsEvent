@@ -82,7 +82,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -100,7 +100,7 @@
         </ParameterBindings>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -146,7 +146,7 @@
             </Neq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="3" Name="d2ed486d-529e-4ef6-813a-6b6707bd79be" DisplayName="Closed" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Closed.aspx">
@@ -171,7 +171,7 @@
             </Eq>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="4" Name="47d81069-db3f-4deb-80d1-897ab85ce2e1" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
@@ -191,7 +191,7 @@
             <FieldRef Name="MissionNumber"/>
           </OrderBy>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="5" Name="46bb3c96-8799-4dcb-a832-f680474fb5ef" DisplayName="Gantt" Type="GANTT" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Gantt.aspx">
@@ -212,7 +212,7 @@
             <FieldRef Name="MissionNumber"/>
           </OrderBy>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
     </Views>

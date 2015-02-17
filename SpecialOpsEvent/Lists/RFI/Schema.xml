@@ -129,7 +129,7 @@
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -147,7 +147,7 @@
         </ParameterBindings>
       </View>
       <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
@@ -200,7 +200,7 @@
             </And>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="3" Name="7f144a68-9649-4a56-af1f-906b8c0316d5" DisplayName="SOATG" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOATG.aspx">
@@ -228,7 +228,7 @@
             </And>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="4" Name="6baee1f9-940b-41fe-b508-440d2447c763" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
@@ -256,7 +256,7 @@
             </And>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="5" Name="68d60789-b865-4091-a533-d12a3915ac42" DisplayName="SOTG-15" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-15.aspx">
@@ -284,7 +284,7 @@
             </And>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="6" Name="39bbdcc1-b83f-4089-ad2c-1ebf720d4eb4" DisplayName="SOTG-25" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-25.aspx">
@@ -312,7 +312,7 @@
             </And>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View BaseViewID="7" Name="c0d6c064-3345-45a6-84a9-9e1328cfcbaa" DisplayName="SOTG-35" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-35.aspx">
@@ -340,7 +340,7 @@
             </And>
           </Where>
         </Query>
-        <Toolbar Type="Standard" />
+        <Toolbar Type="Standard" ShowAlways="TRUE" />
         <XslLink Default="TRUE">main.xsl</XslLink>
       </View>
       <View TabularView="FALSE" BaseViewID="8" Name="1dd331f2-b26b-48f7-beec-a0cde079121b" DisplayName="Open RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Open RFIs.aspx">

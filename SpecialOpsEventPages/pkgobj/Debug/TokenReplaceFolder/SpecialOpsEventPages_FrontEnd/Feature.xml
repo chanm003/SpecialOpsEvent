@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Special Operations Event - Pages" Id="e8c2c84b-592c-4d2f-9338-f089c4e2fd84" ReceiverAssembly="SpecialOpsEventPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06657a0938f97006" ReceiverClass="SpecialOpsEventPages.Features.FrontEnd.FrontEndEventReceiver" Scope="Web">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="e8c2c84b-592c-4d2f-9338-f089c4e2fd84" ReceiverAssembly="SpecialOpsEventPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=06657a0938f97006" ReceiverClass="SpecialOpsEventPages.Features.FrontEnd.FrontEndEventReceiver" Scope="Web" Title="Special Operations Event - Pages">
   <ElementManifests>
     <ElementManifest Location="WebPageAssets\Elements.xml" />
     <ElementFile Location="WebPageAssets\images\ArrowCollapse.gif" />

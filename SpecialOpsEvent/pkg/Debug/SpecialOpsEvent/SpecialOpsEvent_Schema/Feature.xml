@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Special Operations Event - Schema" Id="0ffc1eba-d4c3-48f4-89b7-08c1663e4668" ReceiverAssembly="SpecialOpsEvent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=77948cf7479e80c3" ReceiverClass="SpecialOpsEvent.Features.Schema.SchemaEventReceiver" Scope="Web">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="0ffc1eba-d4c3-48f4-89b7-08c1663e4668" ReceiverAssembly="SpecialOpsEvent, Version=1.0.0.0, Culture=neutral, PublicKeyToken=77948cf7479e80c3" ReceiverClass="SpecialOpsEvent.Features.Schema.SchemaEventReceiver" Scope="Web" Title="Special Operations Event - Schema">
   <ElementManifests>
     <ElementManifest Location="AfterActionReportsInstance\Elements.xml" />
     <ElementManifest Location="AfterActionReports\Elements.xml" />
