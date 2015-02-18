@@ -2,9 +2,13 @@
 <List xmlns:ows="Microsoft SharePoint" Title="EventParticpantLibrary" Direction="$Resources:Direction;" Url="EventParticpantLibrary" BaseType="1" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
   <MetaData>
     <ContentTypes>
-      <ContentTypeRef ID="0x0101">
-        <Folder TargetName="Forms/Document" />
-      </ContentTypeRef>
+      <ContentType ID="0x010100FB6F3EA6B1414E538E378B716346B5CE" Name="Document" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{A7489391-67FB-4544-9DCA-0A17642630FE}" Name="OrganizationalComponent" />
+          <FieldRef ID="{593c4bda-7c08-49f7-8ed8-a067df6c4839}" DisplayName="Doc Type" Required="TRUE" Name="DocType" Format="Dropdown" />
+          <FieldRef ID="{fc83c269-1862-4653-8bf4-ecd99fe3b51c}" DisplayName="Mission" Required="FALSE" Description="The mission associated with the document" Customization="" Name="Mission" />
+        </FieldRefs>
+      </ContentType>
       <ContentTypeRef ID="0x0120" />
       <ContentType ID="0x01010078812FB186BA4DE79ADF1C1A7511F70D" Name="AAR" Group="Special Ops Event Content Types" Description="AAR Template" Inherits="TRUE" Version="0">
         <FieldRefs>
@@ -138,19 +142,22 @@
         <ViewFields>
           <FieldRef Name="DocIcon"></FieldRef>
           <FieldRef Name="LinkFilename"></FieldRef>
-          <FieldRef Name="Modified"></FieldRef>
-          <FieldRef Name="Editor"></FieldRef>
-          <FieldRef Name="OrganizationalComponent" />
-          <FieldRef Name="DocType" />
-          <FieldRef Name="Mission" />
+          <FieldRef Name="DocType"></FieldRef>
+          <FieldRef Name="Mission"></FieldRef>
+          <FieldRef Name="Editor" ></FieldRef>
+          <FieldRef Name="Modified" ></FieldRef>
         </ViewFields>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noitemsinview_doclibrary)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noitemsinview_doclibrary_howto2)" />
         </ParameterBindings>
         <Query>
+          <GroupBy Collapse="TRUE" GroupLimit="30">
+            <FieldRef Name="OrganizationalComponent"></FieldRef>
+            <FieldRef Name="DocType"></FieldRef>
+          </GroupBy>
           <OrderBy>
-            <FieldRef Name="FileLeafRef" />
+            <FieldRef Name="ID" Ascending="FALSE" />
           </OrderBy>
         </Query>
       </View>

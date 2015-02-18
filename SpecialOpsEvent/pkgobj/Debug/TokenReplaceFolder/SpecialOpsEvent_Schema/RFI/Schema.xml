@@ -249,9 +249,12 @@
           <FieldRef Name="LTIOV" />
         </ViewFields>
         <Query>
+          <GroupBy Collapse="False">
+            <FieldRef Name="RecommendedOPR"></FieldRef>
+          </GroupBy>
           <OrderBy>
+            <FieldRef Name="RecommendedOPR" />
             <FieldRef Name="PrioritySort" />
-            <FieldRef Name="ID" />
           </OrderBy>
           <Where>
             <And>
