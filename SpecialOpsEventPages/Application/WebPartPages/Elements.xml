@@ -5,7 +5,6 @@
     <File Type="GhostableInLibrary" Path="WebPartPages\editCustomNav.aspx" Url="app/editCustomNav.aspx" />
     <File Type="GhostableInLibrary" Path="WebPartPages\helpDesk.aspx" Url="app/helpDesk.aspx" />
     <File Type="GhostableInLibrary" Path="WebPartPages\missionTracker.aspx" Url="app/missionTracker.aspx"/>
-    <File Type="GhostableInLibrary" Path="WebPartPages\projection.aspx" Url="app/projection.aspx" />
     <File Type="GhostableInLibrary" Path="WebPartPages\sitreps.aspx" Url="app/sitreps.aspx" />
 
     <File Type="GhostableInLibrary" Path="WebPartPages\announce.aspx" Url="app/announce.aspx" >
@@ -13,7 +12,7 @@
       </View>
     </File>
     <File Type="GhostableInLibrary" Path="WebPartPages\comms.aspx" Url="app/comms.aspx">
-      <View List="SIGCEN" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="100"></View>
+      <View List="SOCC" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="100"></View>
       <View List="Lists/WatchLogSigcen" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="200"></View>
     </File>
     <File Type="GhostableInLibrary" Path="WebPartPages\excon.aspx" Url="app/excon.aspx">

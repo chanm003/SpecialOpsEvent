@@ -13,10 +13,10 @@
         var container = $('<div class="webpartsContainer">');
 
         commonUI.renderWebPartHeaderTag(container, "/Lists/CommunicationsStatus/EditableGrid.aspx", "Overall Communication Status");
-        commsTables.renderCommsTable(container, data.commStatusData);
+        commsTables.renderCommsTable(container, data.commStatusData, "/Lists/CommunicationsStatus/EditableGrid.aspx");
 
         commonUI.renderWebPartHeaderTag(container, "/Lists/NodeStatus/EditableGrid.aspx", "Node Status");
-        commsTables.renderNodeStatusTable(container, data.nodeStatusData);
+        commsTables.renderNodeStatusTable(container, data.nodeStatusData, "/Lists/NodeStatus/EditableGrid.aspx");
 
         $("#commsPageMainContent").prepend(container).show();
     }

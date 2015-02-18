@@ -11,7 +11,6 @@
     <ProjectItemFile Source="helpDesk.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="missionTracker.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="phone.aspx" Target="WebPartPages\" Type="ElementFile" />
-    <ProjectItemFile Source="projection.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="rfi.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="sitreps.aspx" Target="WebPartPages\" Type="ElementFile" />
     <ProjectItemFile Source="soatg.aspx" Target="WebPartPages\" Type="ElementFile" />

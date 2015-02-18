@@ -145,7 +145,6 @@
     <ElementFile Location="WebPartPages\helpDesk.aspx" />
     <ElementFile Location="WebPartPages\missionTracker.aspx" />
     <ElementFile Location="WebPartPages\phone.aspx" />
-    <ElementFile Location="WebPartPages\projection.aspx" />
     <ElementFile Location="WebPartPages\rfi.aspx" />
     <ElementFile Location="WebPartPages\sitreps.aspx" />
     <ElementFile Location="WebPartPages\soatg.aspx" />

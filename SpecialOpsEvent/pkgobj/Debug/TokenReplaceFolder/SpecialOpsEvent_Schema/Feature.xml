@@ -62,7 +62,6 @@
     <ElementManifest Location="Country\Elements.xml" />
     <ElementFile Location="Country\Schema.xml" />
     <ElementManifest Location="App\Elements.xml" />
-    <ElementManifest Location="SOCOMFMD\Elements.xml" />
     <ElementManifest Location="EventDocumentsInstance\Elements.xml" />
     <ElementManifest Location="EventDocuments\Elements.xml" />
     <ElementFile Location="EventDocuments\Schema.xml" />
@@ -83,5 +82,12 @@
     <ElementFile Location="EventParticpantLibrary\FileDlg.htm" />
     <ElementFile Location="EventParticpantLibrary\Repair.aspx" />
     <ElementFile Location="EventParticpantLibrary\Upload.aspx" />
+    <ElementManifest Location="SOCOMFMDInstance\Elements.xml" />
+    <ElementManifest Location="SOCOMFMD\Elements.xml" />
+    <ElementFile Location="SOCOMFMD\Schema.xml" />
+    <ElementFile Location="SOCOMFMD\EditDlg.htm" />
+    <ElementFile Location="SOCOMFMD\FileDlg.htm" />
+    <ElementFile Location="SOCOMFMD\Repair.aspx" />
+    <ElementFile Location="SOCOMFMD\Upload.aspx" />
   </ElementManifests>
 </Feature>

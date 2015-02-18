@@ -159,24 +159,42 @@
         renderNodeStatusTable: renderNodeStatusTable
     }
 
-    function renderCommsTable(container, data) {
+    function renderCommsTable(container, data, editUrl) {
         var commStatusTemplate = handlebars.compile(commStatusHtml),
 			commStatusTable = commStatusTemplate({
                 hasNoData: (data.length === 0),
 			    statuses: data
 			});
 
-        container.append($(commStatusTable));
+        var table = $(commStatusTable);
+
+        if (editUrl) {
+            table.click(function () {
+                window.location.href = _spPageContextInfo.webServerRelativeUrl + editUrl;
+            });
+            table.css({"cursor":"pointer"});
+        }
+
+        container.append(table);
     }
 
-    function renderNodeStatusTable(container, data) {
+    function renderNodeStatusTable(container, data, editUrl) {
         var nodeStatusTemplate = handlebars.compile(nodeStatusHtml),
 			nodeStatusTable = nodeStatusTemplate({
 			    hasNoData: (data.length === 0),
 			    statuses: data
 			});
 
-        container.append($(nodeStatusTable));
+        var table = $(nodeStatusTable);
+
+        if (editUrl) {
+            table.click(function () {
+                window.location.href = _spPageContextInfo.webServerRelativeUrl + editUrl;
+            });
+            table.css({ "cursor": "pointer" });
+        }
+
+        container.append(table);
     }
 
     return exposedAPI;

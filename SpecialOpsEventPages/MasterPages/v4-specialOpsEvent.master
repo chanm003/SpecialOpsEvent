@@ -663,6 +663,74 @@
    <input type="text" name="__spText1" title="text" style="display:none;" />
    <input type="text" name="__spText2" title="text" style="display:none;" />
   </form>
+    <script type="text/javascript">
+        function renderCalculatedHtmlColumns() {
+            var listWP = [],
+				calWP = [],
+				divs = document.getElementById("MSO_ContentTable").getElementsByTagName("div");
+            var count = divs.length;
+
+            for (i = 0; i < count; i++) {
+                try {
+                    if (divs[i].id.indexOf("WebPartWPQ") == 0) {
+                        if (divs[i].innerHTML.indexOf("ViewDefault_CalendarView") >= 0) {
+                            // Calendars
+                            calWP.push(divs[i].id);
+                        }
+                        else {
+                            // Other Web Parts
+                            listWP.push(divs[i].id);
+                        }
+                    }
+                }
+                catch (e) { }
+            }
+
+            function TextToHTML(NodeSet, HTMLregexp) {
+                var CellContent = "";
+                var i = 0;
+                while (i < NodeSet.length) {
+                    try {
+                        CellContent = NodeSet[i].innerText || NodeSet[i].textContent;
+                        if (HTMLregexp.test(CellContent)) {
+                            NodeSet[i].innerHTML = CellContent;
+                        }
+                    }
+                    catch (err) { }
+                    i = i + 1;
+                }
+            }
+
+            var regexpA = new RegExp("\\s*<([a-zA-Z]*)(.|\\s)*/\\1?>\\s*$");
+            var regexpTD = new RegExp("^\\s*<([a-zA-Z]*)(.|\\s)*/\\1?>\\s*$");
+
+            var WP = new Object;
+
+            function UpdateWP() {
+                if (calWP.length > 0) {
+                    for (i = 0; i < calWP.length; i++) {
+                        WP = document.getElementById(calWP[i]);
+                        if (WP.innerHTML.indexOf("&lt\;") >= 0) {
+                            TextToHTML(WP.getElementsByTagName("a"), regexpA);
+                        }
+                    }
+                }
+                if (listWP.length > 0) {
+                    for (i = 0; i < listWP.length; i++) {
+                        WP = document.getElementById(listWP[i]);
+                        if (WP.innerHTML.indexOf("&lt\;") >= 0) {
+                            TextToHTML(WP.getElementsByTagName("td"), regexpTD);
+                        }
+                    }
+                }
+
+            }
+
+            UpdateWP();
+        }
+        renderCalculatedHtmlColumns();
+	</script>
+
 
      <!--CUSTOMIZATION TO OOTB V4.master: START-->
     <SharePoint:ScriptLink ID="ScriptLink1" language="javascript"

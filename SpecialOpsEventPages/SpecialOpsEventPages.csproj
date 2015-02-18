@@ -255,7 +255,6 @@
     <Content Include="Application\WebPartPages\helpDesk.aspx" />
     <Content Include="Application\WebPartPages\missionTracker.aspx" />
     <Content Include="Application\WebPartPages\phone.aspx" />
-    <Content Include="Application\WebPartPages\projection.aspx" />
     <Content Include="Application\WebPartPages\rfi.aspx" />
     <Content Include="Application\WebPartPages\sitreps.aspx" />
     <Content Include="Application\WebPartPages\soatg.aspx" />

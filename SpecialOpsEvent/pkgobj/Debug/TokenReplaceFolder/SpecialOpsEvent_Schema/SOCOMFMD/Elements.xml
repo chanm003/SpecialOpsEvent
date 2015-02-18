@@ -1,4 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <ListInstance Title="SOCOM FMD" OnQuickLaunch="FALSE" TemplateType="101" FeatureId="00bfea71-e717-4e80-aa17-d0c71b360101" Url="SOCOMFMD" Description=""></ListInstance>
+    <!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List project item, an error will occur when the project is run. -->
+    <ListTemplate
+        Name="SOCOMFMD"
+        Type="10021"
+        BaseType="1"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="110"
+        DisplayName="SOCOMFMD"
+        Description="My List Definition"
+        Image="/_layouts/images/itdl.png"
+        DocumentTemplate="121"/>
 </Elements>

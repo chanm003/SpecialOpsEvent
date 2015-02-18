@@ -38,6 +38,12 @@
       </Field>
       <Field Type="Text" DisplayName="Injected" Required="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE"  MaxLength="255" ID="{787AA5F6-A3A6-4142-A08C-311E2AE9AB0D}" Name="Injected" Description="Specifies whether this item was successfully copied to Message Traffic list as an &quot;Inbound Message&quot;" />
       <Field Type="Text" DisplayName="To" Required="TRUE" MaxLength="255" ID="{35e48997-5270-46ed-bf70-e5512e0840da}" Name="To" />
+      <Field Type="Calculated" DisplayName="Actions" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{2D664A62-4708-4F20-9234-79F197B65D52}" Name="ActionsHtml">
+        <Formula>=&quot;&lt;a class=&#39;custombtn mselBtn&#39;&gt;Inject&lt;/a&gt;&quot;</Formula>
+        <FieldRefs>
+          <FieldRef Name="Status" />
+        </FieldRefs>
+      </Field>
     </Fields>
     <Views>
       <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
@@ -63,6 +69,7 @@
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="Attachments" />
           <FieldRef Name="DTG" />
           <FieldRef Name="LinkTitle" />
@@ -85,6 +92,7 @@
       </View>
       <View BaseViewID="2" Name="a8a571f7-a683-4aeb-9d30-ac4ac4351b1e" DisplayName="For EXCON Page" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="For EXCON Page.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="Attachments" />
           <FieldRef Name="DTG" />
           <FieldRef Name="LinkTitle" />

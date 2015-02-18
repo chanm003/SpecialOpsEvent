@@ -88,7 +88,10 @@
       <SharePointProjectItemId>{53748ecd-77ce-4397-a60c-19b34974d1ab}</SharePointProjectItemId>
     </None>
     <None Include="Libraries\SOCOMFMD\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e6083ef8-f72d-4c1e-b23d-6bf1c90827b3}</SharePointProjectItemId>
+      <SharePointProjectItemId>{a4727a39-a20b-4aca-a720-37f588d2dc9a}</SharePointProjectItemId>
+    </None>
+    <None Include="Libraries\SOCOMFMD\SOCOMFMDInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5abbcbb1-270e-452e-9be2-ad41bdbecf9e}</SharePointProjectItemId>
     </None>
     <None Include="Lists\AfterActionReports\AfterActionReportsInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9f812433-1d5a-4b08-bf64-b886debb1fbc}</SharePointProjectItemId>
@@ -241,7 +244,13 @@
     <Content Include="Libraries\EventParticpantLibrary\Repair.aspx" />
     <Content Include="Libraries\EventParticpantLibrary\Schema.xml" />
     <Content Include="Libraries\EventParticpantLibrary\Upload.aspx" />
+    <Content Include="Libraries\SOCOMFMD\EditDlg.htm" />
     <Content Include="Libraries\SOCOMFMD\Elements.xml" />
+    <Content Include="Libraries\SOCOMFMD\FileDlg.htm" />
+    <Content Include="Libraries\SOCOMFMD\Repair.aspx" />
+    <Content Include="Libraries\SOCOMFMD\Schema.xml" />
+    <Content Include="Libraries\SOCOMFMD\SOCOMFMDInstance\Elements.xml" />
+    <Content Include="Libraries\SOCOMFMD\Upload.aspx" />
     <Content Include="Lists\AfterActionReports\AfterActionReportsInstance\Elements.xml" />
     <Content Include="Lists\AfterActionReports\Elements.xml" />
     <Content Include="Lists\AfterActionReports\Schema.xml" />

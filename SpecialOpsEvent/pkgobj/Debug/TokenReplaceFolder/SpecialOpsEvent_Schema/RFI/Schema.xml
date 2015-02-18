@@ -97,7 +97,7 @@
           <CHOICE>No</CHOICE>
         </CHOICES>
       </Field>
-      <Field Type="Calculated" DisplayName="Reopened" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{86107b90-e528-4268-a9b7-26d469f3df4e}" Name="Reopened">
+      <Field Type="Calculated" DisplayName="Reopened" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{86107b90-e528-4268-a9b7-26d469f3df4e}" Name="Reopened">
         <Formula>=IF(ResponseSufficient="No","Yes")</Formula>
         <FieldRefs>
           <FieldRef Name="ResponseSufficient" />
@@ -113,17 +113,23 @@
           <FieldRef Name="Created" />
         </FieldRefs>
       </Field>
-      <Field Type="Calculated" DisplayName="EXCON View" Description="Determines whether or not to display item on EXCON page" Format="DateOnly" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{5f273ca0-41f6-4fd2-9c92-1ae1ea9b7006}" Name="EXCONView">
+      <Field Type="Calculated" DisplayName="EXCON View" Description="Determines whether or not to display item on EXCON page" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{5f273ca0-41f6-4fd2-9c92-1ae1ea9b7006}" Name="EXCONView">
         <Formula>=IF(OR(RecommendedOPR="Higher Headquarters",RecommendedOPR="Embassy",RecommendedOPR="EXCON"),IF(Status="Open","Yes","No"),"No")</Formula>
         <FieldRefs>
           <FieldRef Name="Status" />
           <FieldRef Name="RecommendedOPR" />
         </FieldRefs>
       </Field>
-      <Field Type="Calculated" DisplayName="PrioritySort" Format="DateOnly" LCID="1033" ResultType="Number" ReadOnly="TRUE" ID="{770d6929-29b8-4a9d-abc1-6b81a0207b26}" Name="PrioritySort">
+      <Field Type="Calculated" DisplayName="PrioritySort" LCID="1033" ResultType="Number" ReadOnly="TRUE" ID="{770d6929-29b8-4a9d-abc1-6b81a0207b26}" Name="PrioritySort">
         <Formula>=IF(ISNUMBER(SEARCH("Immediate",Priority)),1,IF(ISNUMBER(SEARCH("Priority",Priority)),2,3))</Formula>
         <FieldRefs>
           <FieldRef Name="Priority" />
+        </FieldRefs>
+      </Field>
+      <Field Type="Calculated" DisplayName="Actions" LCID="1033" ResultType="Text" ReadOnly="TRUE" ID="{11D91660-02A5-4282-8F1D-ECBDD5A37FF7}" Name="ActionsHtml">
+        <Formula>=&quot;&lt;a class=&#39;custombtn rfiBtn&#39;&gt;&quot;&amp;IF(Status=&quot;Open&quot;,&quot;Respond&quot;,&quot;Reopen&quot;)&amp;&quot;&lt;/a&gt;&quot;</Formula>
+        <FieldRefs>
+          <FieldRef Name="Status" />
         </FieldRefs>
       </Field>
     </Fields>
@@ -151,6 +157,7 @@
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="RfiTracking" />
           <FieldRef Name="LinkTitle" />
@@ -177,6 +184,7 @@
       </View>
       <View BaseViewID="2" Name="58a64784-db8f-46ed-8e96-161906494007" DisplayName="EXCON" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="EXCON.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="Priority" />
@@ -205,6 +213,7 @@
       </View>
       <View BaseViewID="3" Name="7f144a68-9649-4a56-af1f-906b8c0316d5" DisplayName="SOATG" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOATG.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="Priority" />
@@ -233,6 +242,7 @@
       </View>
       <View BaseViewID="4" Name="6baee1f9-940b-41fe-b508-440d2447c763" DisplayName="SOCC" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOCC.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="Priority" />
@@ -261,6 +271,7 @@
       </View>
       <View BaseViewID="5" Name="68d60789-b865-4091-a533-d12a3915ac42" DisplayName="SOTG-15" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-15.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="Priority" />
@@ -289,6 +300,7 @@
       </View>
       <View BaseViewID="6" Name="39bbdcc1-b83f-4089-ad2c-1ebf720d4eb4" DisplayName="SOTG-25" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-25.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="Priority" />
@@ -317,6 +329,7 @@
       </View>
       <View BaseViewID="7" Name="c0d6c064-3345-45a6-84a9-9e1328cfcbaa" DisplayName="SOTG-35" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="SOTG-35.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="ID" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="Priority" />
@@ -345,6 +358,7 @@
       </View>
       <View TabularView="FALSE" BaseViewID="8" Name="1dd331f2-b26b-48f7-beec-a0cde079121b" DisplayName="Open RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Open RFIs.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
           <FieldRef Name="POCOrganization" />
@@ -374,6 +388,7 @@
       </View>
       <View TabularView="FALSE" BaseViewID="9" Name="24c9fae1-c87f-4f98-8467-1c9fd0d5646e" DisplayName="Closed RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Closed RFIs.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
           <FieldRef Name="POCOrganization" />
@@ -404,6 +419,7 @@
       </View>
       <View TabularView="FALSE" BaseViewID="10" Name="7f40b8f0-ca78-4bab-964f-efb9a3672c1e" DisplayName="My RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="My RFIs.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
           <FieldRef Name="RfiTracking" />
@@ -435,6 +451,7 @@
       </View>
       <View TabularView="FALSE" BaseViewID="11" Name="82347fd0-3840-4733-94bc-024734ff068f" DisplayName="Manage RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Manage RFIs.aspx">
         <ViewFields>
+          <FieldRef Name="ActionsHtml" />
           <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
           <FieldRef Name="POCOrganization" />

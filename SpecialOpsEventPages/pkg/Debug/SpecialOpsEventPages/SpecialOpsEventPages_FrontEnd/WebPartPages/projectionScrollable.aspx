@@ -66,6 +66,7 @@
                          datacontext.getSignificantWatchlogEvents('Watch Log - SOTG 15'),
                          datacontext.getSignificantWatchlogEvents('Watch Log - SOTG 25'),
                          datacontext.getSignificantWatchlogEvents('Watch Log - SOTG 35'),
+                         datacontext.getSignificantWatchlogEvents('Watch Log - SIGCEN'),
                          datacontext.getBattleRhythmForNext24Hours(),
                          datacontext.getSignifcantMessageTraffic('Inbound Message'),
                          datacontext.getSignifcantMessageTraffic('Outbound Message'),
@@ -73,7 +74,7 @@
                          datacontext.getCommStatuses(),
                          datacontext.getOpenCollectionReqs()
                          )
-                         .then(function (ccirs, exconItems, soatgItems, soccItems, sotg15Items, sotg25Items, sotg35Items, battleRhythmItems, inboundMessages, outboundMessages, missionItems, commsStatuses, openRFI) {
+                         .then(function (ccirs, exconItems, soatgItems, soccItems, sotg15Items, sotg25Items, sotg35Items, sigcenItems, battleRhythmItems, inboundMessages, outboundMessages, missionItems, commsStatuses, openRFI) {
 
                              var watchlogItems = [];
                              watchlogItems = watchlogItems.concat(exconItems);
@@ -82,6 +83,7 @@
                              watchlogItems = watchlogItems.concat(sotg15Items);
                              watchlogItems = watchlogItems.concat(sotg25Items);
                              watchlogItems = watchlogItems.concat(sotg35Items);
+                             watchlogItems = watchlogItems.concat(sigcenItems);
 
                              UI.render({
                                  ccirData: ccirs,
