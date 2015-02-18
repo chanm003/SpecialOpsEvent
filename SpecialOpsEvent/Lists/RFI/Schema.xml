@@ -362,8 +362,8 @@
       <View TabularView="FALSE" BaseViewID="8" Name="1dd331f2-b26b-48f7-beec-a0cde079121b" DisplayName="Open RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Open RFIs.aspx">
         <ViewFields>
           <FieldRef Name="ActionsHtml" />
-          <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
           <FieldRef Name="POCOrganization" />
           <FieldRef Name="RfiTracking" />
           <FieldRef Name="Status" />
@@ -392,8 +392,8 @@
       <View TabularView="FALSE" BaseViewID="9" Name="24c9fae1-c87f-4f98-8467-1c9fd0d5646e" DisplayName="Closed RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Closed RFIs.aspx">
         <ViewFields>
           <FieldRef Name="ActionsHtml" />
-          <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
           <FieldRef Name="POCOrganization" />
           <FieldRef Name="RfiTracking" />
           <FieldRef Name="Status" />
@@ -423,8 +423,8 @@
       <View TabularView="FALSE" BaseViewID="10" Name="7f40b8f0-ca78-4bab-964f-efb9a3672c1e" DisplayName="My RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="My RFIs.aspx">
         <ViewFields>
           <FieldRef Name="ActionsHtml" />
-          <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
           <FieldRef Name="RfiTracking" />
           <FieldRef Name="Status" />
           <FieldRef Name="Priority" />
@@ -455,8 +455,8 @@
       <View TabularView="FALSE" BaseViewID="11" Name="82347fd0-3840-4733-94bc-024734ff068f" DisplayName="Manage RFIs" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="Manage RFIs.aspx">
         <ViewFields>
           <FieldRef Name="ActionsHtml" />
-          <FieldRef Name="LinkTitle" />
           <FieldRef Name="ID" />
+          <FieldRef Name="LinkTitle" />
           <FieldRef Name="POCOrganization" />
           <FieldRef Name="RfiTracking" />
           <FieldRef Name="Status" />

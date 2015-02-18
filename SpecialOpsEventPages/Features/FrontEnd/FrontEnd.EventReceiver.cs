@@ -20,7 +20,7 @@ namespace SpecialOpsEventPages.Features.FrontEnd
             //MAY CHANGE TO ROOTWEB and SCOPE this to Site Collection later on
             var web = properties.Feature.Parent as SPWeb;
             ApplyMasterPage(web, "v4-specialOpsEvent.master");
-            SetDefaultPage(web, "app/projection.aspx");
+            SetDefaultPage(web, "app/socc.aspx");
             ChangeDefaultListForms_AirSupportRequest(web);
             ChangeDefaultListForms_RFI(web);
         }

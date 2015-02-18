@@ -70,6 +70,7 @@
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
           <FieldRef Name="ActionsHtml" />
+          <FieldRef Name="ID" />
           <FieldRef Name="Attachments" />
           <FieldRef Name="DTG" />
           <FieldRef Name="LinkTitle" />
@@ -93,6 +94,7 @@
       <View BaseViewID="2" Name="a8a571f7-a683-4aeb-9d30-ac4ac4351b1e" DisplayName="For EXCON Page" Type="HTML" WebPartZoneID="Main" SetupPath="pages\viewpage.aspx" Url="For EXCON Page.aspx">
         <ViewFields>
           <FieldRef Name="ActionsHtml" />
+          <FieldRef Name="ID" />
           <FieldRef Name="Attachments" />
           <FieldRef Name="DTG" />
           <FieldRef Name="LinkTitle" />

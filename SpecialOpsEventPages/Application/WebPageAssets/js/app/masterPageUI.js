@@ -281,10 +281,40 @@
 	    }
 	}
 
+	function addBehaviorForRfiButtons() {
+	    $(".rfiBtn").on('click', function () {
+	        var btn = $(this);
+
+            //assumes listViewWebpart is set up so next adjacent cell is the ID columm
+	        var listItemId = btn.closest('td').next('td').text();
+
+	        if (btn.text() === "Respond") {
+	            window.location.href = _spPageContextInfo.webServerRelativeUrl + "/Lists/RFI/Respond.aspx?ID=" + listItemId + "&Source=" + document.location.href;
+	        } else if (btn.text() == "Reopen") {
+	            window.location.href = _spPageContextInfo.webServerRelativeUrl + "/Lists/RFI/Sufficient.aspx?ID=" + listItemId + "&Source=" + document.location.href;
+	        }
+
+	    });
+	}
+
+	function addBehaviorForMselButtons() {
+	    $(".mselBtn").on('click', function () {
+	        var btn = $(this);
+
+	        //assumes listViewWebpart is set up so next adjacent cell is the ID columm
+	        var listItemId = btn.closest('td').next('td').text();
+
+	        window.customMselActions.injectInboundMessage(listItemId, _spPageContextInfo.webServerRelativeUrl+ "/Lists/RFI");
+
+	    });
+	}
+
 	function defineCustomActions() {
 	    defineCustomActionsForRFIList();
 	    defineCustomActionsForMselList();
 	    addCustomContextMenus();
+	    addBehaviorForRfiButtons();
+	    addBehaviorForMselButtons();
 	}
 
 	defineCustomActions();
